@@ -2,6 +2,7 @@ import ExploreNdis from "@/components/ExploreNdis";
 import HappyCustomers from "@/components/HappyCustomers";
 import Hero from "@/components/Hero";
 import Leading from "@/components/Leading";
+import OurApproach from "@/components/OurApproach";
 import OurServices from "@/components/OurServices";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <ExploreNdis />
       <OurServices />
       <HappyCustomers />
+      <OurApproach />
     </section>
   )
 }

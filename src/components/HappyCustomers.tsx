@@ -8,9 +8,9 @@ import Image from "next/image";
 
 export default function HappyCustomers() {
   return (
-    <section className="py-10 px-4 bg-light-grey my-10">
+    <section className="py-10 px-4 bg-light-grey">
       <div className="grid lg:grid-cols-2 items-center gap-4">
-        <div className="">
+        <div className="mx-auto">
           <h2 className="font-bold text-2xl lg:text-4xl text-black">
             Our happy <br /> customers speaks <br /> for us
           </h2>

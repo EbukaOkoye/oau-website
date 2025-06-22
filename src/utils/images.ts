@@ -12,6 +12,7 @@ import thumbnail_seven from "@/assets/thumbnail_7.jpeg";
 import tom from '@/assets/tom.jpg';
 import jacob from '@/assets/Jacob.jpg';
 import cynthia from "@/assets/cynthia.jpg";
+import flags from '@/assets/flags.png';
 
 export const images = {
   holaLogo,
@@ -28,4 +29,5 @@ export const images = {
   tom,
   jacob,
   cynthia,
+  flags,
 };
