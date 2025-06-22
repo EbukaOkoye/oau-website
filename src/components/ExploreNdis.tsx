@@ -1,0 +1,26 @@
+'use client';
+import { CircleArrow } from "@/utils/icons";
+import { images } from "@/utils/images";
+import { Button } from "@material-tailwind/react";
+import Image from "next/image";
+
+export default function ExploreNdis() {
+    return (
+        <section className="py-10 px-4 bg-light-grey">
+            <div className="border-2 border-icon-pink md:w-3/4 mx-auto hover:bg-white rounded-xl p-4">
+                <Image src={images.hola_heart} alt="logo-image-hola" className="mx-auto w-24 -mt-16" />
+                <p className="font-bold lg:text-2xl text-center text-black">
+                    Registered NDIS Provider in SA. Helping South Australians with Disability to achieve 
+                    their goals and take control of their futures
+                </p>
+                <p className="font-medium lg:text-xl text-center mt-5 text-black">
+                    Person-Centered Approach is our focus.
+                </p>
+                <Button className="flex items-center gap-3 border-2 border-main-purple rounded-full text-main-purple px-4 py-2 mt-8 cursor-pointer mx-auto">
+                    <CircleArrow className="text-main-purple" />
+                    Explore NDIS
+                </Button>
+            </div>
+        </section>
+    )
+}

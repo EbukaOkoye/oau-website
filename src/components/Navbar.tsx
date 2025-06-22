@@ -1,18 +1,18 @@
 'use client';
-import { useState } from "react";
+// import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/utils/data";
-import Drawer from "@material-tailwind/react/components/Drawer";
-import IconButton from "@material-tailwind/react/components/IconButton";
+// import Drawer from "@material-tailwind/react/components/Drawer";
+// import IconButton from "@material-tailwind/react/components/IconButton";
 import Image from "next/image";
-import { Menu, X } from 'lucide-react';
+// import { Menu } from 'lucide-react';
 import Link from "next/link";
 import { images } from "@/utils/images";
 import { Location, Phone } from "@/utils/icons";
 import { Button } from "@material-tailwind/react";
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
     const pathname = usePathname();
 
     return (
@@ -41,9 +41,9 @@ export default function Navbar() {
                     </div>
 
                     <div className="md:hidden">
-                        <IconButton variant="text" onClick={() => setOpen(true)}>
+                        {/* <IconButton variant="text" onClick={() => setOpen(true)}>
                             <Menu className="h-6 w-6 text-purple-800" />
-                        </IconButton>
+                        </IconButton> */}
                     </div>
                 </div>
 

@@ -6,8 +6,11 @@
   --main-purple: #8b3785;
   --main-pink: #ce4591;
   --secondary-pink: #cf4591;
+  --icon-pink: #d34692;
   --light-pink: #c1a9b6;
   --link-blue: #012c6d;
+  --light-grey: #f5f5f5;
+  --grey-text: #f3f3f3;
 }
 
 @theme inline {
@@ -17,7 +20,10 @@
   --color-main-pink: var(--main-pink);
   --color-secondary-pink: var(--secondary-pink);
   --color-light-pink: var(--light-pink);
+  --color-icon-pink: var(--icon-pink);
   --color-link-blue: var(--link-blue);
+  --color-light-grey: var(--light-grey);
+  --color-grey-text: var(--grey-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -33,4 +39,38 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !w-10 !h-10 sm:!w-12 sm:!h-12 !flex !items-center !justify-center !rounded-full !bg-white !border-2 !border-main-purple !shadow-md !transition-colors !duration-300;
+  /* !important is used to override Swiper's inline styles */
+  top: 50%; /* Position vertically center */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+/* Arrow Color */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply !text-white !text-lg sm:!text-xl; /* Adjust arrow size and color */
+}
+
+/* Specific positioning for prev/next buttons relative to the Swiper container */
+.swiper-button-prev {
+  @apply !-left-4 sm:!-left-6 lg:!-left-8 z-20; /* Adjust to move outside the white box */
+}
+
+.swiper-button-next {
+  @apply !-right-4 sm:!-right-6 lg:!-right-8; /* Adjust to move outside the white box */
+}
+
+/* Optional: Hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply !bg-main-purple;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  @apply !text-white;
 }
