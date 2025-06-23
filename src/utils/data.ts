@@ -22,34 +22,14 @@ export const navbarLinks = [
   },
   {
     name: "ABOUT US",
-    link: "/about",
-  },
-  {
-    name: "NDIS SERVICES",
-    link: "/services",
-  },
-  {
-    name: "RHDP",
-    link: "/",
+    link: "/about-us",
   },
   {
     name: "FAQS",
     link: "/",
   },
   {
-    name: "CAREERS",
-    link: "/",
-  },
-  {
     name: "CONTACT",
-    link: "/",
-  },
-  {
-    name: "COVID-19",
-    link: "/",
-  },
-  {
-    name: "NDIS REFERRAL",
     link: "/",
   },
 ];

@@ -43,6 +43,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.scroll ::-webkit-scrollbar {
+  scrollbar-width: 0 !important;
+  display: none !important;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   @apply !w-10 !h-10 sm:!w-12 sm:!h-12 !flex !items-center !justify-center !rounded-full !bg-white !border-2 !border-main-purple !shadow-md !transition-colors !duration-300;

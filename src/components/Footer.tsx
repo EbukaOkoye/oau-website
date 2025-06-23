@@ -7,7 +7,7 @@ import CustomButton from "./custom-components/Button";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-light-grey pt-10">
+    <footer className="w-full bg-light-grey">
       {/* Top Section: NDIS Support Coordination Box */}
       <div className="bg-gradient-to-r from-main-purple to-main-pink md:w-10/12 translate-y-20 mx-auto rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
         <div className="flex flex-col">
