@@ -1,11 +1,13 @@
+import React from "react";
 import { contactInfo, socialLinks, usefulLinks } from "@/utils/data";
-import { CircleArrow, RightArrow } from "@/utils/icons";
+import { RightArrow } from "@/utils/icons";
 import Link from "next/link";
 import Image from "next/image";
 import { images } from "@/utils/images";
 import CustomButton from "./custom-components/Button";
 
-export default function Footer() {
+
+export default function Footer({topText, icon}: {topText: string, icon: React.ReactNode}) {
   return (
     <footer className="w-full bg-light-grey">
       {/* Top Section: NDIS Support Coordination Box */}
@@ -19,8 +21,9 @@ export default function Footer() {
           </p>
         </div>
         <CustomButton className="flex items-center bg-white gap-3 cursor-pointer text-main-purple font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition duration-300 whitespace-nowrap">
-          Support Coordination
-          <CircleArrow className="text-main-purple" />
+          {topText}
+          {icon}
+          {/* <CircleArrow className="text-main-purple" /> */}
         </CustomButton>
       </div>
 

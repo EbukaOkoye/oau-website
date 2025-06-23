@@ -15,6 +15,7 @@ import {
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
+import { IoIosSend } from "react-icons/io";
 
 export const Phone = FaPhoneAlt;
 export const CircleArrow = FaArrowCircleRight;
@@ -30,4 +31,5 @@ export const Telegram = FaTelegram;
 export const Skype = FaSkype;
 export const DoubleRight = FaAngleDoubleRight;
 export const Email = MdEmail;
+export const Send = IoIosSend;
 export const Time = IoTimeSharp;

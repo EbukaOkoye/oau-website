@@ -3,10 +3,13 @@ import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
 import { images } from "@/utils/images";
 import Image from "next/image";
 import { missionVisionValues } from "@/utils/data";
+import AboutServices from "@/components/AboutServices";
+import Footer from "@/components/Footer";
+import { Send } from "@/utils/icons";
 
 export default function AboutUs() {
   return (
-    <section className="relative w-full h-screen overflow-auto pb-24 scroll">
+    <section className="relative w-full h-screen overflow-auto scroll">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -154,6 +157,8 @@ export default function AboutUs() {
           </div>
         ))}
       </div>
+      <AboutServices />
+      <Footer topText="Contact Now" icon={<Send className="text-main-purple" />} />
     </section>
   );
 }

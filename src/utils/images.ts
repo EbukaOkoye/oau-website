@@ -17,6 +17,9 @@ import about_sec from '@/assets/about_us_sec.jpg';
 import vision from '@/assets/vision.svg';
 import space from '@/assets/space.svg';
 import srum_board from '@/assets/scrum_board.svg';
+import supported from '@/assets/supported.jpg';
+import short_term from '@/assets/short_term.jpg';
+import asstistance from '@/assets/assistance.jpg';
 
 export const images = {
   holaLogo,
@@ -37,5 +40,8 @@ export const images = {
   about_sec,
   vision,
   space,
-  srum_board
+  srum_board,
+  supported,
+  short_term,
+  asstistance,
 };
