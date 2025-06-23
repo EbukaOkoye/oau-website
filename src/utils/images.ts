@@ -13,6 +13,10 @@ import tom from '@/assets/tom.jpg';
 import jacob from '@/assets/Jacob.jpg';
 import cynthia from "@/assets/cynthia.jpg";
 import flags from '@/assets/flags.png';
+import about_sec from '@/assets/about_us_sec.jpg';
+import vision from '@/assets/vision.svg';
+import space from '@/assets/space.svg';
+import srum_board from '@/assets/scrum_board.svg';
 
 export const images = {
   holaLogo,
@@ -30,4 +34,8 @@ export const images = {
   jacob,
   cynthia,
   flags,
+  about_sec,
+  vision,
+  space,
+  srum_board
 };

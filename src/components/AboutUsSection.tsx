@@ -1,7 +1,10 @@
+import { images } from "@/utils/images";
+import Image from "next/image";
+
 export default function AboutUsSection() {
   return (
-    <section className="grid lg:grid-cols-2 gap-4 mt-6 items-center py-10 px-4">
-      <div className="">
+    <section className="grid lg:grid-cols-2 gap-4 mt-14 items-center py-10 px-4">
+      <div className="pb-10">
         <p className="text-black font-medium text-base lg:text-xl leading-9">
           Our programs provide and promotes a positive state of physical, social
           and mental well-being for people, families and communities. Our
@@ -17,7 +20,16 @@ export default function AboutUsSection() {
           circumstances.
         </p>
       </div>
-      <div className=""></div>
+      <div className="">
+        <div className="w-72 h-72 lg:w-[30rem] lg:h-[30rem] relative left-1/2 -translate-x-1/2">
+          <Image
+            src={images.thumbnail_two}
+            alt="Team High Five"
+            fill
+            className="object-cover rounded-full scale-pulse"
+          />
+        </div>
+      </div>
     </section>
   );
 }

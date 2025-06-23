@@ -2,6 +2,7 @@ import AboutUsSection from "@/components/AboutUsSection";
 import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
 import { images } from "@/utils/images";
 import Image from "next/image";
+import { missionVisionValues } from "@/utils/data";
 
 export default function AboutUs() {
   return (
@@ -46,15 +47,113 @@ export default function AboutUs() {
       </div>
       <div className="pt-16 px-4 md:w-10/12 mx-auto mt-14">
         <p className="text-black text-lg lg:text-xl font-medium text-center">
-          <b>Hola Support is a Registered NDIS Service Provider</b> and is one of the
-          fastest-growing disability-care facilities available here in South
-          Australia. Our Participants have the opportunity to live an enriched,
-          and fulfilling life in communities of their choice. We are highly
-          committed to being inclusive of people with differing backgrounds and
-          are constantly tailoring our services to reach diverse social groups.
+          <b>Hola Support is a Registered NDIS Service Provider</b> and is one
+          of the fastest-growing disability-care facilities available here in
+          South Australia. Our Participants have the opportunity to live an
+          enriched, and fulfilling life in communities of their choice. We are
+          highly committed to being inclusive of people with differing
+          backgrounds and are constantly tailoring our services to reach diverse
+          social groups.
         </p>
       </div>
       <AboutUsSection />
+      <section className="h-screen">
+        <div className="background_img relative">
+          <Image
+            src={images.holaLogo}
+            alt="hola-logo"
+            className="animate-bounce absolute bottom-24 left-1/2 -translate-x-1/2"
+          />
+          {/* Top Section: NDIS Support Coordination Box */}
+          <div className="bg-white md:w-10/12 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-22 rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
+            <p className="text-base sm:text-lg font-normal text-black">
+              Hola Support employs excellent staff, all selected through a
+              stringent recruitment process. The staff here are the best in the
+              industry. They are required to undertake ongoing training to keep
+              up-to-date with the best practice standards to enhance their
+              professional skills. Hola Support specialises in Disability care
+              supports, SIL, Short Term Accommodation, Plan Management, NDIS
+              Support Coordination and many more services.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className="grid lg:grid-cols-3 gap-5 p-4 items-center">
+        <div className="col-span-2">
+          <p className="text-sm lg:text-lg font-medium leading-9 text-black">
+            Our services include specialized programs to meet the needs of NDIS
+            participants who are living with disabilities and who seek specific
+            types of care. Our disability support services have been created to
+            suit every age and ability- from young children to older adults. We
+            specialize in adapting to the needs and demands of our clients and
+            we provide a fulfilling experience for them. We provide short term
+            accommodation as well as Supported Independent Living (SIL) to our
+            residents.
+          </p>
+        </div>
+        <div className="col-span-1">
+          <Image
+            src={images.ndisLogo}
+            alt="ndis-logo"
+            className="w-64 mx-auto scale-pulse"
+          />
+        </div>
+      </div>
+      <div className="grid lg:grid-cols-3 gap-5 p-4 items-center mt-14">
+        <div className="col-span-1">
+          <Image
+            src={images.hola_heart}
+            alt="ndis-logo"
+            className="w-36 mx-auto scale-pulse"
+          />
+        </div>
+        <div className="col-span-2">
+          <p className="text-sm lg:text-lg font-medium leading-9 text-black">
+            Our services include specialized programs to meet the needs of NDIS
+            participants who are living with disabilities and who seek specific
+            types of care. Our disability support services have been created to
+            suit every age and ability- from young children to older adults. We
+            specialize in adapting to the needs and demands of our clients and
+            we provide a fulfilling experience for them. We provide short term
+            accommodation as well as Supported Independent Living (SIL) to our
+            residents.
+          </p>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-36">
+        {missionVisionValues.map((_lists, id) => (
+          <div
+            key={id}
+            className="p-3 rounded-2xl shadow-xl flex flex-col justify-between gap-3 min-h-[38rem]"
+          >
+            <Image
+              src={_lists.img}
+              alt="about-images"
+              className={`animate-bounce mx-auto w-48 ${
+                id === 1 ? "delayed" : ""
+              }`}
+            />
+            <div className="my-auto">
+              <h3 className="text-xl font-bold lg:text-4xl text-center text-black">
+                {_lists.title}
+              </h3>
+              <div className="w-16 h-1 bg-main-purple mx-auto" />
+            </div>
+            <div className={`bg-grey-text rounded-2xl mt-auto p-3`}>
+              <p className="font-medium text-sm lg:text-lg leading-8 text-black">
+                {_lists.text}
+              </p>
+              <ul className="list-disc text-black text-sm lg:text-lg ml-3">
+                {_lists.description?.map((_desc, index) => (
+                  <li key={index} className="">
+                    {_desc}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

@@ -81,3 +81,48 @@ body {
 .swiper-button-next:hover::after {
   @apply !text-white;
 }
+
+.background_img {
+  background-image: url('../assets/about_us_sec.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 85% !important;
+}
+
+
+@keyframes morphShape {
+  0%, 100% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  33% {
+    clip-path: ellipse(60% 45% at 50% 50%);
+  }
+  66% {
+    clip-path: polygon(30% 0%, 100% 20%, 80% 100%, 0% 80%);
+  }
+}
+
+.morphing-shape {
+  animation: morphShape 8s infinite ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.scale-pulse {
+  animation: pulseScale 3s ease-in-out infinite;
+}
+
+.delayed {
+  animation-delay: 0.5s;
+}

@@ -243,3 +243,28 @@ export const contactInfo = [
     label: "179B Philip Hwy, Elizabeth South SA 5112",
   },
 ];
+
+export const missionVisionValues = [
+  {
+    img: images.space,
+    title: 'Our Mission',
+    text: 'Our Mission is to ensure an inclusive community where dignity, rights and social justice of all citizens are guaranteed through appropriate support, specific individualized intervention and working alongside relevant stakeholders.'
+  },
+  {
+    img: images.vision,
+    title: 'Our Vision',
+    text: 'Our Vision is to ensure an inclusive community where dignity, rights and social justice of all citizens are guaranteed.'
+  },
+  {
+    img: images.srum_board,
+    title: 'Our Values',
+    text: '',
+    description: [
+      'Integrity in Service Delivery',
+      'Dignity in Care Services',
+      'Respect your privacy and confidentiality',
+      'Accountability in everything we do',
+      'Inclusion by giving equal opportunity and embracing diversity',
+    ],
+  }
+];
