@@ -1,4 +1,5 @@
 import {
+  Chat,
   CheckCircle,
   ClipboardCheck,
   Copy,
@@ -34,7 +35,7 @@ export const navbarLinks = [
   },
   {
     name: "CONTACT",
-    link: "/",
+    link: "/contact",
   },
 ];
 
@@ -436,17 +437,18 @@ export const faqs_two = [
   },
 ];
 
-{
-  /* <span
-                    className={`text-lg font-semibold text-gray-700 ml-4 md:ml-0 whitespace-nowrap
-                    md:absolute md:top-full md:mt-2
-                    ${
-                      index % 2 === 0
-                        ? "md:left-1/2 md:-translate-x-[110%] md:text-right md:pr-4"
-                        : "md:right-1/2 md:translate-x-[110%] md:text-left md:pl-4"
-                    }`}
-                    aria-hidden="true" // Hide from screen readers to avoid redundancy with sr-only span
-                  >
-                    Step {_step.stepNumber}
-                  </span> */
-}
+export const bottomContact = [
+  {
+    icon_img: Chat,
+    text: 'NDIS Feedback & Complaints'
+  },
+  {
+    icon_img: Phone,
+    text: '1800 800 110'
+  },
+  {
+    icon_img: Copy,
+    text: 'Contact & Feedback'
+  },
+];
+

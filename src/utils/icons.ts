@@ -22,6 +22,7 @@ import { MdEmail } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
 import { GiReceiveMoney } from "react-icons/gi";
+import { BsChatDotsFill } from "react-icons/bs";
 
 export const Phone = FaPhoneAlt;
 export const CircleArrow = FaArrowCircleRight;
@@ -45,4 +46,5 @@ export const Email = MdEmail;
 export const Send = IoIosSend;
 export const Time = IoTimeSharp;
 export const ReceiveMoney = GiReceiveMoney;
+export const Chat = BsChatDotsFill;
 
