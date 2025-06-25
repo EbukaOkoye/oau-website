@@ -13,4 +13,15 @@ interface CustomButtonProps {
     children: React.ReactNode;
     className?: string;
     onClick?: () => void;
+    type?:  "button" | "submit" | "reset";
+}
+
+interface InputProps {
+    label: string;
+    className?: string;
+    type: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    value: string;
+    placeholder: string;
+    name: string;
 }

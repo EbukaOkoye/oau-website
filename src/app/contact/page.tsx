@@ -1,9 +1,55 @@
+"use client";
+import { useState } from "react";
 import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
+import Input from "@/components/custom-components/Input";
 import { bottomContact, contactInfo } from "@/utils/data";
 import { images } from "@/utils/images";
 import Image from "next/image";
+import CustomButton from "@/components/custom-components/Button";
+import { CalendarCheck, Send } from "@/utils/icons";
+import Footer from "@/components/Footer";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    contactNumber: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const subject = "Contact Form Submission";
+    const body = `
+    First Name: ${formData.firstName}
+    Last Name: ${formData.lastName}
+    Contact Number: ${formData.contactNumber}
+    Email: ${formData.email}
+    Message: ${formData.message}
+  `;
+
+    // Encode the subject and body for URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    // Open default mail client with prefilled email
+    window.location.href = `mailto:your-email@example.com?subject=${encodedSubject}&body=${encodedBody}`;
+  };
+
   return (
     <section className="relative w-full h-screen">
       {/* Background Image */}
@@ -81,15 +127,97 @@ export default function Contact() {
           ))}
           <div className="mt-8">
             {bottomContact.map((_bottom, idx) => (
-                <div key={idx} className="flex items-center gap-3 my-6">
-                    <_bottom.icon_img className="text-main-purple" />
-                    <p className="text-black font-normal">{_bottom.text}</p>
-                </div>
+              <div key={idx} className="flex items-center gap-3 my-6">
+                <_bottom.icon_img className="text-main-purple" />
+                <p className="text-black font-normal">{_bottom.text}</p>
+              </div>
             ))}
           </div>
         </div>
-        <div className=""></div>
+        <div className="">
+          {/* Address details above map */}
+          <div className="p-4 sm:p-5">
+            <div className="flex space-x-4 text-sm text-hola-purple">
+              {/* These links might point to directions or larger map view */}
+              <iframe
+                loading="lazy"
+                className="w-full !h-[500px]"
+                src="https://www.google.com/maps/embed/v1/place?q=179B%20Philip%20Hwy%20lEizabeth%20South%20SA%205112%2C%20Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
+      <div className="bg-white mt-28 py-8">
+        <Image src={images.mail} alt="mail" className="mx-auto" />
+        <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-purple rounded-2xl mt-24">
+          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-black">
+              Message us
+            </h1>
+            <div className="w-24 h-1 bg-main-purple mb-4" />
+          </div>
+          <form
+            className="grid grid-cols-2 justify-between gap-4 p-4"
+            onSubmit={handleSubmit}
+          >
+            <Input
+              name="firstName"
+              label="First Name"
+              type="text"
+              value={formData.firstName}
+              onChange={handleChange}
+              placeholder="First Name"
+            />
+            <Input
+              name="lastName"
+              label="Last Name"
+              type="text"
+              value={formData.lastName}
+              onChange={handleChange}
+              placeholder="Last Name"
+            />
+            <Input
+              name="contactNumber"
+              label="Contact Number"
+              type="text"
+              value={formData.contactNumber}
+              onChange={handleChange}
+              placeholder="Contact Number"
+            />
+            <Input
+              name="email"
+              label="Email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              onChange={handleChange}
+              value={formData.message}
+              placeholder="Message"
+              cols={5}
+              rows={10}
+              className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-purple col-span-2 rounded-2xl bg-white"
+            />
+            <div className="col-span-2 my-5">
+              <CustomButton
+                type="submit"
+                className="bg-main-purple px-6 py-2 flex items-center gap-3 text-white mx-auto cursor-pointer hover:scale-150 transition ease-in duration-700"
+              >
+                <span className="">Send</span>
+                <Send className="text-white" />
+              </CustomButton>
+            </div>
+          </form>
+        </div>
+      </div>
+      <Footer
+        icon={<CalendarCheck className="text-main-purple" />}
+        topText="Come and meet us"
+      />
     </section>
   );
 }

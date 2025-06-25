@@ -23,10 +23,11 @@ export default function Faqs() {
 
       {/* Overlay Text Content */}
       <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">About us</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">FAQs</h1>
         <div className="w-24 h-1 bg-white mb-4" />
         <p className="text-lg md:text-2xl font-medium max-w-2xl">
-          Hola Support is one of the leading Registered NDIS Service Provider
+          At times the NDIS may sound like another language, <br className="hidden lg:block" /> that&apos;s why we are
+          here to help.
         </p>
       </div>
       {/* Curved Bottom Section with Breadcrumb and Logo */}

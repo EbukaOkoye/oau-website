@@ -3,9 +3,9 @@ import { CustomButtonProps } from "@/utils/types";
 import { Button } from "@material-tailwind/react";
 import React from "react";
 
-export default function CustomButton({children, className, onClick}: CustomButtonProps) {
+export default function CustomButton({children, className, onClick, type}: CustomButtonProps) {
     return (
-        <Button className={className} onClick={onClick}>
+        <Button type={type} className={className} onClick={onClick}>
             {children}
         </Button>
     )

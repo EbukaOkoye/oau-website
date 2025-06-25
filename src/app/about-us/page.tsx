@@ -65,10 +65,10 @@ export default function AboutUs() {
           <Image
             src={images.holaLogo}
             alt="hola-logo"
-            className="animate-bounce absolute bottom-24 left-1/2 -translate-x-1/2"
+            className="animate-bounce absolute hidden md:block md:bottom-22 lg:bottom-24 left-1/2 -translate-x-1/2"
           />
           {/* Top Section: NDIS Support Coordination Box */}
-          <div className="bg-white md:w-10/12 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-22 rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
+          <div className="bg-white w-full lg:w-10/12 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-22 rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
             <p className="text-base sm:text-lg font-normal text-black">
               Hola Support employs excellent staff, all selected through a
               stringent recruitment process. The staff here are the best in the
@@ -123,11 +123,11 @@ export default function AboutUs() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-36">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-36">
         {missionVisionValues.map((_lists, id) => (
           <div
             key={id}
-            className="p-3 rounded-2xl shadow-xl flex flex-col justify-between gap-3 min-h-[38rem]"
+            className="p-3 rounded-2xl shadow-xl flex flex-col my-6 lg:my-0 justify-between gap-3 min-h-[38rem]"
           >
             <Image
               src={_lists.img}

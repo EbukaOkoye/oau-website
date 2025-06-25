@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function OurApproach() {
   return (
     <section className="pt-14 pb-10 px-4 bg-light-grey">
-      <div className="flex-col flex lg:flex-row items-center p-2">
-        <div className="bg-white border-2 border-main-purple rounded-2xl p-4 shadow-md translate-x-3.5 lg:h-[34.4rem]">
+      <div className="flex-col flex gap-4 lg:gap-0 lg:flex-row items-center p-2">
+        <div className="bg-white border-2 border-main-purple rounded-2xl p-4 shadow-md lg:translate-x-3.5 lg:h-[34.4rem]">
           <div className="">
             <h2 className="font-bold text-2xl lg:text-4xl text-black">
               Our Approach

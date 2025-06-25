@@ -9,14 +9,14 @@ import Image from "next/image";
 export default function HappyCustomers() {
   return (
     <section className="py-10 px-4 bg-light-grey">
-      <div className="grid lg:grid-cols-2 items-center gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
         <div className="mx-auto">
           <h2 className="font-bold text-2xl lg:text-4xl text-black">
             Our happy <br /> customers speaks <br /> for us
           </h2>
           <div className="w-24 h-1 bg-main-purple mt-2" />
         </div>
-        <div className="">
+        <div className="w-full">
           <div className="bg-white rounded-xl p-3 shadow-lg lg:h-[479.8px]">
             <Swiper
               modules={[Navigation]}
@@ -24,7 +24,7 @@ export default function HappyCustomers() {
               autoplay={{ delay: 4000 }}
               slidesPerView={2}
               breakpoints={{ 
-                640: {
+                300: {
                   slidesPerView: 1,
                 },
                 768: {
@@ -34,7 +34,7 @@ export default function HappyCustomers() {
                   slidesPerView: 2, // Desktops
                 },
               }}
-              className="w-full"
+              className=""
             >
               {happyTestimony.map((_testimony, id) => (
                 <SwiperSlide key={id}>

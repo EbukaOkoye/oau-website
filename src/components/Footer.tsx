@@ -35,7 +35,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               USEFUL LINKS
             </h4>
-            <div className="w-10 h-1 bg-main-purple" />
+            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <ul className="space-y-2 mt-5">
               {usefulLinks.map((link, index) => (
                 <li key={index} className="my-3">
@@ -56,7 +56,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               HOLA SUPPORT
             </h4>
-            <div className="w-10 h-1 bg-main-purple" />
+            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
               <Image
                 src={images.ndisLogo}
@@ -76,7 +76,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               WE LOVE NDIS
             </h4>
-            <div className="w-10 h-1 bg-main-purple" />
+            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
               {/* Replace with your actual logo image if available */}
               <Image
@@ -97,7 +97,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               APPOINTMENT
             </h4>
-            <div className="w-10 h-1 bg-main-purple" />
+            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start text-black font-normal mt-5">
               {/* <PersonBubbleIcon /> Icon for NDIS Experts */}
               <p className="font-semibold text-black mt-2">NDIS Experts</p>
@@ -113,7 +113,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               CONTACT
             </h4>
-            <div className="w-10 h-1 bg-main-purple" />
+            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
               {contactInfo.map((item, index) => (
                 <div

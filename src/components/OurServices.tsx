@@ -34,7 +34,7 @@ export default function OurServices() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-200 ease-in-out hover:scale-150"
+              className="relative w-8 h-8 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-200 ease-in-out hover:scale-150"
               onMouseEnter={() => handleThumbnailHover(service)}
             >
               <Image
