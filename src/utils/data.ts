@@ -1,5 +1,7 @@
 import {
   CheckCircle,
+  ClipboardCheck,
+  Copy,
   DoubleRight,
   Email,
   Facebook,
@@ -7,8 +9,10 @@ import {
   Location,
   Phone,
   Pinterest,
+  ReceiveMoney,
   Skype,
   Telegram,
+  ThumbsUp,
   Time,
   Twitter,
   Whatsapp,
@@ -26,7 +30,7 @@ export const navbarLinks = [
   },
   {
     name: "FAQS",
-    link: "/",
+    link: "/faqs",
   },
   {
     name: "CONTACT",
@@ -289,3 +293,160 @@ export const aboutServices = [
     btn_link: "Read More",
   },
 ];
+
+export const faqSteps = [
+  {
+    title: "Check Eligibility",
+    icon: CheckCircle,
+    content: [
+      "Residence: Australian citizen or hold a permanent visa or a Protected Special Category visa",
+      "Disability: Permanent disability that significantly affects your ability to take part in everyday activities",
+      "Age: Under 65 years, under 50 years for Aboriginal and Torres Strait Islanders at the time you register",
+    ],
+    color: "bg-main-purple",
+    stepNumber: 1,
+  },
+  {
+    title: "Access Request Questions",
+    icon: ClipboardCheck,
+    content: [
+      "To confirm your identity and/or a person’s authority to act on your behalf",
+      "To see if you meet the NDIS access requirements",
+      "About providing consent to enter the NDIS",
+    ],
+    color: "bg-step-green",
+    stepNumber: 2,
+  },
+  {
+    title: "Creating Your Plan",
+    icon: Copy,
+    content: [
+      "Preparation for  planning meeting",
+      "Setting goals",
+      "Planning meeting checklist",
+      "Ways to manage your funding Plan budget and rules",
+      "Receiving your approved plan",
+      "Compensation",
+    ],
+    color: "bg-step-purple",
+    stepNumber: 3,
+  },
+  {
+    title: "Access Request Questions",
+    icon: ClipboardCheck,
+    content: `
+      <ul className="list-disc list-inside space-y-1">
+        <li>To confirm your identity and/or a person’s authority to act on your behalf</li>
+        <li>To see if you meet the NDIS access requirements</li>
+        <li>About providing consent to enter the NDIS</li>
+      </ul>
+    `,
+    color: "bg-step-green",
+    stepNumber: 4,
+  },
+  {
+    title: "Using Your Plan",
+    icon: ReceiveMoney,
+    content: [
+      "Help starting your plan",
+      "Understanding your plan",
+      "Managing your plan",
+      "Self-management",
+      "Managing your plan",
+      "Changing your plan",
+    ],
+    color: "bg-step-purple",
+    stepNumber: 5,
+  },
+  {
+    title: "Using Your Plan",
+    icon: ThumbsUp,
+    content:
+      "Plan review is an opportunity for you to check if your supports are working for you and they are helping you work towards your goals.",
+    color: "bg-step-green",
+    stepNumber: 6,
+  },
+];
+
+export const faqs_one = [
+  {
+    question: "What is the NDIS?",
+    answer:
+      "The National Disability Insurance Scheme (NDIS) is a federally managed and funded scheme that provides support and funding to people with permanent disability, their families and carers. We work with you to figure out a plan that is suitable to your needs and aspirations.",
+  },
+  {
+    question: "What is the purpose of NDIS?",
+    answer:
+      "The NDIS aims to support people with disabilities to achieve their goals, improve their independence and participate in the community.",
+  },
+  {
+    question: "Who is the NDIA?",
+    answer:
+      "The NDIA (National Disability Insurance Agency) is the organization responsible for implementing the NDIS.",
+  },
+  {
+    question: "What is the eligibility criteria for NDIS?",
+    answer:
+      "You must be under 65 years of age, live in Australia, and have a permanent and significant disability.",
+  },
+  {
+    question: "What happens if I am over 65 years old?",
+    answer:
+      "If you are over the age of 65 years, you will not be eligible to participate in the NDIS. You might be eligible for funding by the Aged Care System, instead.",
+  },
+];
+
+export const faqs_two = [
+  {
+    question: "What support can I receive under the NDIS?",
+    answer: [
+      "Daily Personal Activities",
+      "Transport facilities to enable participation in community, social, economic and daily life activities",
+      "Therapeutic Support",
+      "Home modification design and construction",
+      "Help with household tasks to maintain their home environment",
+      "Vehicle and mobility equipment modifications",
+      "Workplace help and training",
+    ],
+  },
+  {
+    question: "Does the NDIS affect the DSP?",
+    answer:
+      "The NDIS is not means-tested and has no impact on your Disability Support Pension (DSP).",
+  },
+  {
+    question: "Will the NDIS cost me anything?",
+    top: "The NDIS does not provide funding for support if it is: ",
+    answer: [
+      "Not related to a person’s disability.",
+      "A duplicate of another support within a participants personal support plan.",
+      "Related to daily living expenses not tied to a participants disability (e.g. rent, groceries).",
+      "The responsibility of another government system or community service.",
+      "Likely to cause harm to a participant or pose a risk to others.",
+      "Related to income replacement.",
+    ],
+  },
+  {
+    question: "Who is Carer?",
+    answer: [
+      "A carer is a person who provides unpaid care and support to family members or friends with a disability, a serious long-term illness, a terminal illness, a drug or alcohol issue or who are frail and aged.",
+      "Do Carers receive support outside of the NDIS? Carers receive a range of supports including respite support, counselling, education and training, peer support and advocacy.",
+      "The Carer Advisory Service provides information and advice to carers and their families about carer supports and services.",
+    ],
+  },
+];
+
+{
+  /* <span
+                    className={`text-lg font-semibold text-gray-700 ml-4 md:ml-0 whitespace-nowrap
+                    md:absolute md:top-full md:mt-2
+                    ${
+                      index % 2 === 0
+                        ? "md:left-1/2 md:-translate-x-[110%] md:text-right md:pr-4"
+                        : "md:right-1/2 md:translate-x-[110%] md:text-left md:pl-4"
+                    }`}
+                    aria-hidden="true" // Hide from screen readers to avoid redundancy with sr-only span
+                  >
+                    Step {_step.stepNumber}
+                  </span> */
+}

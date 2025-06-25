@@ -11,11 +11,17 @@ import {
   FaPinterest,
   FaTelegram,
   FaSkype,
+  FaClipboardCheck,
+  FaCopy,
+  FaThumbsUp,
+  FaPlus,
+  FaMinus,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
+import { GiReceiveMoney } from "react-icons/gi";
 
 export const Phone = FaPhoneAlt;
 export const CircleArrow = FaArrowCircleRight;
@@ -30,6 +36,13 @@ export const Pinterest = FaPinterest;
 export const Telegram = FaTelegram;
 export const Skype = FaSkype;
 export const DoubleRight = FaAngleDoubleRight;
+export const ClipboardCheck = FaClipboardCheck;
+export const Copy = FaCopy;
+export const ThumbsUp = FaThumbsUp;
+export const Plus = FaPlus;
+export const Minus = FaMinus;
 export const Email = MdEmail;
 export const Send = IoIosSend;
 export const Time = IoTimeSharp;
+export const ReceiveMoney = GiReceiveMoney;
+

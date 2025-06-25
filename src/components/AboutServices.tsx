@@ -39,7 +39,7 @@ export default function AboutServices() {
           ))}
         </div>
       </section>
-      <CustomButton className="mt-4 bg-main-purple flex items-center gap-3 text-white px-6 py-3 mx-auto cursor-pointer rounded-none hover:scale-150 hover:shadow-md transition ease-in duration-1000">
+      <CustomButton className="mt-4 mb-10 bg-main-purple flex items-center gap-3 text-white px-6 py-3 mx-auto cursor-pointer rounded-none hover:scale-150 hover:shadow-md transition ease-in duration-1000">
         <CircleArrow className="text-white" size={16} />
         <span className="">View all Services</span>
       </CustomButton>

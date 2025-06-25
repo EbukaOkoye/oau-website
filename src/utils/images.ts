@@ -20,6 +20,8 @@ import srum_board from '@/assets/scrum_board.svg';
 import supported from '@/assets/supported.jpg';
 import short_term from '@/assets/short_term.jpg';
 import asstistance from '@/assets/assistance.jpg';
+import faqs_img from '@/assets/faq.svg';
+
 
 export const images = {
   holaLogo,
@@ -44,4 +46,6 @@ export const images = {
   supported,
   short_term,
   asstistance,
+  faqs_img,
+  faq_img: 'https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg',
 };

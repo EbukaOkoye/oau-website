@@ -9,7 +9,7 @@ import { Send } from "@/utils/icons";
 
 export default function AboutUs() {
   return (
-    <section className="relative w-full h-screen overflow-auto scroll">
+    <section className="relative w-full h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

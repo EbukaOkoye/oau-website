@@ -12,4 +12,5 @@ type Services = {
 interface CustomButtonProps {
     children: React.ReactNode;
     className?: string;
+    onClick?: () => void;
 }
