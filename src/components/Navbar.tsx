@@ -1,20 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/utils/data";
 
 import Link from "next/link";
 import { images } from "@/utils/images";
 import { Location, Phone } from "@/utils/icons";
-import { Button, Drawer, IconButton } from "@material-tailwind/react";
-import { Menu, X } from "lucide-react";
+import {
+  Button,
+  Collapse,
+  IconButton,
+  Navbar as Nav,
+  // Typography,
+} from "@material-tailwind/react";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
 
-  const closeDrawer = () => setOpen(false);
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 1024 && setOpenNav(false)
+    );
+  }, []);
 
   return (
     <section className="z-50 w-full fixed top-0 left-0">
@@ -41,9 +52,9 @@ export default function Navbar() {
           Maintenance
         </Button>
       </div>
-      <nav className="bg-gradient-to-r from-main-purple to-main-pink">
-        <div className="flex justify-between px-4 py-3 md:px-8">
-          <div className="hidden lg:flex w-full lg:justify-between gap-6 text-sm font-semibold text-purple-800">
+      <Nav className="mx-auto max-w-screen-xl bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-4">
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="hidden lg:block">
             {navbarLinks.map((_link) => (
               <Link
                 key={_link.name}
@@ -58,46 +69,61 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-
-          <div className="lg:hidden mb-3">
-            <IconButton
-              variant="text"
-              onClick={() => setOpen(true)}
-              className="mb-3"
-            >
-              <Menu className="h-6 w-6 text-main-purple my-auto mb-3" />
-            </IconButton>
-          </div>
+          <IconButton
+            variant="text"
+            className="mr-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden mb-3"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </IconButton>
         </div>
-
-        <Drawer
-          open={open}
-          onClose={closeDrawer}
-          className="p-4 bg-white z-[1000] translate-x-full"
-          placement="left"
-          size={300} 
-        >
-          <div className="flex justify-between items-center mb-4">
-            <span className="font-bold text-lg text-deep-orange">Menu</span>
-            <IconButton variant="text" onClick={closeDrawer}>
-              <X className="h-6 w-6 text-deep-orange cursor-pointer" onClick={closeDrawer} />
-            </IconButton>
-          </div>
-          <div className="flex flex-col gap-4">
+        <Collapse open={openNav}>
+          <div className="flex flex-col gap-4 mt-8">
             {navbarLinks.map((_link) => (
               <a
                 key={_link.name}
                 href={_link.link}
-                className={`text-main-pink hover:text-main-purple ${
-                  _link.link === pathname && "!text-main-pink"
+                onClick={() => setOpenNav(!openNav)}
+                className={`text-white hover:text-gray-500 ${
+                  _link.link === pathname && "!text-gray-300"
                 } text-sm font-medium`}
               >
                 {_link.name}
               </a>
             ))}
           </div>
-        </Drawer>
-      </nav>
+        </Collapse>
+      </Nav>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { contactInfo, socialLinks, usefulLinks } from "@/utils/data";
 import { RightArrow } from "@/utils/icons";
