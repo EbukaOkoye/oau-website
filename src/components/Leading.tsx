@@ -3,13 +3,14 @@ import { holaSupportList } from "@/utils/data";
 import { CircleArrow } from "@/utils/icons";
 import { images } from "@/utils/images";
 import { Button } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function Leading() {
   return (
     <section className="py-10 px-4">
       <div className="">
-        <img
-          src={images.sunflower_logo.src}
+        <Image
+          src={images.sunflower_logo}
           alt="heart-ndis"
           className="w-[150px] animate-bounce mx-auto"
         />
@@ -21,7 +22,7 @@ export default function Leading() {
         Registered NDIS Service Provider in Adelaide
       </p>
       <div className="w-32 h-1 bg-main-purple mx-auto mt-2" />
-      <img src={images.about_img.src} alt="image" />
+      <Image src={images.about_img} alt="image" />
       <section className="grid gap-5 lg:grid-cols-2 mt-10">
         <div className="p-3">
           <p className="text-base lg:text-xl font-normal text-gray-500 text-justify leading-9">

@@ -4,6 +4,7 @@ import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
 import Input from "@/components/custom-components/Input";
 import { bottomContact, contactInfo } from "@/utils/data";
 import { images } from "@/utils/images";
+import Image from "next/image";
 import CustomButton from "@/components/custom-components/Button";
 import { CalendarCheck, Send } from "@/utils/icons";
 import Footer from "@/components/Footer";
@@ -53,10 +54,12 @@ export default function Contact() {
     <section className="relative w-full h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src={images.thumbnail_four.src}
+        <Image
+          src={images.thumbnail_four}
           alt="About us background"
+          fill
           className="object-cover object-center brightness-75"
+          priority
         />
       </div>
       {/* Overlay Text Content */}
@@ -146,7 +149,7 @@ export default function Contact() {
         </div>
       </section>
       <div className="bg-white mt-28 py-8">
-        <img src={images.mail} alt="mail" className="mx-auto" />
+        <Image src={images.mail} alt="mail" className="mx-auto" />
         <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-purple rounded-2xl mt-24">
           <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 pt-6">
             <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">

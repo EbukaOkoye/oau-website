@@ -19,7 +19,7 @@ export default function QuestionsTwo() {
         return (
           <div
             key={index}
-            className="shadow-sm overflow-hidden border-b-2 border-pink-300 mb-3 my-4"
+            className="shadow-sm overflow-hidden border-b-2 border-main-purple mb-3 my-4"
           >
             <CustomButton
               onClick={() => toggleAccordion(index)}
