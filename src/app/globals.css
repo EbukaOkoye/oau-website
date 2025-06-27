@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --main-purple: #8b3785;
-  --main-pink: #ce4591;
+  --main-purple: #bf8246;
+  --main-pink: #ddaa79;
   --secondary-pink: #cf4591;
   --icon-pink: #d34692;
   --light-pink: #c1a9b6;
@@ -14,7 +14,10 @@
   --grey-bg: #b5dff0;
   --step-green: #a2d35d;
   --step-purple: #9d59e5;
+  --deep-orange: #bf7022;
 }
+
+/* #bf7022 */
 
 @theme inline {
   --color-background: var(--background);
@@ -30,6 +33,7 @@
   --color-grey-bg: var(--grey-bg);
   --color-step-green: var(--step-green);
   --color-step-purple: var(--step-purple);
+  --color-deep-orange: var(--deep-orange);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

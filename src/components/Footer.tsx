@@ -6,8 +6,13 @@ import Image from "next/image";
 import { images } from "@/utils/images";
 import CustomButton from "./custom-components/Button";
 
-
-export default function Footer({topText, icon}: {topText: string, icon: React.ReactNode}) {
+export default function Footer({
+  topText,
+  icon,
+}: {
+  topText: string;
+  icon: React.ReactNode;
+}) {
   return (
     <footer className="w-full bg-light-grey">
       {/* Top Section: NDIS Support Coordination Box */}
@@ -41,7 +46,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
                 <li key={index} className="my-3">
                   <Link
                     href={link.href}
-                    className="text-black font-normal hover:text-hola-purple transition duration-200 flex items-center gap-3 justify-center md:justify-start"
+                    className="text-gray-500 font-normal hover:text-hola-purple transition duration-200 flex items-center gap-3 justify-center md:justify-start"
                   >
                     <RightArrow className="text-main-pink" />
                     {link.label}
@@ -54,7 +59,7 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
           {/* Column 2: HOLA SUPPORT */}
           <div>
             <h4 className="font-semibold text-lg text-main-pink mb-2">
-              HOLA SUPPORT
+              Sunflower Care Support
             </h4>
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
@@ -80,9 +85,9 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
               {/* Replace with your actual logo image if available */}
               <Image
-                src={images.hola_heart}
+                src={images.sunflower_logo}
                 alt="We Love NDIS"
-                width={80}
+                width={100}
                 className="mb-2"
               />
               <div className="flex gap-2 mt-2">
@@ -100,9 +105,9 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start text-black font-normal mt-5">
               {/* <PersonBubbleIcon /> Icon for NDIS Experts */}
-              <p className="font-semibold text-black mt-2">NDIS Experts</p>
-              <p>Locally Owned</p>
-              <CustomButton className="mt-4 bg-white border-2 border-main-pink text-main-purple font-semibold py-2 px-4 rounded-full shadow-md hover:bg-main-pink hover:text-white hover:border-none transition duration-700">
+              <p className="font-semibold text-gray-500 mt-2">NDIS Experts</p>
+              <p className="text-gray-500">Locally Owned</p>
+              <CustomButton className="mt-4 bg-white border-2 border-main-pink text-main-purple font-semibold py-2 px-4 rounded-full shadow-md hover:bg-main-pink hover:text-white hover:border-none transition duration-700 ease-linear">
                 Book Appointment
               </CustomButton>
             </div>
@@ -121,7 +126,9 @@ export default function Footer({topText, icon}: {topText: string, icon: React.Re
                   className="flex items-center text-center md:text-left gap-3"
                 >
                   <item.icon className="text-main-purple" size={16} />
-                  <span className="break-all text-black font-normal text-base">{item.label}</span>{" "}
+                  <span className="break-all text-gray-500 font-normal text-base">
+                    {item.label}
+                  </span>{" "}
                 </div>
               ))}
             </div>

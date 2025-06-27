@@ -11,10 +11,11 @@ export default function HappyCustomers() {
     <section className="py-10 px-4 bg-light-grey">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
         <div className="mx-auto">
-          <h2 className="font-bold text-2xl lg:text-4xl text-black">
-            Our happy <br /> customers speaks <br /> for us
+          <h2 className="font-bold text-2xl lg:text-4xl text-main-purple text-center lg:text-left">
+            Our happy <br className="hidden lg:block" /> customers speaks{" "}
+            <br className="hidden lg:block" /> for us
           </h2>
-          <div className="w-24 h-1 bg-main-purple mt-2" />
+          <div className="w-24 h-1 bg-main-purple mt-2 mx-auto lg:mx-0" />
         </div>
         <div className="w-full">
           <div className="bg-white rounded-xl p-3 shadow-lg lg:h-[479.8px]">
@@ -23,7 +24,7 @@ export default function HappyCustomers() {
               navigation
               autoplay={{ delay: 4000 }}
               slidesPerView={2}
-              breakpoints={{ 
+              breakpoints={{
                 300: {
                   slidesPerView: 1,
                 },
@@ -39,7 +40,7 @@ export default function HappyCustomers() {
               {happyTestimony.map((_testimony, id) => (
                 <SwiperSlide key={id}>
                   <div className="p-2.5 flex flex-col gap-3 justify-center lg:h-[449.8px]">
-                    <p className="font-normal text-center text-black">
+                    <p className="font-normal text-center text-gray-500">
                       {_testimony.testimony}
                     </p>
                     <div className="mt-auto">
