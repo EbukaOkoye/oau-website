@@ -42,13 +42,13 @@ export default function QuestionsTwo() {
             {isOpen && (
               <div className="px-6 pb-6 pt-2 bg-white text-gray-700 text-base leading-relaxed">
                 {isBulletPoints && Array.isArray(_two.answer) ? (
-                  <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                  <ul className="list-disc pl-5 text-gray-500 space-y-2">
                     {_two.answer.map((point, index) => (
                       <li key={index}>{point}</li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-700 leading-relaxed">{typeof _two.answer === "string" ? _two.answer : ""}</p>
+                  <p className="text-gray-500 leading-relaxed">{typeof _two.answer === "string" ? _two.answer : ""}</p>
                 )}
               </div>
             )}

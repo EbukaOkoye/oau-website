@@ -23,6 +23,7 @@ import asstistance from '@/assets/assistance.jpg';
 import faqs_img from '@/assets/faq.svg';
 import mail from '@/assets/mail.svg';
 import sunflower_logo from '@/assets/sunflower-care-logo-removebg.png';
+import sunflower_logo_white from '@/assets/sunflower-logo-white.png';
 
 
 export const images = {
@@ -51,5 +52,6 @@ export const images = {
   faqs_img,
   mail,
   sunflower_logo,
+  sunflower_logo_white,
   faq_img: 'https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg',
 };

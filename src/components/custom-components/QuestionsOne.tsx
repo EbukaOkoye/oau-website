@@ -18,14 +18,14 @@ export default function QuestionsOne() {
         return (
           <div
             key={index}
-            className="bg-white shadow-sm rounded-t-md overflow-hidden border-b-2 border-pink-300 mb-3"
+            className="bg-white shadow-sm rounded-t-md overflow-hidden border-b-2 border-main-purple mb-3"
           >
             <CustomButton
               onClick={() => toggleAccordion(index)}
               className={`w-full text-left px-6 py-4 flex justify-between items-center font-semibold text-lg transition-colors ${
                 isOpen
-                  ? "bg-white text-main-pink"
-                  : "bg-white text-secondary-pink"
+                  ? "bg-white text-main-purple"
+                  : "bg-white text-main-pink"
               }`}
             >
               <span>{_faqs.question}</span>
@@ -39,7 +39,7 @@ export default function QuestionsOne() {
             </CustomButton>
 
             {isOpen && (
-              <div className="px-6 pb-6 pt-2 bg-gray-100 text-gray-700 text-base leading-relaxed">
+              <div className="px-6 pb-6 pt-2 bg-gray-100 text-gray-500 text-base leading-relaxed">
                 {_faqs.answer}
               </div>
             )}

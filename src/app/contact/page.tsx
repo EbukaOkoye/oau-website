@@ -86,13 +86,13 @@ export default function Contact() {
           <BreadcrumbPill currentRoute="Contact us" />
         </div>
 
-        <div className="absolute bottom-4 right-6">
+        {/* <div className="absolute bottom-4 right-6">
           <Image src={images.hola_heart} alt="Logo" width={50} height={50} />
-        </div>
+        </div> */}
       </div>
       <div className="mt-16 p-4 bg-white">
-        <p className="text-black font-medium leading-8 text-base lg:text-xl">
-          <b>Hola Support is a NDIS Service Provider</b> and is one of the
+        <p className="text-gray-500 font-medium leading-8 text-base lg:text-xl">
+          <b className="text-main-purple">Hola Support is a NDIS Service Provider</b> and is one of the
           fastest-growing disability-care facilities available here in South
           Australia. Our Participants have the opportunity to live an enriched,
           and fulfilling life in communities of their choice. We are highly
@@ -107,7 +107,7 @@ export default function Contact() {
       <section className="grid lg:grid-cols-2 gap-4 py-10 px-4 mt-14">
         <div className="">
           <div className="mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-black">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">
               Contact info
             </h1>
             <div className="w-24 h-1 bg-main-purple mb-4" />
@@ -120,7 +120,7 @@ export default function Contact() {
               <div className="p-3 bg-main-purple rounded-lg flex items-center justify-center">
                 <_info.icon className="text-white" />
               </div>
-              <div className="p-3 bg-white peer-hover:bg-grey-text rounded-lg font-bold text-black">
+              <div className="p-3 bg-white peer-hover:bg-grey-text rounded-lg font-bold text-gray-500">
                 {_info.label}
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Contact() {
             {bottomContact.map((_bottom, idx) => (
               <div key={idx} className="flex items-center gap-3 my-6">
                 <_bottom.icon_img className="text-main-purple" />
-                <p className="text-black font-normal">{_bottom.text}</p>
+                <p className="text-gray-500 font-normal">{_bottom.text}</p>
               </div>
             ))}
           </div>
@@ -151,8 +151,8 @@ export default function Contact() {
       <div className="bg-white mt-28 py-8">
         <Image src={images.mail} alt="mail" className="mx-auto" />
         <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-purple rounded-2xl mt-24">
-          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-black">
+          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 pt-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">
               Message us
             </h1>
             <div className="w-24 h-1 bg-main-purple mb-4" />

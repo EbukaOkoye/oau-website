@@ -335,13 +335,11 @@ export const faqSteps = [
   {
     title: "Access Request Questions",
     icon: ClipboardCheck,
-    content: `
-      <ul className="list-disc list-inside space-y-1">
-        <li>To confirm your identity and/or a person’s authority to act on your behalf</li>
-        <li>To see if you meet the NDIS access requirements</li>
-        <li>About providing consent to enter the NDIS</li>
-      </ul>
-    `,
+    content: [
+      "To confirm your identity and/or a person’s authority to act on your behalf",
+      "To see if you meet the NDIS access requirements",
+      "About providing consent to enter the NDIS",
+    ],
     color: "bg-step-green",
     stepNumber: 4,
   },
@@ -440,15 +438,14 @@ export const faqs_two = [
 export const bottomContact = [
   {
     icon_img: Chat,
-    text: 'NDIS Feedback & Complaints'
+    text: "NDIS Feedback & Complaints",
   },
   {
     icon_img: Phone,
-    text: '1800 800 110'
+    text: "1800 800 110",
   },
   {
     icon_img: Copy,
-    text: 'Contact & Feedback'
+    text: "Contact & Feedback",
   },
 ];
-

@@ -8,7 +8,7 @@ export default function AboutServices() {
     <>
       <section className="py-10 px-4 mt-12">
         <div className="text-center">
-          <h2 className="font-bold text-2xl lg:text-4xl text-black">
+          <h2 className="font-bold text-2xl lg:text-4xl text-main-purple">
             Our Services
           </h2>
           <div className="w-32 h-1 bg-main-purple mx-auto mt-2" />
@@ -24,11 +24,11 @@ export default function AboutServices() {
                 alt="services-images"
                 className="rounded-xl w-full"
               />
-              <h3 className="font-bold text-base lg:text-xl mt-4 text-black">
+              <h3 className="font-bold text-base lg:text-xl mt-4 text-main-purple">
                 {_services.title}
               </h3>
               <div className=" mt-auto">
-                <p className="font-normal text-xs lg:text-base mt-7 text-black">
+                <p className="font-normal text-xs lg:text-base mt-7 text-gray-500">
                   {_services.text}
                 </p>
                 <CustomButton className="mt-4 bg-main-purple text-white px-6 py-2 cursor-pointer rounded-none hover:bg-main-pink transition ease-in duration-1000">

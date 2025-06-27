@@ -45,9 +45,9 @@ export default function Faqs() {
           <BreadcrumbPill currentRoute="FAQs" />
         </div>
 
-        <div className="absolute bottom-4 right-6">
+        {/* <div className="absolute bottom-4 right-6">
           <Image src={images.hola_heart} alt="Logo" width={50} height={50} />
-        </div>
+        </div> */}
       </div>
       <div className="mt-16 p-4">
         <h1 className="text-xl md:text-2xl font-bold mb-2 text-black">
@@ -64,7 +64,7 @@ export default function Faqs() {
         />
         <div className="mt-28">
           <div className="mt-16 p-4">
-            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-black">
+            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-main-purple">
               Frequently Asked Questions
             </h1>
             <div className="w-14 h-1 bg-main-purple mb-4" />

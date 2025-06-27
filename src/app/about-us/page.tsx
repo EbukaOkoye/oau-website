@@ -46,7 +46,7 @@ export default function AboutUs() {
 
         {/* <div className="absolute bottom-4 right-6">
           <Image
-            src={images.sunflower_logo}
+            src={images.sunflower_logo_white}
             alt="Logo"
             width={120}
             height={1200}
@@ -69,13 +69,13 @@ export default function AboutUs() {
       <section className="h-screen">
         <div className="background_img relative">
           <Image
-            src={images.sunflower_logo}
+            src={images.sunflower_logo_white}
             alt="hola-logo"
             className="w-[200px] animate-bounce absolute hidden md:block md:bottom-22 lg:bottom-24 left-1/2 -translate-x-1/2"
           />
           {/* Top Section: NDIS Support Coordination Box */}
           <div className="bg-white w-full lg:w-10/12 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-22 rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
-            <p className="text-base sm:text-lg font-normal text-black">
+            <p className="text-base sm:text-lg font-normal text-gray-500">
               Sunflower Care employs excellent staff, all selected through a
               stringent recruitment process. The staff here are the best in the
               industry. They are required to undertake ongoing training to keep
@@ -89,7 +89,7 @@ export default function AboutUs() {
       </section>
       <div className="grid lg:grid-cols-3 gap-5 p-4 items-center">
         <div className="col-span-2">
-          <p className="text-sm lg:text-lg font-medium leading-9 text-black">
+          <p className="text-sm lg:text-lg font-medium leading-9 text-gray-500">
             Our services include specialized programs to meet the needs of NDIS
             participants who are living with disabilities and who seek specific
             types of care. Our disability support services have been created to
@@ -102,7 +102,7 @@ export default function AboutUs() {
         </div>
         <div className="col-span-1">
           <Image
-            src={images.ndisLogo}
+            src={images.sunflower_logo}
             alt="ndis-logo"
             className="w-64 mx-auto scale-pulse"
           />
@@ -111,13 +111,13 @@ export default function AboutUs() {
       <div className="grid lg:grid-cols-3 gap-5 p-4 items-center mt-14">
         <div className="col-span-1">
           <Image
-            src={images.hola_heart}
+            src={images.sunflower_logo}
             alt="ndis-logo"
-            className="w-36 mx-auto scale-pulse"
+            className="w-64 mx-auto scale-pulse"
           />
         </div>
         <div className="col-span-2">
-          <p className="text-sm lg:text-lg font-medium leading-9 text-black">
+          <p className="text-sm lg:text-lg font-medium leading-9 text-gray-500">
             Our services include specialized programs to meet the needs of NDIS
             participants who are living with disabilities and who seek specific
             types of care. Our disability support services have been created to
@@ -143,16 +143,16 @@ export default function AboutUs() {
               }`}
             />
             <div className="my-auto">
-              <h3 className="text-xl font-bold lg:text-4xl text-center text-black">
+              <h3 className={`text-xl mb-1 font-bold lg:text-4xl text-center text-main-purple ${id === 2 && 'lg:mt-6'}`}>
                 {_lists.title}
               </h3>
               <div className="w-16 h-1 bg-main-purple mx-auto" />
             </div>
             <div className={`bg-grey-text rounded-2xl mt-auto p-3`}>
-              <p className="font-medium text-sm lg:text-lg leading-8 text-black">
+              <p className="font-medium text-sm lg:text-lg leading-8 text-gray-500">
                 {_lists.text}
               </p>
-              <ul className="list-disc text-black text-sm lg:text-lg ml-3">
+              <ul className="list-disc text-gray-500 text-sm lg:text-lg ml-3">
                 {_lists.description?.map((_desc, index) => (
                   <li key={index} className="">
                     {_desc}
