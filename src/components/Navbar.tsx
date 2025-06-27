@@ -55,7 +55,7 @@ export default function Navbar() {
 
           <div className="lg:hidden">
             <IconButton variant="text" onClick={() => setOpen(true)}>
-              <Menu className="h-6 w-6 text-white my-auto" />
+              <Menu className="h-6 w-6 text-white my-auto mb-3" />
             </IconButton>
           </div>
         </div>
