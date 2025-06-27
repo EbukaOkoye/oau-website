@@ -1,11 +1,12 @@
+import { StaticImageData } from "next/image";
 
 interface Services {
     id: string;
     title: string;
     category: string;
     description: string;
-    mainImage: string;
-    thumbnail: string;
+    mainImage: string | StaticImageData;
+    thumbnail: string | StaticImageData;
 }
 
 interface CustomButtonProps {
