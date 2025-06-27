@@ -2,14 +2,13 @@
 import { CircleArrow } from "@/utils/icons";
 import { images } from "@/utils/images";
 import { Button } from "@material-tailwind/react";
-import Image from "next/image";
 
 export default function ExploreNdis() {
   return (
     <section className="py-10 px-4 bg-light-grey">
       <div className="border-2 border-main-pink md:w-3/4 mx-auto hover:bg-white rounded-xl p-4">
-        <Image
-          src={images.sunflower_logo}
+        <img
+          src={images.sunflower_logo.src}
           alt="logo-image-hola"
           className="mx-auto w-24 -mt-16"
         />

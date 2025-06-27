@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { aboutServices } from "@/utils/data";
-import Image from "next/image";
 import CustomButton from "./custom-components/Button";
 import { CircleArrow } from "@/utils/icons";
 
@@ -19,8 +19,8 @@ export default function AboutServices() {
               key={id}
               className="border-2 border-main-purple rounded-2xl p-3 pb-6 bg-grey-text hover:bg-white flex flex-col hover:shadow-md"
             >
-              <Image
-                src={_services.img}
+              <img
+                src={_services.img.src}
                 alt="services-images"
                 className="rounded-xl w-full"
               />
