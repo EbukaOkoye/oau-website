@@ -1,11 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/utils/data";
-// import Drawer from "@material-tailwind/react/components/Drawer";
-// import IconButton from "@material-tailwind/react/components/IconButton";
-import Image from "next/image";
-// import { Menu } from 'lucide-react';
+
 import Link from "next/link";
 import { images } from "@/utils/images";
 import { Location, Phone } from "@/utils/icons";
@@ -19,7 +17,7 @@ export default function Navbar() {
   return (
     <section className="z-50 w-full fixed top-0 left-0">
       <div className="hidden lg:flex gap-2 justify-between items-center bg-white px-3">
-        <Image src={images.sunflower_logo} alt="Hola Support Logo" className="w-[6.25rem]" />
+        <img src={images.sunflower_logo.src} alt="Hola Support Logo" className="w-[6.25rem]" />
         <div className="flex items-center gap-3">
           <Location size={28} className="text-main-pink" />
           <a href="#" className="text-deep-orange text-lg font-bold">
@@ -57,7 +55,7 @@ export default function Navbar() {
 
           <div className="lg:hidden">
             <IconButton variant="text" onClick={() => setOpen(true)}>
-              <Menu className="h-6 w-6 text-white" />
+              <Menu className="h-6 w-6 text-white my-auto" />
             </IconButton>
           </div>
         </div>

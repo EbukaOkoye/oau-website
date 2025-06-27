@@ -1,5 +1,4 @@
 import { images } from "@/utils/images";
-import Image from "next/image";
 
 export default function AboutUsSection() {
   return (
@@ -22,10 +21,9 @@ export default function AboutUsSection() {
       </div>
       <div className="">
         <div className="w-72 h-72 lg:w-[30rem] lg:h-[30rem] relative left-1/2 -translate-x-1/2 bg-main-pink opacity-70 rounded-full">
-          <Image
-            src={images.thumbnail_two}
+          <img
+            src={images.thumbnail_two.src}
             alt="Team High Five"
-            fill
             className="object-cover rounded-full scale-pulse"
           />
         </div>

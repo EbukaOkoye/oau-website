@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import Image from "next/image";
 import { heroImages } from "@/utils/data";
 
 export default function Hero() {
@@ -16,12 +15,10 @@ export default function Hero() {
         {heroImages.map((_images, id) => (
           <SwiperSlide key={id}>
             <div className="h-full w-full">
-              <Image
-                src={_images}
+              <img
+                src={_images.src}
                 alt="Hero Slide 1"
-                layout="fill"
-                objectFit="cover"
-                className="brightness-75"
+                className="brightness-75 object-cover"
               />
             </div>
           </SwiperSlide>

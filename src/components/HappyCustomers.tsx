@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { happyTestimony } from "@/utils/data";
-import Image from "next/image";
 
 export default function HappyCustomers() {
   return (
@@ -44,8 +43,8 @@ export default function HappyCustomers() {
                       {_testimony.testimony}
                     </p>
                     <div className="mt-auto">
-                      <Image
-                        src={_testimony.pic}
+                      <img
+                        src={_testimony.pic.src}
                         alt="testifiers"
                         className="mt-5 mx-auto h-12 w-12 rounded-full"
                       />

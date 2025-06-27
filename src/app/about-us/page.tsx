@@ -1,7 +1,6 @@
 import AboutUsSection from "@/components/AboutUsSection";
 import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
 import { images } from "@/utils/images";
-import Image from "next/image";
 import { missionVisionValues } from "@/utils/data";
 import AboutServices from "@/components/AboutServices";
 import Footer from "@/components/Footer";
@@ -12,12 +11,10 @@ export default function AboutUs() {
     <section className="relative w-full h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={images.thumbnail_two}
+        <img
+          src={images.thumbnail_two.src}
           alt="About us background"
-          fill
           className="object-cover object-center brightness-75"
-          priority
         />
       </div>
 
@@ -68,8 +65,8 @@ export default function AboutUs() {
       <AboutUsSection />
       <section className="h-screen">
         <div className="background_img relative">
-          <Image
-            src={images.sunflower_logo_white}
+          <img
+            src={images.sunflower_logo_white.src}
             alt="hola-logo"
             className="w-[200px] animate-bounce absolute hidden md:block md:bottom-22 lg:bottom-24 left-1/2 -translate-x-1/2"
           />
@@ -101,8 +98,8 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="col-span-1">
-          <Image
-            src={images.sunflower_logo}
+          <img
+            src={images.sunflower_logo.src}
             alt="ndis-logo"
             className="w-64 mx-auto scale-pulse"
           />
@@ -110,8 +107,8 @@ export default function AboutUs() {
       </div>
       <div className="grid lg:grid-cols-3 gap-5 p-4 items-center mt-14">
         <div className="col-span-1">
-          <Image
-            src={images.sunflower_logo}
+          <img
+            src={images.sunflower_logo.src}
             alt="ndis-logo"
             className="w-64 mx-auto scale-pulse"
           />
@@ -135,7 +132,7 @@ export default function AboutUs() {
             key={id}
             className="p-3 rounded-2xl shadow-xl flex flex-col my-6 lg:my-0 justify-between gap-3 min-h-[38rem]"
           >
-            <Image
+            <img
               src={_lists.img}
               alt="about-images"
               className={`animate-bounce mx-auto w-48 ${

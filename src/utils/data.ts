@@ -83,8 +83,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Transitioning to a new stage of life is daunting for anyone, and we understand that it can be even harder if you have a disability. We at Hola Support excel at supporting NDIS participants through life's transitions and help...",
-    mainImage: images.thumbnail_one,
-    thumbnail: images.thumbnail_one,
+    mainImage: images.thumbnail_one.src,
+    thumbnail: images.thumbnail_one.src,
   },
   {
     id: "daily-life",
@@ -92,8 +92,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Assistance with daily personal activities, including showering, dressing, and meal preparation, to help you live independently.",
-    mainImage: images.thumbnail_two,
-    thumbnail: images.thumbnail_two,
+    mainImage: images.thumbnail_two.src,
+    thumbnail: images.thumbnail_two.src,
   },
   {
     id: "community-access",
@@ -101,8 +101,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Support to participate in community activities, social events, and recreational programs, fostering inclusion and connection.",
-    mainImage: images.thumbnail_three,
-    thumbnail: images.thumbnail_three,
+    mainImage: images.thumbnail_three.src,
+    thumbnail: images.thumbnail_three.src,
   },
   {
     id: "therapy",
@@ -110,8 +110,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Access to various therapies like occupational therapy, physiotherapy, and speech pathology to improve functional abilities.",
-    mainImage: images.thumbnail_four,
-    thumbnail: images.thumbnail_four,
+    mainImage: images.thumbnail_four.src,
+    thumbnail: images.thumbnail_four.src,
   },
   {
     id: "employment",
@@ -119,8 +119,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Guidance and support to find and maintain employment, including job coaching, resume building, and workplace assistance.",
-    mainImage: images.thumbnail_five,
-    thumbnail: images.thumbnail_five,
+    mainImage: images.thumbnail_five.src,
+    thumbnail: images.thumbnail_five.src,
   },
   {
     id: "respite",
@@ -128,8 +128,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Short-term care options to provide a break for carers, ensuring participants receive continuous support in a safe environment.",
-    mainImage: images.thumbnail_six,
-    thumbnail: images.thumbnail_six,
+    mainImage: images.thumbnail_six.src,
+    thumbnail: images.thumbnail_six.src,
   },
 ];
 

@@ -1,6 +1,5 @@
 import { approachList } from "@/utils/data";
 import { images } from "@/utils/images";
-import Image from "next/image";
 
 export default function OurApproach() {
   return (
@@ -24,8 +23,8 @@ export default function OurApproach() {
             ))}
           </div>
         </div>
-        <Image
-          src={images.thumbnail_six}
+        <img
+          src={images.thumbnail_six.src}
           alt="approach"
           className="lg:h-[30.4rem]"
         />

@@ -2,7 +2,6 @@ import React from "react";
 import { contactInfo, socialLinks, usefulLinks } from "@/utils/data";
 import { RightArrow } from "@/utils/icons";
 import Link from "next/link";
-import Image from "next/image";
 import { images } from "@/utils/images";
 import CustomButton from "./custom-components/Button";
 
@@ -63,8 +62,8 @@ export default function Footer({
             </h4>
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
-              <Image
-                src={images.ndisLogo}
+              <img
+                src={images.ndisLogo.src}
                 alt="We NDIS Registered Provider"
                 width={120}
                 height={60}
@@ -84,15 +83,15 @@ export default function Footer({
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
               {/* Replace with your actual logo image if available */}
-              <Image
-                src={images.sunflower_logo}
+              <img
+                src={images.sunflower_logo.src}
                 alt="We Love NDIS"
                 width={100}
                 className="mb-2"
               />
               <div className="flex gap-2 mt-2">
                 {/* Placeholder for flags/icons */}
-                <Image src={images.flags} alt="Country Flags" />
+                <img src={images.flags.src} alt="Country Flags" />
               </div>
             </div>
           </div>

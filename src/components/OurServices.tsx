@@ -1,14 +1,13 @@
 "use client";
 import { useState } from "react";
-import Image, { StaticImageData } from "next/image";
+// import Image, { StaticImageData } from "next/image";
 import { services } from "@/utils/data";
-import { Services } from "@/utils/types";
 import CustomButton from "./custom-components/Button";
 import { CircleArrow } from "@/utils/icons";
 
 export default function OurServices() {
   const [currentMainImage, setCurrentMainImage] = useState<
-    string | StaticImageData
+    string 
   >(services[0].mainImage);
   const [currentServiceDetails, setCurrentServiceDetails] = useState<Services>(
     services[0]
@@ -37,12 +36,10 @@ export default function OurServices() {
               className="relative w-8 h-8 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-200 ease-in-out hover:scale-150"
               onMouseEnter={() => handleThumbnailHover(service)}
             >
-              <Image
+              <img
                 src={service.thumbnail}
                 alt={service.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                className="rounded-lg object-cover"
               />
               {/* Optional: Overlay to indicate active/hovered state */}
               {currentServiceDetails.id === service.id && (
@@ -57,13 +54,10 @@ export default function OurServices() {
         {/* Large Main Card */}
         <div className="relative w-full max-w-5xl rounded-lg overflow-hidden shadow-2xl mt-8 pt-16 pb-8 px-6 sm:px-10 lg:px-16 flex items-end min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]">
           {/* Background Image for the large card */}
-          <Image
+          <img
             src={currentMainImage}
             alt="Main service image"
-            layout="fill"
-            objectFit="cover"
-            quality={80}
-            className="z-0 transition-opacity duration-300 ease-in-out"
+            className="z-0 transition-opacity duration-300 ease-in-out object-cover"
           />
 
           {/* Gradient Overlay for better text readability */}
