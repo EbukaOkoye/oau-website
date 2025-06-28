@@ -52,9 +52,9 @@ export default function Navbar() {
           Maintenance
         </Button>
       </div>
-      <Nav className="mx-auto max-w-screen-xl bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <Nav className="mx-auto max-w-screen-xl bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-0">
         <div className="container mx-auto flex items-center justify-between">
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex gap-3 justify-between w-full">
             {navbarLinks.map((_link) => (
               <Link
                 key={_link.name}
