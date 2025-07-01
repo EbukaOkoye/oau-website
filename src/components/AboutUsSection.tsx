@@ -21,7 +21,7 @@ export default function AboutUsSection() {
         </p>
       </div>
       <div className="">
-        <div className="w-72 h-72 lg:w-[30rem] lg:h-[30rem] relative left-1/2 -translate-x-1/2 bg-main-pink opacity-70 rounded-full">
+        <div className="w-72 h-72 lg:w-[30rem] lg:h-[30rem] relative left-1/2 -translate-x-1/2 bg-main-purple opacity-80 rounded-full">
           <Image
             src={images.thumbnail_two}
             alt="Team High Five"

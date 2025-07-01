@@ -92,7 +92,7 @@ export default function Contact() {
       </div>
       <div className="mt-16 p-4 bg-white">
         <p className="text-gray-500 font-medium leading-8 text-base lg:text-xl">
-          <b className="text-main-purple">Hola Support is a NDIS Service Provider</b> and is one of the
+          <b className="text-main-purple">Sunflower Care is a NDIS Service Provider</b> and is one of the
           fastest-growing disability-care facilities available here in South
           Australia. Our Participants have the opportunity to live an enriched,
           and fulfilling life in communities of their choice. We are highly

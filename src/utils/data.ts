@@ -40,9 +40,9 @@ export const navbarLinks = [
 ];
 
 export const heroImages = [
-  images.about_img,
-  images.about_img,
-  images.about_img,
+  images.home_hero,
+  images.home_hero_two,
+  images.home_hero_three,
 ];
 
 export const holaSupportList = [
@@ -284,7 +284,7 @@ export const aboutServices = [
   {
     img: images.short_term,
     title: "Short Term Accommodation",
-    text: "We at Hola Support are dedicated to your personal needs and aspirations and we offer Short Term Accommodation…",
+    text: "We at Sunflower Care are dedicated to your personal needs and aspirations and we offer Short Term Accommodation…",
     btn_link: "Read More",
   },
   {

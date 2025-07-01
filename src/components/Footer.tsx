@@ -65,7 +65,7 @@ export default function Footer({
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
               <Image
-                src={images.ndisLogo}
+                src={images.vector_three}
                 alt="We NDIS Registered Provider"
                 width={120}
                 height={60}
@@ -93,7 +93,7 @@ export default function Footer({
               />
               <div className="flex gap-2 mt-2">
                 {/* Placeholder for flags/icons */}
-                <Image src={images.flags} alt="Country Flags" />
+                <Image src={images.care_support} alt="Country Flags" />
               </div>
             </div>
           </div>

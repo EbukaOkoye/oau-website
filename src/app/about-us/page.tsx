@@ -13,7 +13,7 @@ export default function AboutUs() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={images.thumbnail_two}
+          src={images.about_image}
           alt="About us background"
           fill
           className="object-cover object-center brightness-75"

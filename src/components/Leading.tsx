@@ -22,7 +22,11 @@ export default function Leading() {
         Registered NDIS Service Provider in Adelaide
       </p>
       <div className="w-32 h-1 bg-main-purple mx-auto mt-2" />
-      <Image src={images.about_img} alt="image" />
+      <Image
+        src={images.leading}
+        alt="image"
+        className="mt-5 object-cover mx-auto w-full"
+      />
       <section className="grid gap-5 lg:grid-cols-2 mt-10">
         <div className="p-3">
           <p className="text-base lg:text-xl font-normal text-gray-500 text-justify leading-9">
