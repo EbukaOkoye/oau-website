@@ -81,13 +81,13 @@ export default function OurServices() {
             <p className="text-sm sm:text-base leading-relaxed mb-6">
               {currentServiceDetails.description}
             </p>
-            <CustomButton className="bg-main-purple hover:bg-white hover:text-main-purple text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+            <CustomButton className="bg-main-purple hover:bg-white hover:text-main-purple text-white font-bold py-3 px-6 rounded-full transition duration-700 ease-linear transform hover:scale-105">
               READ MORE
             </CustomButton>
           </div>
         </div>
       </div>
-      <CustomButton className="flex items-center gap-3 border-2 border-main-purple mt-6 mx-auto cursor-pointer bg-white hover:text-main-purple text-main-purple font-bold py-1 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+      <CustomButton className="flex items-center gap-3 border-2 border-main-purple mt-6 mx-auto cursor-pointer bg-white hover:text-main-purple text-main-purple font-bold py-2 px-6 rounded-full transition duration-500 ease-linear transform hover:scale-110">
         <CircleArrow className="text-main-purple" />
         View All Services
       </CustomButton>

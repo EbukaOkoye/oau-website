@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <section className="z-50 w-full fixed top-0 left-0">
-      <div className="hidden lg:flex gap-2 justify-between items-center bg-white px-3">
+      <div className="hidden lg:flex gap-3 justify-evenly items-center bg-white lg:px-5">
         <img
           src={images.sunflower_logo.src}
           alt="Hola Support Logo"
@@ -37,31 +37,30 @@ export default function Navbar() {
         />
         <div className="flex items-center gap-3">
           <Location size={28} className="text-main-pink" />
-          <a href="#" className="text-deep-orange text-lg font-bold">
+          <a href="#" className="text-deep-orange text-base font-bold">
             179B Philip Hwy, Elizabeth South SA 5112{" "}
           </a>
         </div>
         <div className="flex items-center gap-3">
           <Phone size={28} className="text-main-pink" />
-          <a href="#" className="text-deep-orange text-lg font-bold">
+          <a href="#" className="text-deep-orange text-base font-bold">
             (08) 7078 5845
           </a>
         </div>
-        {/* <Image src={images.ndisLogo} alt="ndis-logo" className="w-[100px]" /> */}
-        <Button className="bg-gradient-to-r from-main-purple to-main-pink rounded-full cursor-pointer px-4 py-2 text-white text-base font-bold">
-          Maintenance
+        <Button className="bg-gradient-to-r from-main-purple to-main-pink text-base rounded-full cursor-pointer px-4 py-2 text-white font-bold">
+          Join Our Team
         </Button>
       </div>
-      <Nav className="mx-auto max-w-screen-xl bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-0">
+      <Nav className="bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-0">
         <div className="container mx-auto flex items-center justify-between">
           <div className="hidden lg:flex gap-3 justify-between w-full">
             {navbarLinks.map((_link) => (
               <Link
                 key={_link.name}
                 href={_link.link}
-                className={`hover:bg-white hover:text-main-purple p-3 ${
+                className={`hover:bg-white hover:text-main-purple p-4 ${
                   _link.link === pathname
-                    ? "bg-white text-main-purple"
+                    ? "bg-white text-main-purple font-bold"
                     : "text-white"
                 }`}
               >

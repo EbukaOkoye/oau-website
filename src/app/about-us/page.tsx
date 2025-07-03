@@ -54,7 +54,7 @@ export default function AboutUs() {
           />
         </div> */}
       </div>
-      <div className="pt-16 px-4 md:w-10/12 mx-auto mt-14">
+      <div className="pt-16 px-4 md:w-9/12 mx-auto mt-14">
         <p className="text-gray-500 text-lg lg:text-xl font-medium text-center">
           <b className="text-main-purple">Sunflower Care is a Registered NDIS Service Provider</b> and is one
           of the fastest-growing disability-care facilities available here in
@@ -87,7 +87,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <div className="grid lg:grid-cols-3 gap-5 p-4 items-center">
+      <div className="grid lg:grid-cols-3 gap-5 p-4 items-center mt-24">
         <div className="col-span-2">
           <p className="text-sm lg:text-lg font-medium leading-9 text-gray-500">
             Our services include specialized programs to meet the needs of NDIS
@@ -102,7 +102,7 @@ export default function AboutUs() {
         </div>
         <div className="col-span-1">
           <Image
-            src={images.sunflower_logo}
+            src={images.vector_three}
             alt="ndis-logo"
             className="w-64 mx-auto scale-pulse"
           />

@@ -55,7 +55,7 @@ export default function Leading() {
         </div>
         <div className="p-3">
           <div className="">
-            <h2 className="font-bold text-2xl lg:text-4xl text-deep-orange">
+            <h2 className="font-bold text-2xl lg:text-4xl text-main-purple">
               Why Sunflower Care{" "}
             </h2>
             <div className="w-20 h-1 bg-main-purple mt-2" />

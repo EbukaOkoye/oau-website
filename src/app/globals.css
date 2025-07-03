@@ -4,9 +4,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --main-purple: #d39937;
+  --main-purple: #FF8200;
   /* --main-purple: #bf8246; */
-  --main-pink: #bf8246;
+  --main-pink: #FF7900;
   --secondary-pink: #cf4591;
   --icon-pink: #d34692;
   --light-pink: #c1a9b6;
@@ -16,7 +16,7 @@
   --grey-bg: #b5dff0;
   --step-green: #a2d35d;
   --step-purple: #9d59e5;
-  --deep-orange: #bf7022;
+  --deep-orange: #FF9900;
 }
 
 /* #bf7022 */
