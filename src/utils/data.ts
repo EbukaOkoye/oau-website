@@ -37,6 +37,10 @@ export const navbarLinks = [
     name: "CONTACT",
     link: "/contact",
   },
+  {
+    name: "CAREERS",
+    link: "/careers",
+  },
 ];
 
 export const heroImages = [
@@ -82,7 +86,7 @@ export const services = [
     title: "Support Coordination",
     category: "NDIS Services",
     description:
-      "Transitioning to a new stage of life is daunting for anyone, and we understand that it can be even harder if you have a disability. We at Hola Support excel at supporting NDIS participants through life's transitions and help...",
+      "Transitioning to a new stage of life is daunting for anyone, and we understand that it can be even harder if you have a disability. We at Sunflower Care excel at supporting NDIS participants through life's transitions and help...",
     mainImage: images.thumbnail_one.src,
     thumbnail: images.thumbnail_one.src,
   },
@@ -136,21 +140,21 @@ export const services = [
 export const happyTestimony = [
   {
     testimony:
-      "I was happy with the NDIS plan I received but I was overwhelmed with the process of organising my supports. My friend suggested to contact Hola Support, in a couple of days I was at so easy as all my support needs were organised with my choice. Quite happy with the services I have been receiving from Hola Support.",
+      "I was happy with the NDIS plan I received but I was overwhelmed with the process of organising my supports. My friend suggested to contact Sunflower Care, in a couple of days I was at so easy as all my support needs were organised with my choice. Quite happy with the services I have been receiving from Sunflower Care.",
     pic: images.jacob,
     name: "Jacob",
     county: "Cowandilla, SA",
   },
   {
     testimony:
-      "I am so thankful to Hola Support team for assisting me to understand my daughter's NDIS plan, I work full-time work and I was unable to spend much time to organise supports but since I started receiving services from Hola Support my daughters is fully utilising her NDIS plan. I highly recommend Hola Support and would like to thank everyone in the team for their support and services.",
+      "I am so thankful to Sunflower Care team for assisting me to understand my daughter's NDIS plan, I work full-time work and I was unable to spend much time to organise supports but since I started receiving services from Sunflower Care my daughters is fully utilising her NDIS plan. I highly recommend Sunflower Care and would like to thank everyone in the team for their support and services.",
     pic: images.cynthia,
     name: "Cynthia",
     county: "Craigmore, SA",
   },
   {
     testimony:
-      " I was supported by my Support Coordinator and staff in my NDIS plan reviews, it really helped me to get the right plan for my required supports. Support Coordinator assisted to draft my goals for the new plan, I was so much in control of my NDIS review meeting. Thank you Hola Support.",
+      " I was supported by my Support Coordinator and staff in my NDIS plan reviews, it really helped me to get the right plan for my required supports. Support Coordinator assisted to draft my goals for the new plan, I was so much in control of my NDIS review meeting. Thank you Sunflower Care.",
     pic: images.tom,
     name: "Tom",
     county: "Beverly, SA",
@@ -187,11 +191,11 @@ export const usefulLinks = [
   },
   {
     label: "Start Career",
-    href: "/",
+    href: "/careers",
   },
   {
     label: "What is NDIS",
-    href: "/",
+    href: "/faqs",
   },
   {
     label: "Refer Someone",
@@ -448,4 +452,114 @@ export const bottomContact = [
     icon_img: Copy,
     text: "Contact & Feedback",
   },
+];
+
+export const whatWeOffer = [
+  "Professional development",
+  "Networking Opportunities",
+  "A friendly working environment",
+  "Good Orientation and Induction process",
+  "Work-Life balance",
+  "Training opportunities",
+  "Safe workplace",
+];
+
+export const importantToHave = [
+  "A current South Australian driver’s licence",
+  "A current Senior First Aid Certificate",
+  "Screening clearance to work with children and vulnerable people (DHS Screening Clearance)",
+  "Person-Centerd approach",
+  "In-depth understanding of Disability and Human Rights",
+];
+
+export const qualifications = [
+  "Cert III in Disability Care",
+  "Proof of First Aid Training",
+  "Recent, related experience working as a Support Worker",
+  "Ability to read, write, comprehend and communicate effectively in English",
+  "Must be able to meet the physical requirements of the position",
+  "Excellent communication abilities and interpersonal skills to interact positively and effectively with participants, staff and the general public",
+  "Demonstrated ability to prioritise multiple and changing tasks that require attention to detail",
+  "Demonstrated ability to work effectively as a member of a team",
+  "Commitment to Person-Centred care with a Service-Oriented attitude",
+  "Basic computer skills",
+  "Ability to problem solve",
+  "Demonstrate initiative within appropriate scope of practice",
+  "Demonstrated knowledge of protocol to escalate concerns",
+  "Must be self-directed and show initiative",
+  "Demonstrated ability to work independently with minimal supervision",
+  "Demonstrated ability to attend work on a regular basis",
+];
+
+export const skillsAbilities = [
+  "Ability to provide a Person-Centered holistic approach to care",
+  "Ability to communicate effectively both verbally and in writing.",
+  "Ability to work independently, organize workload and establish priorities.",
+  "Ability to work effectively as part of an inter-disciplinary team.",
+  "Knowledge of community dynamics, agencies and resources.",
+  "Physical ability to perform the duties of the position.",
+  "Ability to operate related equipment.",
+  "Ability to work independently and show initiative",
+  "Ability to deal effectively with a wide range of community and facility contacts.",
+  "Ability to demonstrate sound professional judgment, empathy, tact and integrity.",
+  "Excellent assessment, care planning and coordination skills.",
+];
+
+export const specificSkills = [
+  "Select appropriate exercises, apparatus and manipulations",
+  "Plan physiotherapy programs",
+  "Maintain clinical and progress reports",
+  "Confer with other health professionals",
+  "Assess patients’ physical abilities",
+  "Teach and/or supervise exercises to patients",
+  "Security and Safety",
+];
+
+export const workConditions = [
+  "Fast-paced environment",
+  "Work under pressure",
+  "Attention to detail",
+  "Combination of sitting, standing, walking",
+  "Standing for extended periods",
+];
+
+export const personalSuitability = [
+  "Effective interpersonal skills",
+  "Excellent oral communication",
+  "Client focus",
+  "Interpersonal awareness",
+  "Judgement",
+  "Punctuality",
+];
+
+export const keySkills = [
+  "Reliability and discretion",
+  "Adaptability",
+  "Communication, negotiation and relationship-building skills",
+];
+
+export const oSkills = [
+  "IT skills",
+  "Problem solving skills",
+  "Initiative",
+  "Leadership and the ability to make things happen",
+  "Budgeting skills",
+  "Attention to detail",
+];
+
+export const responsibilities = [
+  "organising meetings and managing databases",
+  "organising company events or conferences",
+  "ordering stationery and furniture",
+  "dealing with correspondence, complaints and queries",
+  "preparing letters, presentations and reports",
+  "supervising and monitoring the work of administrative staff",
+  "managing office budgets",
+  "liaising with Staff and Participants",
+  "implementing and maintaining procedures/office administrative systems",
+  "organising induction programmes for new employees",
+  "ensuring that health and safety policies are up to date",
+  "using a range of software packages",
+  "attending meetings with senior management",
+  "assisting the organisation’s HR function by keeping personnel records up to date, arranging interviews.",
 ];

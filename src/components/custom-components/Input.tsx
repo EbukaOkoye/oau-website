@@ -1,8 +1,18 @@
 import { InputProps } from "@/utils/types";
 
-export default function Input({ label, type, value, onChange, placeholder, name }: InputProps) {
+export default function Input({
+  label,
+  type,
+  value,
+  onChange,
+  placeholder,
+  name,
+  accept,
+  className,
+  divClassName,
+}: InputProps) {
   return (
-    <div className="p-2 my-4">
+    <div className={`p-2 my-4 ${divClassName}`}>
       <label htmlFor={label} className="text-main-purple mb-3">
         {label}
       </label>
@@ -12,7 +22,8 @@ export default function Input({ label, type, value, onChange, placeholder, name 
         onChange={onChange}
         placeholder={placeholder}
         name={name}
-        className="w-full border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none"
+        accept={accept}
+        className={`w-full border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none ${className}`}
       />
     </div>
   );

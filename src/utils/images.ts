@@ -10,29 +10,29 @@ import thumbnail_four from "@/assets/thumbnail_four.jpg";
 import thumbnail_five from "@/assets/thumbnail_7.jpeg";
 import thumbnail_six from "@/assets/thumbnail_five.jpg";
 import thumbnail_seven from "@/assets/thumbnail_7.jpeg";
-import tom from '@/assets/tom.jpg';
-import jacob from '@/assets/Jacob.jpg';
+import tom from "@/assets/tom.jpg";
+import jacob from "@/assets/Jacob.jpg";
 import cynthia from "@/assets/cynthia.jpg";
-import flags from '@/assets/flags.png';
-import about_sec from '@/assets/about_us_sec.jpg';
-import vision from '@/assets/vision.svg';
-import space from '@/assets/space.svg';
-import srum_board from '@/assets/scrum_board.svg';
-import supported from '@/assets/supported.jpg';
-import short_term from '@/assets/short_term.jpg';
-import asstistance from '@/assets/assistance.jpg';
-import faqs_img from '@/assets/faq.svg';
-import mail from '@/assets/mail.svg';
-import sunflower_logo from '@/assets/sunflower-care-logo-removebg.png';
-import sunflower_logo_white from '@/assets/sunflower-logo-white.png';
-import home_hero from '@/assets/home_hero.jpg';
-import home_hero_two from '@/assets/home_hero_two.jpg';
-import home_hero_three from '@/assets/home_hero_three.jpg';
-import leading from '@/assets/leading.jpg';
-import care_support from '@/assets/care_support.jpg';
-import vector_three from '@/assets/ndis_vector_three.jpg';
-import about_image from '@/assets/about_image.jpg';
-
+import flags from "@/assets/flags.png";
+import about_sec from "@/assets/about_us_sec.jpg";
+import vision from "@/assets/vision.svg";
+import space from "@/assets/space.svg";
+import srum_board from "@/assets/scrum_board.svg";
+import supported from "@/assets/supported.jpg";
+import short_term from "@/assets/short_term.jpg";
+import asstistance from "@/assets/assistance.jpg";
+import faqs_img from "@/assets/faq.svg";
+import mail from "@/assets/mail.svg";
+import sunflower_logo from "@/assets/sunflower-care-logo-removebg.png";
+import sunflower_logo_white from "@/assets/sunflower-logo-white.png";
+import home_hero from "@/assets/home_hero.jpg";
+import home_hero_two from "@/assets/home_hero_two.jpg";
+import home_hero_three from "@/assets/home_hero_three.jpg";
+import leading from "@/assets/leading.jpg";
+import care_support from "@/assets/care_support.jpg";
+import vector_three from "@/assets/ndis_vector_three.jpg";
+import about_image from "@/assets/about_image.jpg";
+import careers from "@/assets/careers.svg";
 
 export const images = {
   holaLogo,
@@ -69,5 +69,7 @@ export const images = {
   vector_three,
   about_image,
   thumbnail_3,
-  faq_img: 'https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg',
+  careers,
+  faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
+  link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };
