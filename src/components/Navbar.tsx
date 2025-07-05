@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import { navbarLinks } from "@/utils/data";
+import { usePathname, useRouter } from "next/navigation";
+import { navbarLinks, subLinks } from "@/utils/data";
 
 import Link from "next/link";
 import { images } from "@/utils/images";
@@ -11,6 +11,10 @@ import {
   Button,
   Collapse,
   IconButton,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList,
   Navbar as Nav,
   // Typography,
 } from "@material-tailwind/react";
@@ -19,6 +23,7 @@ export default function Navbar() {
   // const [open, setOpen] = useState(false);
   const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
+  const route = useRouter();
 
   useEffect(() => {
     window.addEventListener(
@@ -51,7 +56,7 @@ export default function Navbar() {
           Join Our Team
         </Button>
       </div>
-      <Nav className="bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-0">
+      <Nav className="bg-gradient-to-r from-main-purple to-main-pink rounded-none px-4 py-2 lg:px-8 lg:py-1">
         <div className="container mx-auto flex items-center justify-between">
           <div className="hidden lg:flex gap-3 justify-between w-full">
             {navbarLinks.map((_link) => (
@@ -67,6 +72,38 @@ export default function Navbar() {
                 {_link.name}
               </Link>
             ))}
+            <Menu placement="bottom-start">
+              <MenuHandler>
+                <span
+                  className={`hover:bg-white hover:text-main-purple !p-4 cursor-pointer ${
+                    pathname.includes("/ndis-services")
+                      ? "bg-white text-main-purple font-bold"
+                      : "text-white"
+                  }`}
+                >
+                  NDIS SERVICES
+                </span>
+              </MenuHandler>
+              <MenuList className="bg-white shadow-lg text-black z-[9999] w-72 !border !border-main-purple">
+                {subLinks.map((item) => (
+                  <MenuItem
+                    key={item.name}
+                    className={`hover:bg-main-purple my-1 hover:text-white !hover:border-0 hover:outline-none font-medium text-sm py-2 ${
+                      item.link === pathname
+                        ? "bg-main-purple text-white"
+                        : "bg-white text-black"
+                    }`}
+                    onClick={() => {
+                      route.push(item.link);
+                      // Close the menu after clicking an item
+                      setOpenNav(false);
+                    }}
+                  >
+                    {item.name}
+                  </MenuItem>
+                ))}
+              </MenuList>
+            </Menu>
           </div>
           <IconButton
             variant="text"
@@ -120,6 +157,28 @@ export default function Navbar() {
                 {_link.name}
               </a>
             ))}
+          </div>
+          <div className="flex flex-col">
+            <span className="text-white font-bold text-sm mb-1">
+              NDIS SERVICES
+            </span>
+            <div className="pl-4 space-y-1">
+              {subLinks.map((item) => (
+                <p
+                  key={item.name}
+                  className={`text-white text-sm hover:text-gray-500 cursor-pointer ${
+                    item.link === pathname ? "!text-gray-300" : "text-white"
+                  }`}
+                  onClick={() => {
+                    route.push(item.link);
+                    // Close the collapse after clicking an item
+                    setOpenNav(false);
+                  }}
+                >
+                  {item.name}
+                </p>
+              ))}
+            </div>
           </div>
         </Collapse>
       </Nav>

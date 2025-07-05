@@ -33,6 +33,10 @@ import care_support from "@/assets/care_support.jpg";
 import vector_three from "@/assets/ndis_vector_three.jpg";
 import about_image from "@/assets/about_image.jpg";
 import careers from "@/assets/careers.svg";
+import sil from "@/assets/sil.jpg";
+import sta from "@/assets/sta.jpg";
+import dls from "@/assets/dls.jpg";
+import adpa from "@/assets/adpa.jpg";
 
 export const images = {
   holaLogo,
@@ -70,6 +74,10 @@ export const images = {
   about_image,
   thumbnail_3,
   careers,
+  sil,
+  sta,
+  dls,
+  adpa,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };

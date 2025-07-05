@@ -26,7 +26,6 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { BsChatDotsFill } from "react-icons/bs";
 import { RiMenu2Fill } from "react-icons/ri";
 
-
 export const Phone = FaPhoneAlt;
 export const CircleArrow = FaArrowCircleRight;
 export const CheckCircle = FaCheckCircle;

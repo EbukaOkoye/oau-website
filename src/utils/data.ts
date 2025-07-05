@@ -43,6 +43,45 @@ export const navbarLinks = [
   },
 ];
 
+export const subLinks = [
+  {
+    name: "Supported Independent Living",
+    link: "/supported-independent-living",
+  },
+  {
+    name: "Short Term Accommodation",
+    link: "/short-term-accomodation",
+  },
+  {
+    name: "Life Skills Assistance",
+    link: "/assistance-with-daily-living-life-skills",
+  },
+  {
+    name: "Personal Activities Assistance",
+    link: "/assistance-with-daily-personal-activities",
+  },
+  {
+    name: "Community Participation",
+    link: "/",
+  },
+  {
+    name: "Support Coordination",
+    link: "/",
+  },
+  {
+    name: "Community Nursing",
+    link: "/",
+  },
+  {
+    name: "Household Tasks",
+    link: "/",
+  },
+  {
+    name: "Psychosocial Recovery Coach",
+    link: "/",
+  },
+];
+
 export const heroImages = [
   images.home_hero,
   images.home_hero_two,
@@ -562,4 +601,124 @@ export const responsibilities = [
   "using a range of software packages",
   "attending meetings with senior management",
   "assisting the organisation’s HR function by keeping personnel records up to date, arranging interviews.",
+];
+
+export const includedSil = [
+  "Support with supervision, safety and security",
+  "Assistance with personal care tasks",
+  "Assistance with capacity building tasks (for example, meal prep and cooking, cleaning, routine development)",
+  "Behaviour support and social skill development",
+  "Administration of medication",
+  "Support for medical appointments",
+  "Community access that is not routine or regular (for example, support to complete personal tasks)",
+  "Support to get to and from community access activities (where this is the participant’s preference)",
+];
+
+export const notIncludedSil = [
+  "Cost of groceries",
+  "Rent, board or lodging costs",
+  "Utilities – gas, electricity, water, telephone, internet",
+  "Household budgeting/bill paying activities",
+  "Expenses related to holidays, including travel costs",
+  "Personal care supports while the participant is in hospital",
+  "Specialist Disability Accommodation (SDA) related costs (such as property maintenance costs, repairs, vacancy costs)",
+  "Ongoing costs and supports for vacancies (which is built into the price limit)",
+  "Regular community access",
+  "Specific funding for staff to attend training for the participant’s support needs (which is built into the price limit)",
+  "Shadow shifts",
+  "Organisational management costs",
+  "Allied Health staff, including those employed by SIL provider",
+  "Vehicle costs",
+  "Temporary Transformation Payment (TTP) pricing",
+  "Justice related supports",
+  "Community supervision orders",
+  "Nursing, medical care and other health related supports",
+  "Items covered in other sections of the NDIS Pricing Arrangements and Price Limits (such as transport costs, assistive technology, personal care while in the workplace, plan management, financial intermediary supports, clinical or allied health services)",
+];
+
+export const provisions = [
+  "General Household cleaning and laundry",
+  "Meal preparation",
+  "Assistance with catching Public Transport",
+  "New Hobby Assistance",
+  "Transport assistance to appointments",
+  "Assistance with administration of medication",
+  "Personal Care such as showering and dressing",
+];
+
+export const stac = [
+  "the need for Short Term Accommodation is related to your disability",
+  "it helps you pursue your goals",
+  "it helps you to participate in the community",
+  "it’s value for money",
+  "how much support your family and other informal supports provide",
+];
+
+export const supportFunding = [
+  "support a child in the long term",
+  "maintain your family situation.",
+];
+
+export const supportInclude = [
+  "support in your home",
+  "training to implement a behaviour support plan or build capacity in other areas. For example, this might help parents support their child in creating a sleep routine",
+  "community access to help you socialise and interact with your community",
+  "help to supervise behaviours of concern or support positive behaviour strategies.",
+];
+
+export const professionalAssist = [
+  "We provide assistance with developing independent living and social skills.",
+  "We provide assistance with personal care.",
+  "We provide opportunities to socialize and to get involved in recreational activities in the community.",
+  "We cater to the needs of the individual and provide assistance with personal care.",
+  "We also provide our services in the comfort of your own home if that is your preference.",
+  "Our service is available for both children and adults.",
+];
+
+export const trainingDevelopment = [
+  "Nutrition: such as grocery shopping and meal-planning",
+  "Personal Hygiene: such as personal care, toileting",
+  "Household Tasks",
+  "Public Transport Training",
+  "Problem solving",
+  "Job readiness- including resume and interview prep",
+  "Liaising with Public Trustee",
+  "Time Management and Problem Solving",
+  "Budgeting",
+  "Communication and Social Skills development",
+];
+
+export const assistSupport = [
+  "Bathing, dressing, toileting and grooming up to 2 hours per day – including bowel management, skin care, bladder management, menstrual care;",
+  "Assistance with eating up to 2 hours per day which may include assistance with medication;",
+  "Mobility including exercise, positioning, moving up to 1 hour per day; and",
+  "Where toileting assistance alone is required, up to 1 hour a day.",
+];
+
+export const circumstance = [
+  "Whether the participant has high care needs, for example unstable seizure activity or respiratory support;",
+  "The weight (and other physical aspects) of the participant;",
+  "The medical condition of the participant, including any medication required;",
+  "Whether the need for a higher level of support is of a temporary nature. For example, due to waiting for a suitable home modification (for example, a bathroom modification) to be completed;",
+  "Whether two people are required for transfers;",
+  "Whether there are behavioural concerns which require more intensive assistance with personal care activities and there are no other options, for example behavioural support intervention; and",
+  "Whether additional time limited funding is likely to reduce a participant’s longer term support costs by building their capacity to independently perform personal care activities.",
+  "The NDIA will also consider whether assistive technology, home modifications or other supports can be used to reduce the level of assistance with daily personal activities.",
+];
+
+export const personalSupport = [
+  "Maximise the independence and functional skills of the participant;",
+  "Are appropriate to the participant’s age and circumstances; and",
+  "Whether alternative arrangements or supports could meet a participant’s needs in a less intrusive manner. For example, aids and equipment may enable a participant to complete tasks for themselves or the provision of training may increase the participant’s independence in the tasks.",
+];
+
+export const servicesInclude = [
+  "Assistance with shopping and meal preparation",
+  "Assistance with personal care",
+  "Personal hygiene, including showering, bathing, oral hygiene, dressing and grooming;",
+  "Assistance with household management skills",
+  "Bladder and bowel management and menstrual care",
+  "Assistance with appointments",
+  "Developing your hobbies and interests",
+  "Using aids and appliances, hearing and communication devices;",
 ];
