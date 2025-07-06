@@ -92,16 +92,18 @@ export default function Contact() {
       </div>
       <div className="mt-16 p-4 bg-white">
         <p className="text-gray-500 font-medium leading-8 text-base lg:text-xl">
-          <b className="text-main-purple">Sunflower Care is a NDIS Service Provider</b> and is one of the
-          fastest-growing disability-care facilities available here in South
-          Australia. Our Participants have the opportunity to live an enriched,
-          and fulfilling life in communities of their choice. We are highly
-          committed to being inclusive of people with differing backgrounds and
-          are constantly tailoring our services to reach diverse social groups.
-          Our website provides an overview of our services, information provided
-          / recorded is accurate as of July 2021. Please contact us If you have
-          any questions or feedback, or want to now more about our support
-          services
+          <b className="text-main-purple">
+            Sunflower Care is a NDIS Service Provider
+          </b>{" "}
+          and is one of the fastest-growing disability-care facilities available
+          here in South Australia. Our Participants have the opportunity to live
+          an enriched, and fulfilling life in communities of their choice. We
+          are highly committed to being inclusive of people with differing
+          backgrounds and are constantly tailoring our services to reach diverse
+          social groups. Our website provides an overview of our services,
+          information provided / recorded is accurate as of July 2021. Please
+          contact us If you have any questions or feedback, or want to now more
+          about our support services
         </p>
       </div>
       <section className="grid lg:grid-cols-2 gap-4 py-10 px-4 mt-14">

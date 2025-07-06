@@ -7,6 +7,7 @@ interface Services {
   description: string;
   mainImage: string | StaticImageData;
   thumbnail: string | StaticImageData;
+  link: string;
 }
 
 interface CustomButtonProps {

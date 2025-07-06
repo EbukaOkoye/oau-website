@@ -26,8 +26,9 @@ export default function Faqs() {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">FAQs</h1>
         <div className="w-24 h-1 bg-white mb-4" />
         <p className="text-lg md:text-2xl font-medium max-w-2xl">
-          At times the NDIS may sound like another language, <br className="hidden lg:block" /> that&apos;s why we are
-          here to help.
+          At times the NDIS may sound like another language,{" "}
+          <br className="hidden lg:block" /> that&apos;s why we are here to
+          help.
         </p>
       </div>
       {/* Curved Bottom Section with Breadcrumb and Logo */}
@@ -75,6 +76,7 @@ export default function Faqs() {
       </section>
 
       <Footer
+        link="/contact"
         topText="Contact Now"
         icon={<Send className="text-main-purple" />}
       />

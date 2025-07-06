@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sunflower care",
   icons: {
-    icon: '/sunflower-care-logo-removebg.png'
-  }
+    icon: "/sunflower-care-logo-removebg.png",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <Navbar />
         {children}

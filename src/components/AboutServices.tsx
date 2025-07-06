@@ -1,9 +1,13 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import { aboutServices } from "@/utils/data";
 import CustomButton from "./custom-components/Button";
 import { CircleArrow } from "@/utils/icons";
+import { useRouter } from "next/navigation";
 
 export default function AboutServices() {
+  const router = useRouter();
+
   return (
     <>
       <section className="py-10 px-4 mt-12">
@@ -31,7 +35,10 @@ export default function AboutServices() {
                 <p className="font-normal text-xs lg:text-base mt-7 text-gray-500">
                   {_services.text}
                 </p>
-                <CustomButton className="mt-4 bg-main-purple text-white px-6 py-2 cursor-pointer rounded-none hover:bg-main-pink transition ease-in duration-1000">
+                <CustomButton
+                  onClick={() => router.push(_services.link)}
+                  className="mt-4 bg-main-purple text-white px-6 py-2 cursor-pointer rounded-none hover:bg-main-pink transition ease-in duration-1000"
+                >
                   {_services.btn_link}
                 </CustomButton>
               </div>
@@ -39,7 +46,10 @@ export default function AboutServices() {
           ))}
         </div>
       </section>
-      <CustomButton className="mt-4 mb-10 bg-main-purple flex items-center gap-3 text-white px-6 py-3 mx-auto cursor-pointer rounded-none hover:scale-150 hover:shadow-md transition ease-in duration-1000">
+      <CustomButton
+        onClick={() => router.push("/supported-independent-living")}
+        className="mt-4 mb-10 bg-main-purple flex items-center gap-3 text-white px-6 py-3 mx-auto cursor-pointer rounded-none hover:scale-150 hover:shadow-md transition ease-in duration-1000"
+      >
         <CircleArrow className="text-white" size={16} />
         <span className="">View all Services</span>
       </CustomButton>

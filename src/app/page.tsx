@@ -16,7 +16,11 @@ export default function Home() {
       <OurServices />
       <HappyCustomers />
       <OurApproach />
-      <Footer topText="Support Coordination" icon={<CircleArrow className="text-main-purple" />} />
+      <Footer
+        link="/support-coordination"
+        topText="Support Coordination"
+        icon={<CircleArrow className="text-main-purple" />}
+      />
     </section>
-  )
+  );
 }

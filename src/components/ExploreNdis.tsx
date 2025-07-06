@@ -1,8 +1,11 @@
 "use client";
 import { CircleArrow } from "@/utils/icons";
 import { Button } from "@material-tailwind/react";
+import { useRouter } from "next/navigation";
 
 export default function ExploreNdis() {
+  const router = useRouter();
+
   return (
     <section className="py-10 px-4 bg-light-grey">
       <div className="border-[2.5] border-main-pink md:w-3/4 lg:w-3/5 mx-auto hover:bg-white rounded-xl p-4">
@@ -18,7 +21,10 @@ export default function ExploreNdis() {
         <p className="font-medium lg:text-xl text-center mt-5 text-gray-500">
           Person-Centered Approach is our focus.
         </p>
-        <Button className="flex items-center gap-3 border-2 border-main-pink rounded-full text-main-purple px-4 py-2 mt-8 cursor-pointer mx-auto hover:scale-125 transition duration-700 ease-linear">
+        <Button
+          onClick={() => router.push("/supported-independent-living")}
+          className="flex items-center gap-3 border-2 border-main-pink rounded-full text-main-purple px-4 py-2 mt-8 cursor-pointer mx-auto hover:scale-125 transition duration-700 ease-linear"
+        >
           <CircleArrow className="text-main-purple" />
           Explore NDIS
         </Button>

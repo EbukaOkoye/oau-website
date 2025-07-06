@@ -41,18 +41,21 @@ export default function Navbar() {
           className="w-[6.25rem]"
         />
         <div className="flex items-center gap-3">
-          <Location size={28} className="text-main-pink" />
-          <a href="#" className="text-deep-orange text-base font-bold">
+          <Location size={28} className="text-deep-orange" />
+          <a href="#" className="text-main-purple text-base font-bold">
             179B Philip Hwy, Elizabeth South SA 5112{" "}
           </a>
         </div>
         <div className="flex items-center gap-3">
-          <Phone size={28} className="text-main-pink" />
-          <a href="#" className="text-deep-orange text-base font-bold">
+          <Phone size={28} className="text-deep-orange" />
+          <a href="#" className="text-main-purple text-base font-bold">
             (08) 7078 5845
           </a>
         </div>
-        <Button className="bg-gradient-to-r from-main-purple to-main-pink text-base rounded-full cursor-pointer px-4 py-2 text-white font-bold">
+        <Button
+          onClick={() => route.push("/careers#career-form")}
+          className="bg-gradient-to-r from-main-purple to-main-pink text-base rounded-full cursor-pointer px-4 py-2 text-white font-bold"
+        >
           Join Our Team
         </Button>
       </div>

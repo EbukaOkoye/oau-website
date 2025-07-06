@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { contactInfo, socialLinks, usefulLinks } from "@/utils/data";
 import { RightArrow } from "@/utils/icons";
@@ -6,14 +6,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { images } from "@/utils/images";
 import CustomButton from "./custom-components/Button";
+import { useRouter } from "next/navigation";
 
 export default function Footer({
   topText,
   icon,
+  link,
 }: {
-  topText: string;
-  icon: React.ReactNode;
+  topText?: string;
+  icon?: React.ReactNode;
+  link?: string | undefined;
 }) {
+  const router = useRouter();
+
   return (
     <footer className="w-full bg-light-grey">
       {/* Top Section: NDIS Support Coordination Box */}
@@ -26,10 +31,12 @@ export default function Footer({
             Understand Your NDIS plan & funding
           </p>
         </div>
-        <CustomButton className="flex items-center bg-white gap-3 cursor-pointer text-main-purple font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+        <CustomButton
+          onClick={() => router.push(link ?? "/")}
+          className="flex items-center bg-white gap-3 cursor-pointer text-main-purple font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition duration-300 whitespace-nowrap"
+        >
           {topText}
           {icon}
-          {/* <CircleArrow className="text-main-purple" /> */}
         </CustomButton>
       </div>
 
@@ -108,9 +115,9 @@ export default function Footer({
               {/* <PersonBubbleIcon /> Icon for NDIS Experts */}
               <p className="font-semibold text-gray-500 mt-2">NDIS Experts</p>
               <p className="text-gray-500">Locally Owned</p>
-              <CustomButton className="mt-4 bg-white border-2 border-main-pink text-main-purple font-semibold py-2 px-4 rounded-full shadow-md hover:bg-main-pink hover:text-white hover:border-none transition duration-700 ease-linear">
+              {/* <CustomButton className="mt-4 bg-white border-2 border-main-pink text-main-purple font-semibold py-2 px-4 rounded-full shadow-md hover:bg-main-pink hover:text-white hover:border-none transition duration-700 ease-linear">
                 Book Appointment
-              </CustomButton>
+              </CustomButton> */}
             </div>
           </div>
 

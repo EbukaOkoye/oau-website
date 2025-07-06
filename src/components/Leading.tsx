@@ -4,8 +4,11 @@ import { CircleArrow } from "@/utils/icons";
 import { images } from "@/utils/images";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Leading() {
+  const router = useRouter();
+
   return (
     <section className="py-10 px-4">
       <div className="">
@@ -48,7 +51,10 @@ export default function Leading() {
             lives. Our staff contribute a diverse range of knowledge and
             experience.
           </p>
-          <Button className="flex items-center gap-3 border-2 border-main-purple rounded-full text-main-purple px-4 py-2 mt-8 cursor-pointer hover:scale-125 transition duration-700 ease-linear">
+          <Button
+            onClick={() => router.push("/about-us")}
+            className="flex items-center gap-3 border-2 border-main-purple rounded-full text-main-purple px-4 py-2 mt-8 cursor-pointer hover:scale-125 transition duration-700 ease-linear"
+          >
             <CircleArrow className="text-main-purple" />
             Know More About Us
           </Button>

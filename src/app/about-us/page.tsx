@@ -106,7 +106,7 @@ export default function AboutUs() {
           <Image
             src={images.vector_three}
             alt="ndis-logo"
-            className="w-64 mx-auto scale-pulse"
+            className="w-64 mx-auto"
           />
         </div>
       </div>
@@ -115,7 +115,7 @@ export default function AboutUs() {
           <Image
             src={images.sunflower_logo}
             alt="ndis-logo"
-            className="w-64 mx-auto scale-pulse"
+            className="w-64 mx-auto"
           />
         </div>
         <div className="col-span-2">
@@ -171,6 +171,7 @@ export default function AboutUs() {
       </div>
       <AboutServices />
       <Footer
+        link="/contact"
         topText="Contact Now"
         icon={<Send className="text-main-purple" />}
       />

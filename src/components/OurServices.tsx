@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-// import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 import { services } from "@/utils/data";
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from "next/image";
 import CustomButton from "./custom-components/Button";
 import { CircleArrow } from "@/utils/icons";
 import { Services } from "@/utils/types";
 
 export default function OurServices() {
+  const router = useRouter();
   const [currentMainImage, setCurrentMainImage] = useState<
     string | StaticImageData
   >(services[0].mainImage);
@@ -81,13 +82,19 @@ export default function OurServices() {
             <p className="text-sm sm:text-base leading-relaxed mb-6">
               {currentServiceDetails.description}
             </p>
-            <CustomButton className="bg-main-purple hover:bg-white hover:text-main-purple text-white font-bold py-3 px-6 rounded-full transition duration-700 ease-linear transform hover:scale-105">
+            <CustomButton
+              onClick={() => router.push(currentServiceDetails.link)}
+              className="bg-main-purple hover:bg-white hover:text-main-purple text-white font-bold py-3 px-6 rounded-full transition duration-700 ease-linear transform hover:scale-105"
+            >
               READ MORE
             </CustomButton>
           </div>
         </div>
       </div>
-      <CustomButton className="flex items-center gap-3 border-2 border-main-purple mt-6 mx-auto cursor-pointer bg-white hover:text-main-purple text-main-purple font-bold py-2 px-6 rounded-full transition duration-500 ease-linear transform hover:scale-110">
+      <CustomButton
+        onClick={() => router.push("/supported-independent-living")}
+        className="flex items-center gap-3 border-2 border-main-purple mt-6 mx-auto cursor-pointer bg-white hover:text-main-purple text-main-purple font-bold py-2 px-6 rounded-full transition duration-500 ease-linear transform hover:scale-110"
+      >
         <CircleArrow className="text-main-purple" />
         View All Services
       </CustomButton>

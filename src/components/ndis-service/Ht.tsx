@@ -1,3 +1,4 @@
+import { houseHoldTasks } from "@/utils/data";
 import { images } from "@/utils/images";
 import Image from "next/image";
 
@@ -43,6 +44,13 @@ export default function Ht({ name }: { name: string | undefined }) {
             with increased independence. The following are a list of some of the
             services we offer:
           </p>
+          <ul className="mt-10 list-disc">
+            {houseHoldTasks.map((_tasks, idx) => (
+              <li key={idx} className="text-gray-500 ml-4 text-base lg:text-lg">
+                {_tasks}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

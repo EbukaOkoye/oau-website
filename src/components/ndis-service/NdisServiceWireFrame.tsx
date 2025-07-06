@@ -10,6 +10,7 @@ import Cp from "./Cp";
 import Sc from "./Sc";
 import Cn from "./Cn";
 import Ht from "./Ht";
+import Prc from "./Prc";
 
 export default function NdisServiceWireFrame() {
   const router = useRouter();
@@ -35,6 +36,8 @@ export default function NdisServiceWireFrame() {
         return <Cn name={activeLink?.name} />;
       case "/household-tasks":
         return <Ht name={activeLink?.name} />;
+      case "/psychosocial-recovery-coach":
+        return <Prc name={activeLink?.name} />;
       default:
         return <Sta name={activeLink?.name} />;
     }

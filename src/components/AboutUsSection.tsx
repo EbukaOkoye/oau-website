@@ -15,7 +15,7 @@ export default function AboutUsSection() {
         <p className="text-gray-500 font-medium text-base lg:text-lg leading-9 mt-12">
           Person-Centred approach is the base of our service, our focus is on
           the person and what they can do, not their condition or disability. We
-          believe that Support should focus on achieving the person’s goals and
+          believe that support should focus on achieving the person’s goals and
           aspirations and must be customised to meet their needs and personal
           circumstances.
         </p>

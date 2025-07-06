@@ -117,7 +117,7 @@ export default function Careers() {
       <JoinSunflower />
       <CareersOffers />
       <CurrentVacancies />
-      <div className="py-10 px-4 mt-6">
+      <div className="py-10 px-4 mt-6" id="career-form">
         <h1 className="text-gray-500 text-xl lg:text-3xl font-bold text-center mb-6">
           Expression of Interest
         </h1>
@@ -236,6 +236,7 @@ export default function Careers() {
         </form>
       </div>
       <Footer
+        link="/contact"
         icon={<CalendarCheck className="text-main-purple" />}
         topText="Come and meet us"
       />
