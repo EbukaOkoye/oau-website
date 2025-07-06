@@ -13,7 +13,7 @@ export default function AboutUs() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={images.about_image}
+          src={images.about_img}
           alt="About us background"
           fill
           className="object-cover object-center brightness-75"
@@ -56,11 +56,13 @@ export default function AboutUs() {
       </div>
       <div className="pt-16 px-4 md:w-9/12 mx-auto mt-14">
         <p className="text-gray-500 text-lg lg:text-xl font-medium text-center">
-          <b className="text-main-purple">Sunflower Care is a Registered NDIS Service Provider</b> and is one
-          of the fastest-growing disability-care facilities available here in
-          South Australia. Our Participants have the opportunity to live an
-          enriched, and fulfilling life in communities of their choice. We are
-          highly committed to being inclusive of people with differing
+          <b className="text-main-purple">
+            Sunflower Care is a Registered NDIS Service Provider
+          </b>{" "}
+          and is one of the fastest-growing disability-care facilities available
+          here in South Australia. Our Participants have the opportunity to live
+          an enriched, and fulfilling life in communities of their choice. We
+          are highly committed to being inclusive of people with differing
           backgrounds and are constantly tailoring our services to reach diverse
           social groups.
         </p>
@@ -143,7 +145,11 @@ export default function AboutUs() {
               }`}
             />
             <div className="my-auto">
-              <h3 className={`text-xl mb-1 font-bold lg:text-4xl text-center text-main-purple ${id === 2 && 'lg:mt-6'}`}>
+              <h3
+                className={`text-xl mb-1 font-bold lg:text-4xl text-center text-main-purple ${
+                  id === 2 && "lg:mt-6"
+                }`}
+              >
                 {_lists.title}
               </h3>
               <div className="w-16 h-1 bg-main-purple mx-auto" />

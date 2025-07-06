@@ -37,6 +37,12 @@ import sil from "@/assets/sil.jpg";
 import sta from "@/assets/sta.jpg";
 import dls from "@/assets/dls.jpg";
 import adpa from "@/assets/adpa.jpg";
+import cp from "@/assets/cp.jpg";
+import sc from "@/assets/sc.jpg";
+import cn from "@/assets/cn.jpg";
+import ht from "@/assets/ht.jpg";
+import disability_one from "@/assets/disability_one.jpeg";
+import disability_two from "@/assets/disability_two.jpg";
 
 export const images = {
   holaLogo,
@@ -78,6 +84,12 @@ export const images = {
   sta,
   dls,
   adpa,
+  cp,
+  sc,
+  cn,
+  ht,
+  disability_one,
+  disability_two,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };

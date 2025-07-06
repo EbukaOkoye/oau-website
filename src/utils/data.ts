@@ -62,19 +62,19 @@ export const subLinks = [
   },
   {
     name: "Community Participation",
-    link: "/",
+    link: "/community-participation",
   },
   {
     name: "Support Coordination",
-    link: "/",
+    link: "/support-coordination",
   },
   {
     name: "Community Nursing",
-    link: "/",
+    link: "/community-nursing",
   },
   {
     name: "Household Tasks",
-    link: "/",
+    link: "/household-tasks",
   },
   {
     name: "Psychosocial Recovery Coach",
@@ -82,11 +82,7 @@ export const subLinks = [
   },
 ];
 
-export const heroImages = [
-  images.home_hero,
-  images.home_hero_two,
-  images.home_hero_three,
-];
+export const heroImages = [images.home_hero, images.about_img, images.sc];
 
 export const holaSupportList = [
   {
@@ -126,8 +122,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Transitioning to a new stage of life is daunting for anyone, and we understand that it can be even harder if you have a disability. We at Sunflower Care excel at supporting NDIS participants through life's transitions and help...",
-    mainImage: images.thumbnail_one.src,
-    thumbnail: images.thumbnail_one.src,
+    mainImage: images.sc.src,
+    thumbnail: images.sc.src,
   },
   {
     id: "daily-life",
@@ -135,8 +131,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Assistance with daily personal activities, including showering, dressing, and meal preparation, to help you live independently.",
-    mainImage: images.thumbnail_two.src,
-    thumbnail: images.thumbnail_two.src,
+    mainImage: images.dls.src,
+    thumbnail: images.dls.src,
   },
   {
     id: "community-access",
@@ -144,8 +140,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Support to participate in community activities, social events, and recreational programs, fostering inclusion and connection.",
-    mainImage: images.thumbnail_three.src,
-    thumbnail: images.thumbnail_three.src,
+    mainImage: images.cp.src,
+    thumbnail: images.cp.src,
   },
   {
     id: "therapy",
@@ -153,8 +149,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Access to various therapies like occupational therapy, physiotherapy, and speech pathology to improve functional abilities.",
-    mainImage: images.thumbnail_four.src,
-    thumbnail: images.thumbnail_four.src,
+    mainImage: images.adpa.src,
+    thumbnail: images.adpa.src,
   },
   {
     id: "employment",
@@ -171,8 +167,8 @@ export const services = [
     category: "NDIS Services",
     description:
       "Short-term care options to provide a break for carers, ensuring participants receive continuous support in a safe environment.",
-    mainImage: images.thumbnail_six.src,
-    thumbnail: images.thumbnail_six.src,
+    mainImage: images.sil.src,
+    thumbnail: images.sil.src,
   },
 ];
 
@@ -721,4 +717,57 @@ export const servicesInclude = [
   "Assistance with appointments",
   "Developing your hobbies and interests",
   "Using aids and appliances, hearing and communication devices;",
+];
+
+export const communityActivities = [
+  "Participating in volunteer activities",
+  "Attending personal development courses",
+  "Attending community events",
+  "Visiting a local library",
+  "Assistance with using public transport",
+  "Joining a social group",
+  "Attending sporting events",
+  "Joining a Gym",
+  "Making new friends and maintaining friendship",
+  "Movies / Music concerts",
+  "Holidays",
+  "Joining a group ex: Dance, Arts and Crafts.",
+];
+
+export const supportCoordinator = [
+  "Support the participant to understand and implement the funded supports in their plan and link them to community, mainstream and other government services.",
+  "Focus on supporting you to build skills and direct your life as well as connect you to providers.",
+  "Assist to negotiate with providers about what they will offer you and how much it will cost out of the approved plan.",
+  "Ensure service agreements and service bookings are completed.",
+  "Assist to build your ability to exercise choice and control, to coordinate supports and access local community.",
+  "Assist Participants in planning ahead to prepare for Plan review meetings.",
+  "Assist the participant to ‘optimise’ their plan ensuring that they qre getting the most out of funded supports.",
+];
+
+export const supportServices = [
+  "Assist you to understand your NDIS plan and funding",
+  "To provide information, advice and support when decisions are to be made",
+  "Help you monitor the progress and outcomes of your goals",
+  "Guide you on how to access the NDIS portal so that you can monitor how your funds are spent",
+  "Help you to prepare for your next NDIS review meeting",
+];
+
+export const nursingPlans = [
+  "Development of Care Plans",
+  "Diabetes management",
+  "Community Participation",
+  "Medication administration/supervision",
+  "General nursing care",
+  "Dementia management",
+  "Overnight nursing care",
+  "Catheter care",
+  "Continence care and management",
+  "Respiratory support",
+  "Stoma care",
+  "General Care after admission to hospital",
+  "Wound management",
+  "Assessment & Ongoing Professional Support",
+  "Case Management",
+  "Palliative support",
+  "Education for clients and support networks etc.",
 ];

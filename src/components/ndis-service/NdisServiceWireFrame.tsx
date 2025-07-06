@@ -6,6 +6,10 @@ import { CircleArrow } from "@/utils/icons";
 import Sta from "./Sta";
 import Dls from "./Dls";
 import Paa from "./Paa";
+import Cp from "./Cp";
+import Sc from "./Sc";
+import Cn from "./Cn";
+import Ht from "./Ht";
 
 export default function NdisServiceWireFrame() {
   const router = useRouter();
@@ -23,6 +27,14 @@ export default function NdisServiceWireFrame() {
         return <Dls name={activeLink?.name} />;
       case "/assistance-with-daily-personal-activities":
         return <Paa name={activeLink?.name} />;
+      case "/community-participation":
+        return <Cp name={activeLink?.name} />;
+      case "/support-coordination":
+        return <Sc name={activeLink?.name} />;
+      case "/community-nursing":
+        return <Cn name={activeLink?.name} />;
+      case "/household-tasks":
+        return <Ht name={activeLink?.name} />;
       default:
         return <Sta name={activeLink?.name} />;
     }

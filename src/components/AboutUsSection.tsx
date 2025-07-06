@@ -23,7 +23,7 @@ export default function AboutUsSection() {
       <div className="">
         <div className="w-72 h-72 lg:w-[24rem] lg:h-[24rem] mb-8 relative left-1/2 -translate-x-1/2 bg-main-purple opacity-80 rounded-full">
           <Image
-            src={images.thumbnail_two}
+            src={images.cp}
             alt="Team High Five"
             fill
             className="object-cover rounded-full scale-pulse"
