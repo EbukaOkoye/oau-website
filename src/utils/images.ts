@@ -43,6 +43,10 @@ import cn from "@/assets/cn.jpg";
 import ht from "@/assets/ht.jpg";
 import disability_one from "@/assets/disability_one.jpeg";
 import disability_two from "@/assets/disability_two.jpg";
+import rhdp from "@/assets/rhdp.jpg";
+import rhdp_img from "@/assets/rhdp_img.jpg";
+import referral from "@/assets/referral.jpg";
+import referral_vector from "@/assets/referal_vector.svg";
 
 export const images = {
   holaLogo,
@@ -90,6 +94,10 @@ export const images = {
   ht,
   disability_one,
   disability_two,
+  rhdp,
+  rhdp_img,
+  referral,
+  referral_vector,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };

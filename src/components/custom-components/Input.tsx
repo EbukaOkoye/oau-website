@@ -10,6 +10,7 @@ export default function Input({
   accept,
   className,
   divClassName,
+  required,
 }: InputProps) {
   return (
     <div className={`p-2 my-4 ${divClassName}`}>
@@ -23,6 +24,7 @@ export default function Input({
         placeholder={placeholder}
         name={name}
         accept={accept}
+        required={required}
         className={`w-full border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none ${className}`}
       />
     </div>

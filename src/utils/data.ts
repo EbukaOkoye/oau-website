@@ -41,6 +41,10 @@ export const navbarLinks = [
     name: "CAREERS",
     link: "/careers",
   },
+  {
+    name: "NDIS REFERRAL",
+    link: "/referral",
+  },
 ];
 
 export const subLinks = [
@@ -230,10 +234,10 @@ export const approachList = [
 ];
 
 export const usefulLinks = [
-  // {
-  //   label: "RHDP",
-  //   href: "/",
-  // },
+  {
+    label: "RHDP",
+    href: "/rhdp",
+  },
   {
     label: "Start Career",
     href: "/careers",
@@ -242,10 +246,10 @@ export const usefulLinks = [
     label: "What is NDIS",
     href: "/support-coordination",
   },
-  // {
-  //   label: "Refer Someone",
-  //   href: "/",
-  // },
+  {
+    label: "Refer Someone",
+    href: "/referral",
+  },
 ];
 
 export const socialLinks = [
@@ -813,4 +817,20 @@ export const recoveryServices = [
   "Documentation and reporting",
   "Recovery goals",
   "Fund utilisation",
+];
+
+export const rhdpList = [
+  "Collaborates and manages the process of discharge and transitioning back into the community.",
+  "Sources suitable Medium-Term Accommodation and provides around the clock care from a team of trained support workers funded by the NDIS",
+  "Collaborates with our Specialist Support Coordinators Homes team to find new ‘forever homes’",
+  "Partners with other professions and allied health teams to assist participants with their NDIS plans and funding requirements.",
+  "Within a Multidisplinary team work to develop person-centred support plans that meet the needs of each individual.",
+  "Ensures individual goals are captured and monitored within a person’s support plan",
+];
+
+export const rhdpSupport = [
+  "Applying for a rental property",
+  "Meeting your tenancy obligations",
+  "Getting home modifications and quote",
+  "Accessing SDA accommodation or support coordination",
 ];

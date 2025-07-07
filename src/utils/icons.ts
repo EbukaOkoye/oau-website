@@ -17,6 +17,7 @@ import {
   FaPlus,
   FaMinus,
   FaCalendarCheck,
+  FaAward,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -45,6 +46,7 @@ export const ThumbsUp = FaThumbsUp;
 export const Plus = FaPlus;
 export const Minus = FaMinus;
 export const CalendarCheck = FaCalendarCheck;
+export const Award = FaAward;
 export const Email = MdEmail;
 export const Send = IoIosSend;
 export const Time = IoTimeSharp;

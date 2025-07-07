@@ -27,4 +27,5 @@ interface InputProps {
   name: string;
   accept?: string;
   divClassName?: string;
+  required?: boolean;
 }
