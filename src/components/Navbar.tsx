@@ -20,7 +20,7 @@ import {
 } from "@material-tailwind/react";
 
 export default function Navbar() {
-  // const [open, setOpen] = useState(false);
+  const [openSubMenu, setOpenSubMenu] = useState(false);
   const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
   const route = useRouter();
@@ -161,27 +161,50 @@ export default function Navbar() {
               </a>
             ))}
           </div>
+          {/* Mobile NDIS Services dropdown */}
           <div className="flex flex-col">
-            <span className="text-white font-bold text-sm mb-1">
+            <button
+              onClick={() => setOpenSubMenu(!openSubMenu)}
+              className="flex items-center justify-between text-white font-medium text-sm my-2.5"
+            >
               NDIS SERVICES
-            </span>
-            <div className="pl-4 space-y-1">
-              {subLinks.map((item) => (
-                <p
-                  key={item.name}
-                  className={`text-white text-sm hover:text-gray-500 cursor-pointer ${
-                    item.link === pathname ? "!text-gray-300" : "text-white"
-                  }`}
-                  onClick={() => {
-                    route.push(item.link);
-                    // Close the collapse after clicking an item
-                    setOpenNav(false);
-                  }}
-                >
-                  {item.name}
-                </p>
-              ))}
-            </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`h-4 w-4 transition-transform ${
+                  openSubMenu ? "rotate-180" : ""
+                }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <Collapse open={openSubMenu}>
+              <div className="pl-4 space-y-1">
+                {subLinks.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.link}
+                    onClick={() => {
+                      setOpenNav(false);
+                      setOpenSubMenu(false);
+                    }}
+                    className={`block py-1 text-white text-sm hover:text-gray-500 ${
+                      item.link === pathname ? "!text-gray-300" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </Collapse>
           </div>
         </Collapse>
       </Nav>

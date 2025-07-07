@@ -51,9 +51,9 @@ export default function NdisServiceWireFrame() {
         </h2>
         <div className="w-32 h-1 bg-main-purple mx-auto mt-2" />
       </div>
-      <div className="grid gap-4 lg:grid-cols-3 px-4 mt-24">
-        <section className="col-span-1 p-4">
-          <div className="rounded-xl border border-main-purple p-3 bg-[#f9f9f9] hover:shadow-2xl !h-full">
+      <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 px-4 mt-24">
+        <section className="lg:col-span-1 p-4">
+          <div className="rounded-xl border flex flex-wrap gap-3 lg:grid border-main-purple p-3 bg-[#f9f9f9] hover:shadow-2xl !h-full">
             {subLinks.map((_links) => (
               <div
                 key={_links.name}

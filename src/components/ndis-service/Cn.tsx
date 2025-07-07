@@ -11,7 +11,7 @@ export default function Cn({ name }: { name: string | undefined }) {
       <Image
         src={images.cn}
         alt="supported-living"
-        className="lg:w-9/12 lg:mx-auto mt-8 rounded-tr-2xl rounded-tl-2xl border-2 border-main-purple border-b-0"
+        className="w-9/12 mx-auto mt-8 rounded-tr-2xl rounded-tl-2xl border-2 border-main-purple border-b-0"
       />
       <div className="rounded-2xl p-2 border-2 border-main-purple lg:w-[95%] lg:mx-auto">
         <h4 className="rounded-md px-8 py-2 bg-main-purple w-fit mx-auto text-white text-xl lg:text-2xl">
