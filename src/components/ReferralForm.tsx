@@ -160,7 +160,7 @@ export default function ReferralForm() {
         </Step>
       </Stepper>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="!mt-12">
         {step === 1 && (
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 !mt-12">
             <Input
@@ -170,6 +170,7 @@ export default function ReferralForm() {
               required={true}
               value={formData.pName}
               placeholder="Participant Name"
+              className="!rounded-none"
               onChange={handleChange}
             />
             <Input
@@ -178,6 +179,7 @@ export default function ReferralForm() {
               name="pAddress"
               value={formData.pAddress}
               placeholder="Participant Address"
+              className="!rounded-none"
               onChange={handleChange}
             />
             <Input
@@ -186,6 +188,7 @@ export default function ReferralForm() {
               name="pPhone"
               required
               placeholder="Mobile/Landline"
+              className="!rounded-none"
               value={formData.pPhone}
               onChange={handleChange}
             />
@@ -194,6 +197,7 @@ export default function ReferralForm() {
               type="text"
               name="ndisNumber"
               placeholder="NDIS Number"
+              className="!rounded-none"
               required
               value={formData.ndisNumber}
               onChange={handleChange}
@@ -207,7 +211,7 @@ export default function ReferralForm() {
                 required
                 value={formData.mgtType}
                 onChange={handleChange}
-                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none`}
+                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-none bg-white text-black p-3 focus:outline-none`}
               >
                 <option value="" disabled>
                   Select Plan Management Type
@@ -226,7 +230,7 @@ export default function ReferralForm() {
                 required
                 value={formData.requiredService}
                 onChange={handleChange}
-                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none`}
+                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-none bg-white text-black p-3 focus:outline-none`}
               >
                 <option value="" disabled>
                   Select Required Service
@@ -251,7 +255,7 @@ export default function ReferralForm() {
                 required
                 value={formData.consent}
                 onChange={handleChange}
-                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none`}
+                className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-none bg-white text-black p-3 focus:outline-none`}
               >
                 <option value="" disabled>
                   Choose Consent
@@ -274,6 +278,7 @@ export default function ReferralForm() {
                 required={true}
                 value={formData.name}
                 placeholder="Your Name"
+                className="!rounded-none"
                 onChange={handleChange}
               />
               <Input
@@ -283,6 +288,7 @@ export default function ReferralForm() {
                 required={true}
                 value={formData.orgName}
                 placeholder="Organization Name"
+                className="!rounded-none"
                 onChange={handleChange}
               />
               <Input
@@ -292,6 +298,7 @@ export default function ReferralForm() {
                 required={true}
                 value={formData.email}
                 placeholder="Your Email Address"
+                className="!rounded-none"
                 onChange={handleChange}
               />
               <Input
@@ -301,6 +308,7 @@ export default function ReferralForm() {
                 required={true}
                 value={formData.phone}
                 placeholder="Mobile/Landline"
+                className="!rounded-none"
                 onChange={handleChange}
               />
               <div className="p-2 my-4">
@@ -312,7 +320,7 @@ export default function ReferralForm() {
                   required
                   value={formData.callBack}
                   onChange={handleChange}
-                  className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none`}
+                  className={`flex justify-end space-y-1.5 w-full border-r-0 border-l-0 !border-t-0 border-b-2 border-b-main-purple rounded-none bg-white text-black p-3 focus:outline-none`}
                 >
                   <option value="" disabled>
                     Select Callback Request
@@ -328,6 +336,7 @@ export default function ReferralForm() {
                 required={true}
                 value={formData.relationship}
                 placeholder="Family/Friend/Professional"
+                className="!rounded-none"
                 onChange={handleChange}
               />
               <div className="p-2 my-4 col-span-2">
@@ -341,7 +350,7 @@ export default function ReferralForm() {
                   placeholder="Message"
                   // cols={5}
                   // rows={10}
-                  className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-purple col-span-2 rounded-2xl bg-white"
+                  className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-purple col-span-2 rounded-none bg-white"
                 />
               </div>
             </div>
