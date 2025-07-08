@@ -122,7 +122,7 @@ export default function ReferralForm() {
       </Typography>
 
       <Stepper activeStep={step - 1} className="mb-10">
-        <Step onClick={() => setStep(1)}>
+        <Step>
           <div
             className={`${
               step === 1
@@ -142,7 +142,7 @@ export default function ReferralForm() {
             </p>
           </div>
         </Step>
-        <Step onClick={() => setStep(2)} className="!bg-transparent">
+        <Step className="!bg-transparent">
           <div
             className={`w-5 h-5 p-3 flex items-center justify-center rounded-full bg-white border border-gray-500 text-gray-500 ${
               step === 2 && "!border-main-purple !text-main-purple"
@@ -270,7 +270,7 @@ export default function ReferralForm() {
         {step === 2 && (
           <div className="py-8">
             {/* Add fields for step 2 here */}
-            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 !mt-12">
+            <div className="flex flex-col gap-4 md:grid md:grid-cols-2 !mt-12">
               <Input
                 type="text"
                 name="name"
