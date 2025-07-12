@@ -53,7 +53,7 @@ export default function NdisServiceWireFrame() {
         </h2>
         <div className="w-32 h-1 bg-main-purple mx-auto mt-2" />
       </div>
-      <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 px-4 mt-24">
+      <div className="grid gap-4 grid-cols-1 !lg:grid-cols-3 px-4 mt-24">
         <section className="hidden lg:col-span-1 p-4">
           <div className="rounded-xl border flex flex-wrap gap-3 lg:grid border-main-purple p-3 bg-[#f9f9f9] hover:shadow-2xl !h-full">
             {subLinks.map((_links) => (
@@ -90,7 +90,7 @@ export default function NdisServiceWireFrame() {
 
           {/* Sidebar - shown differently on mobile */}
           <section
-            className={`lg:col-span-1 p-4 ${
+            className={`!lg:col-span-1 p-4 ${
               showMobileMenu
                 ? "fixed left-0 top-0 !h-full w-3/4 bg-white z-50 shadow-xl overflow-y-auto"
                 : "hidden lg:block"
@@ -114,7 +114,7 @@ export default function NdisServiceWireFrame() {
               ))}
             </div>
           </section>
-          <div className="col-span-2">{renderContentForPath(pathname)}</div>
+          <div className="lg:!col-span-2">{renderContentForPath(pathname)}</div>
         </div>
       </div>
     </section>
