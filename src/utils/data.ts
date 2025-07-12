@@ -51,38 +51,47 @@ export const subLinks = [
   {
     name: "Supported Independent Living",
     link: "/supported-independent-living",
+    // id: "sil",
   },
   {
     name: "Short Term Accommodation",
     link: "/short-term-accomodation",
+    // id: "sta",
   },
   {
     name: "Life Skills Assistance",
     link: "/assistance-with-daily-living-life-skills",
+    // id: "lsa",
   },
   {
     name: "Personal Activities Assistance",
     link: "/assistance-with-daily-personal-activities",
+    // id: "pas",
   },
   {
     name: "Community Participation",
     link: "/community-participation",
+    // id: "sp",
   },
   {
     name: "Support Coordination",
     link: "/support-coordination",
+    // id: "sc",
   },
   {
     name: "Community Nursing",
     link: "/community-nursing",
+    // id: "cn",
   },
   {
     name: "Household Tasks",
     link: "/household-tasks",
+    // id: "ht",
   },
   {
     name: "Psychosocial Recovery Coach",
     link: "/psychosocial-recovery-coach",
+    // id: "prc",
   },
 ];
 

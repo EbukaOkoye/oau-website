@@ -50,13 +50,19 @@ export default function AssistanceWithDailyLivingLifeSkills() {
     <section className="">
       <section className="grid lg:grid-cols-2 gap-8 justify-between py-10 px-4 mt-14 bg-light-grey ">
         <div className="px-4">
-          <div className="flex flex-col justify-center px-6 pt-6">
+          <div
+            data-aos="slide-up"
+            className="flex flex-col justify-center px-6 pt-6"
+          >
             <h1 className="text-2xl lg:text-4xl font-bold mb-2 text-main-purple">
               Contact us
             </h1>
             <div className="w-24 h-1 bg-main-purple mb-4" />
           </div>
-          <div className="border-[3px] hover:border-main-purple hover:shadow-2xl rounded-2xl mt-4">
+          <div
+            data-aos="slide-right"
+            className="border-[3px] hover:border-main-purple hover:shadow-2xl rounded-2xl mt-4"
+          >
             <form
               className="grid grid-cols-2 justify-between gap-4 p-4"
               onSubmit={handleSubmit}

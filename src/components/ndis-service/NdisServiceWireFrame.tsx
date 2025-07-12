@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { subLinks } from "@/utils/data";
 import Sil from "./Sil";
@@ -11,13 +12,16 @@ import Sc from "./Sc";
 import Cn from "./Cn";
 import Ht from "./Ht";
 import Prc from "./Prc";
-import { useState } from "react";
 
 export default function NdisServiceWireFrame() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const activeLink = subLinks.find((link) => link.link === pathname);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
 
   // Map the path to the appropriate component
   const renderContentForPath = (path: string) => {
@@ -46,7 +50,7 @@ export default function NdisServiceWireFrame() {
   };
 
   return (
-    <section className="mt-40">
+    <section className="mt-1 lg:mt-40">
       <div className="h-44 rounded-bl-[100%] rounded-br-[30%] p-4 bg-light-grey">
         <h2 className="text-main-pink text-2xl lg:text-4xl text-center font-semibold">
           NDIS Services
@@ -59,7 +63,7 @@ export default function NdisServiceWireFrame() {
             {subLinks.map((_links) => (
               <div
                 key={_links.name}
-                onClick={() => router.push(_links.link)}
+                onClick={() => router.push(`${_links.link}`)}
                 className="rounded-xl border border-main-purple p-4 flex items-center justify-between gap-2 my-4 cursor-pointer hover:border-r-8 hover:border-r-main-purple transition-all ease-linear duration-1000"
               >
                 <p className="text-main-purple font-semibold w-fit text-lg lg:text-xl break-after-all">
