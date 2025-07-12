@@ -48,12 +48,9 @@ export default function AssistanceWithDailyLivingLifeSkills() {
 
   return (
     <section className="">
-      <section className="grid lg:grid-cols-2 gap-8 justify-between py-10 px-4 mt-14 bg-light-grey ">
+      <section className="grid lg:grid-cols-2 gap-8 justify-between py-10 px-4 mt-14 bg-light-grey">
         <div className="px-4">
-          <div
-            data-aos="slide-up"
-            className="flex flex-col justify-center px-6 pt-6"
-          >
+          <div className="flex flex-col justify-center px-6 pt-6">
             <h1 className="text-2xl lg:text-4xl font-bold mb-2 text-main-purple">
               Contact us
             </h1>
