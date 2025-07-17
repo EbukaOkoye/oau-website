@@ -75,7 +75,7 @@ export default function Navbar() {
                 {_link.name}
               </Link>
             ))}
-            <Menu placement="bottom-start">
+            <Menu data-cy="services_menu" placement="bottom-start">
               <MenuHandler>
                 <span
                   className={`hover:bg-white hover:text-main-purple !p-4 cursor-pointer ${
@@ -118,10 +118,11 @@ export default function Navbar() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                className="h-6 w-6"
+                className="h-6 w-6 close"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={2}
+                data-cy="close"
               >
                 <path
                   strokeLinecap="round"
@@ -132,10 +133,11 @@ export default function Navbar() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 hamburger"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
+                data-cy="menu"
               >
                 <path
                   strokeLinecap="round"
@@ -146,7 +148,7 @@ export default function Navbar() {
             )}
           </IconButton>
         </div>
-        <Collapse open={openNav}>
+        <Collapse data-cy="mobile_nav" open={openNav}>
           <div className="flex flex-col gap-4 mt-8">
             {navbarLinks.map((_link) => (
               <a
@@ -186,7 +188,7 @@ export default function Navbar() {
               </svg>
             </button>
 
-            <Collapse open={openSubMenu}>
+            <Collapse data-cy="sub_menu" open={openSubMenu}>
               <div className="pl-4 space-y-1">
                 {subLinks.map((item) => (
                   <Link
