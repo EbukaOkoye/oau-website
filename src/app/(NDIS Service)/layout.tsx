@@ -36,12 +36,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
       <Navbar />
-      <NdisServiceWireFrame />
-      {children}
-      <Footer
+      {/* <NdisServiceWireFrame /> */}
+      {/* {children} */}
+      {/* <Footer
         topText="Contact Now"
         icon={<Send className="text-main-purple" />}
-      />
+      /> */}
     </section>
   );
 }

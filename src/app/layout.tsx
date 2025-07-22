@@ -30,9 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
-        <section className="container mx-auto">
+        <section className="xl:container lg:mx-auto">
           <Navbar />
-          {children}
+          {/* {children} */}
         </section>
       </body>
     </html>
