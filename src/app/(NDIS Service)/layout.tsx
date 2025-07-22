@@ -1,8 +1,8 @@
 "use client";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import NdisServiceWireFrame from "@/components/ndis-service/NdisServiceWireFrame";
-import { Send } from "@/utils/icons";
+// import NdisServiceWireFrame from "@/components/ndis-service/NdisServiceWireFrame";
+// import { Send } from "@/utils/icons";
 import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -18,9 +18,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout({}: // children,
+Readonly<{
   children: React.ReactNode;
   rightChildren: React.ReactNode;
 }>) {
