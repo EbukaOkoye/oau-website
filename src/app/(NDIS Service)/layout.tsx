@@ -1,8 +1,8 @@
 "use client";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-// import NdisServiceWireFrame from "@/components/ndis-service/NdisServiceWireFrame";
-// import { Send } from "@/utils/icons";
+import NdisServiceWireFrame from "@/components/ndis-service/NdisServiceWireFrame";
+import { Send } from "@/utils/icons";
 import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -36,12 +36,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
       <Navbar />
-      {/* <NdisServiceWireFrame /> */}
+      <NdisServiceWireFrame />
       {children}
-      {/* <Footer
+      <Footer
         topText="Contact Now"
         icon={<Send className="text-main-purple" />}
-      /> */}
+      />
     </section>
   );
 }
