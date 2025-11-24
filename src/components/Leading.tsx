@@ -10,10 +10,11 @@ import { Typography } from "@material-tailwind/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import ContactForm from "./contactForm";
 
 export default function Leading() {
   return (
-    <section className="py-10 px-4 mt-8">
+    <section className="py-28 px-4 my-14">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center items-center">
         <div className="p-3 lg:col-span-1">
           <Image
@@ -90,7 +91,7 @@ export default function Leading() {
           ))}
         </div>
       </div>
-      <div className="p-3 mt-10 bg-secondary-blue lg:h-72 grid grid-cols-1 lg:gridcols">
+      <div className="p-3 my-14 bg-secondary-blue lg:h-72">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000 }}
@@ -104,7 +105,7 @@ export default function Leading() {
         >
           {accomplishmentCarousel.map((item, indx) => (
             <SwiperSlide key={indx}>
-              <div className="bg-white p-4 rounded-md shadow-md lg:h-[373.7px] flex flex-col">
+              <div className="bg-white p-4 rounded-xl shadow-md lg:h-[373.7px] flex flex-col">
                 <Typography
                   as="h4"
                   className="text-lg lg:text-[26px] text-main-blue font-semibold mb-2 text-center capitalize"
@@ -112,7 +113,7 @@ export default function Leading() {
                   {item.heading}
                 </Typography>
                 {item.icon ? (
-                  <item.icon className="text-main-blue lg:text-[50px] m-auto" />
+                  <item.icon className="text-main-blue lg:text-[70px] m-auto" />
                 ) : item.img ? (
                   <Image
                     src={item.img}
@@ -133,6 +134,7 @@ export default function Leading() {
           ))}
         </Swiper>
       </div>
+      <ContactForm />
     </section>
   );
 }

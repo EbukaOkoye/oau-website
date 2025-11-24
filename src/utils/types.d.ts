@@ -18,7 +18,7 @@ interface CustomButtonProps {
 }
 
 interface InputProps {
-  label: string;
+  label?: string;
   className?: string;
   type: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;

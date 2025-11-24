@@ -652,3 +652,18 @@ export const accomplishmentCarousel = [
     text: 'In politics, OAU was a 2023 gubernatorial candidate in Abia State under the umbrella of Action Alliance (AA) party, advocating for a leadership that\'s transparent, developmental, and accountable to the people of his state'
   },
 ];
+
+export const contactTexts = [
+  {
+    icons: Health,
+    name: 'Compassionate'
+  },
+  {
+    icons: LifeSupport,
+    name: 'Charitable'
+  },
+  {
+    icons: Help,
+    name: 'Socially Concerned'
+  },
+];
