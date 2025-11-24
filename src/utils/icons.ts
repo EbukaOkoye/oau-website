@@ -18,15 +18,21 @@ import {
   FaMinus,
   FaCalendarCheck,
   FaAward,
+  FaFirstAid,
+  FaHandsHelping,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoTimeSharp, IoCloseSharp } from "react-icons/io5";
-import { IoIosSend } from "react-icons/io";
+import { MdEmail, MdHealthAndSafety } from "react-icons/md";
+import { IoTimeSharp, IoCloseSharp, IoTelescope } from "react-icons/io5";
+import { IoIosSend, IoMdSchool } from "react-icons/io";
 import { GiReceiveMoney } from "react-icons/gi";
 import { BsChatDotsFill } from "react-icons/bs";
-import { RiMenu2Fill } from "react-icons/ri";
+import { RiMenu2Fill, RiGovernmentFill } from "react-icons/ri";
+import { GiLifeSupport, GiBulletImpacts, GiLifeTap, GiPayMoney, GiAmbulance, GiTakeMyMoney, GiJourney } from "react-icons/gi";
 
+
+export const Aid = FaFirstAid;
+export const Help = FaHandsHelping;
 export const Phone = FaPhoneAlt;
 export const CircleArrow = FaArrowCircleRight;
 export const CheckCircle = FaCheckCircle;
@@ -54,3 +60,14 @@ export const CloseX = IoCloseSharp;
 export const ReceiveMoney = GiReceiveMoney;
 export const Chat = BsChatDotsFill;
 export const Menu = RiMenu2Fill;
+export const LifeSupport = GiLifeSupport;
+export const Impact = GiBulletImpacts;
+export const LifeTap = GiLifeTap;
+export const School = IoMdSchool;
+export const Health = MdHealthAndSafety;
+export const Economy = GiPayMoney;
+export const Emergency = GiAmbulance;
+export const PovertyAlleviation = GiTakeMyMoney;
+export const Telescope = IoTelescope;
+export const Politics = RiGovernmentFill;
+export const Mission = GiJourney;

@@ -3,9 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
-import { heroImages } from "@/utils/data";
+import { heroImages, heroTexts } from "@/utils/data";
+import { Button, Typography } from "@material-tailwind/react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const route = useRouter();
+
   return (
     <section className="">
       <Swiper
@@ -13,19 +17,38 @@ export default function Hero() {
         autoplay={{ delay: 4000 }}
         className="h-screen w-full"
       >
-        {heroImages.map((_images, id) => (
-          <SwiperSlide key={id}>
-            <div className="h-full w-full">
-              <Image
-                src={_images}
-                alt="Hero Slide 1"
-                layout="fill"
-                objectFit="cover"
-                className="brightness-75"
-              />
-            </div>
-          </SwiperSlide>
-        ))}
+        {heroImages.map((image, id) => {
+          const textData = heroTexts[id];
+
+          return (
+            <SwiperSlide key={id}>
+              <div className="relative h-full w-full">
+                <Image
+                  src={image}
+                  alt={`Hero Slide ${id + 1}`}
+                  className="brightness-50 object-cover w-full h-full"
+                  fill
+                />
+
+                <div className="absolute inset-0 flex items-center ml-2 lg:ml-5 px-4">
+                  <div className="max-w-2xl text-white space-y-4">
+                    <Typography className="text-base lg:text-lg lg:w-[40%] whitespace-pre-line">
+                      {textData.text}
+                    </Typography>
+
+                    <Button
+                      color="white"
+                      onClick={() => route.push(textData.link)}
+                      className="text-black cursor-pointer"
+                    >
+                      Read More
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </section>
   );

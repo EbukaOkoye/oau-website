@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
-import BreadcrumbPill from "@/components/custom-components/BreadcrumbPill";
 import Input from "@/components/custom-components/Input";
 import { bottomContact, contactInfo } from "@/utils/data";
 import { images } from "@/utils/images";
 import Image from "next/image";
 import CustomButton from "@/components/custom-components/Button";
-import { CalendarCheck, Send } from "@/utils/icons";
-import Footer from "@/components/Footer";
+import { Send } from "@/utils/icons";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -55,7 +53,7 @@ export default function Contact() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={images.thumbnail_four}
+          src={images.oau_man}
           alt="About us background"
           fill
           className="object-cover object-center brightness-75"
@@ -81,10 +79,6 @@ export default function Contact() {
         >
           <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
         </svg>
-
-        <div className="absolute bottom-4 left-6 flex items-center gap-4">
-          <BreadcrumbPill currentRoute="Contact us" />
-        </div>
 
         {/* <div className="absolute bottom-4 right-6">
           <Image src={images.hola_heart} alt="Logo" width={50} height={50} />
@@ -152,7 +146,7 @@ export default function Contact() {
       </section>
       <div className="bg-white mt-28 py-8">
         <Image src={images.mail} alt="mail" className="mx-auto" />
-        <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-purple rounded-2xl mt-24">
+        <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-blue rounded-2xl mt-24">
           <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 pt-6">
             <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">
               Message us
@@ -202,7 +196,7 @@ export default function Contact() {
               placeholder="Message"
               cols={5}
               rows={10}
-              className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-purple col-span-2 rounded-2xl bg-white"
+              className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-blue col-span-2 rounded-2xl bg-white"
             />
             <div className="col-span-2 my-5">
               <CustomButton
@@ -216,10 +210,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <Footer
-        icon={<CalendarCheck className="text-main-purple" />}
-        topText="Come and meet us"
-      />
     </section>
   );
 }

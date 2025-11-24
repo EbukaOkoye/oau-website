@@ -4,9 +4,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --main-purple: #FF8200;
-  /* --main-purple: #bf8246; */
-  --main-pink: #FF7900;
+  --main-blue: #3d5a80;
+  --main-purple: #bf8246;
+  --secondary-blue: #118ab2;
+  --main-pink: #cf4591;
   --secondary-pink: #cf4591;
   --icon-pink: #d34692;
   --light-pink: #c1a9b6;
@@ -24,9 +25,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-main-blue: var(--main-blue);
   --color-main-purple: var(--main-purple);
   --color-main-pink: var(--main-pink);
   --color-secondary-pink: var(--secondary-pink);
+  --color-secondary-blue: var(--secondary-blue);
   --color-light-pink: var(--light-pink);
   --color-icon-pink: var(--icon-pink);
   --color-link-blue: var(--link-blue);
@@ -50,7 +53,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .scroll ::-webkit-scrollbar {
@@ -60,7 +63,7 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  @apply !w-10 !h-10 sm:!w-12 sm:!h-12 !flex !items-center !justify-center !rounded-full !bg-white !border-2 !border-main-purple !shadow-md !transition-colors !duration-300;
+  @apply !w-10 !h-10 sm:!w-12 sm:!h-12 !flex !items-center !justify-center !rounded-full !bg-white !border-2 !border-main-blue !shadow-md !transition-colors !duration-300;
   /* !important is used to override Swiper's inline styles */
   top: 50%; /* Position vertically center */
   transform: translateY(-50%); /* Adjust for perfect vertical centering */
@@ -99,6 +102,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 85% !important;
+}
+
+.hero_bg {
+  background-image: linear-gradient(to bottom, #0000005f, #0000005f), url('../assets/about_us_sec.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 55% !important;
 }
 
 

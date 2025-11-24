@@ -1,10 +1,6 @@
-import ExploreNdis from "@/components/ExploreNdis";
 import Footer from "@/components/Footer";
-import HappyCustomers from "@/components/HappyCustomers";
 import Hero from "@/components/Hero";
 import Leading from "@/components/Leading";
-import OurApproach from "@/components/OurApproach";
-import OurServices from "@/components/OurServices";
 import { CircleArrow } from "@/utils/icons";
 
 export default function Home() {
@@ -12,10 +8,6 @@ export default function Home() {
     <section className="bg-white">
       <Hero />
       <Leading />
-      <ExploreNdis />
-      <OurServices />
-      <HappyCustomers />
-      <OurApproach />
       <Footer
         link="/support-coordination"
         topText="Support Coordination"

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { contactInfo, socialLinks, usefulLinks } from "@/utils/data";
-import { RightArrow } from "@/utils/icons";
+import { contactInfo, socialLinks } from "@/utils/data";
 import Link from "next/link";
 import Image from "next/image";
 import { images } from "@/utils/images";
@@ -25,11 +24,8 @@ export default function Footer({
       <div className="bg-gradient-to-r from-main-purple to-main-pink md:w-10/12 translate-y-20 mx-auto rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
         <div className="flex flex-col">
           <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1">
-            NDIS Support Coordination
+            The OAU Foundation
           </h3>
-          <p className="text-base sm:text-lg font-normal opacity-90">
-            Understand Your NDIS plan & funding
-          </p>
         </div>
         <CustomButton
           onClick={() => router.push(link ?? "/")}
@@ -42,32 +38,11 @@ export default function Footer({
 
       {/* Middle Section: Main Footer Content */}
       <div className="bg-white py-12 md:py-16 px-4 mt-8">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 text-center md:text-left">
-          {/* Column 1: USEFUL LINKS */}
-          <div>
-            <h4 className="font-semibold text-lg text-main-pink mb-2">
-              USEFUL LINKS
-            </h4>
-            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
-            <ul className="space-y-2 mt-5">
-              {usefulLinks.map((link, index) => (
-                <li key={index} className="my-3">
-                  <Link
-                    href={link.href}
-                    className="text-gray-500 font-normal hover:text-hola-purple transition duration-200 flex items-center gap-3 justify-center md:justify-start"
-                  >
-                    <RightArrow className="text-main-pink" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 !justify-between gap-8 lg:gap-4 text-center md:text-left">
           {/* Column 2: HOLA SUPPORT */}
           <div>
             <h4 className="font-semibold text-lg text-main-pink mb-2">
-              Sunflower Care Support
+              THE OAU FOUNDATION
             </h4>
             <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
@@ -84,45 +59,8 @@ export default function Footer({
             </div>
           </div>
 
-          {/* Column 3: WE LOVE NDIS */}
-          <div>
-            <h4 className="font-semibold text-lg text-main-pink mb-2">
-              WE LOVE NDIS
-            </h4>
-            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
-            <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
-              {/* Replace with your actual logo image if available */}
-              <Image
-                src={images.sunflower_logo}
-                alt="We Love NDIS"
-                width={100}
-                className="mb-2"
-              />
-              <div className="flex gap-2 mt-2">
-                {/* Placeholder for flags/icons */}
-                <Image src={images.care_support} alt="Country Flags" />
-              </div>
-            </div>
-          </div>
-
-          {/* Column 4: APPOINTMENT */}
-          <div>
-            <h4 className="font-semibold text-lg text-main-pink mb-2">
-              APPOINTMENT
-            </h4>
-            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
-            <div className="flex flex-col items-center md:items-start text-black font-normal mt-5">
-              {/* <PersonBubbleIcon /> Icon for NDIS Experts */}
-              <p className="font-semibold text-gray-500 mt-2">NDIS Experts</p>
-              <p className="text-gray-500">Locally Owned</p>
-              {/* <CustomButton className="mt-4 bg-white border-2 border-main-pink text-main-purple font-semibold py-2 px-4 rounded-full shadow-md hover:bg-main-pink hover:text-white hover:border-none transition duration-700 ease-linear">
-                Book Appointment
-              </CustomButton> */}
-            </div>
-          </div>
-
           {/* Column 5: CONTACT */}
-          <div>
+          <div className="w-fit">
             <h4 className="font-semibold text-lg text-main-pink mb-2">
               CONTACT
             </h4>

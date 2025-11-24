@@ -1,18 +1,29 @@
 import {
+  Aid,
   Chat,
   CheckCircle,
   ClipboardCheck,
   Copy,
-  DoubleRight,
+  Economy,
   Email,
+  Emergency,
   Facebook,
+  Health,
+  Help,
+  LifeSupport,
+  LifeTap,
   LinkedinIn,
   Location,
+  Mission,
   Phone,
   Pinterest,
+  Politics,
+  PovertyAlleviation,
   ReceiveMoney,
+  School,
   Skype,
   Telegram,
+  Telescope,
   ThumbsUp,
   Time,
   Twitter,
@@ -26,79 +37,33 @@ export const navbarLinks = [
     link: "/",
   },
   {
-    name: "ABOUT US",
-    link: "/about-us",
+    name: "BIO",
+    link: "/bio",
   },
   {
-    name: "FAQS",
-    link: "/faqs",
+    name: "THE OAU FOUNDATION",
+    link: "/oau-foundation",
   },
   {
-    name: "CONTACT",
+    name: "CONTACT US",
     link: "/contact",
-  },
-  {
-    name: "CAREERS",
-    link: "/careers",
-  },
-  {
-    name: "NDIS REFERRAL",
-    link: "/referral",
-  },
-];
-
-export const subLinks = [
-  {
-    name: "Supported Independent Living",
-    link: "/supported-independent-living",
-    // id: "sil",
-  },
-  {
-    name: "Short Term Accommodation",
-    link: "/short-term-accomodation",
-    // id: "sta",
-  },
-  {
-    name: "Life Skills Assistance",
-    link: "/assistance-with-daily-living-life-skills",
-    // id: "lsa",
-  },
-  {
-    name: "Personal Activities Assistance",
-    link: "/assistance-with-daily-personal-activities",
-    // id: "pas",
-  },
-  {
-    name: "Community Participation",
-    link: "/community-participation",
-    // id: "sp",
-  },
-  {
-    name: "Support Coordination",
-    link: "/support-coordination",
-    // id: "sc",
-  },
-  {
-    name: "Community Nursing",
-    link: "/community-nursing",
-    // id: "cn",
-  },
-  {
-    name: "Household Tasks",
-    link: "/household-tasks",
-    // id: "ht",
-  },
-  {
-    name: "Psychosocial Recovery Coach",
-    link: "/psychosocial-recovery-coach",
-    // id: "prc",
   },
 ];
 
 export const heroImages = [
-  images.home_hero,
-  images.disability_one,
-  images.home_hero_two,
+  images.landscape_oau,
+  images.portrait_oau,
+];
+
+export const heroTexts = [
+  {
+    text: 'Onyekwere Akym Uche is a Nigerian entrepreneur, humanitarian, and politician, primarily known for his involvement in Abia State politics. \n \n He is the founder of THE OAU FOUNDATION, a humanitarian platform that works to uplift communities and empower individuals.',
+    link: '/bio'
+  },
+  {
+    text: 'The OAU Foundation is a humanitarian non-governmental organization (NGO) dedicated to improving the lives of individuals and communities in need. \n \n Our foundation works tirelessly to promote sustainable development, alleviate poverty, and provide humanitarian assistance to vulnerable populations.',
+    link: '/oau-foundation'
+  },
 ];
 
 export const holaSupportList = [
@@ -132,132 +97,63 @@ export const holaSupportList = [
   },
 ];
 
-export const services = [
-  {
-    id: "support-coordination",
-    title: "Support Coordination",
-    category: "NDIS Services",
-    description:
-      "Transitioning to a new stage of life is daunting for anyone, and we understand that it can be even harder if you have a disability. We at Sunflower Care excel at supporting NDIS participants through life's transitions and help...",
-    mainImage: images.sc.src,
-    thumbnail: images.sc.src,
-    link: "/support-coordination",
-  },
-  {
-    id: "daily-life",
-    title: "Daily Life",
-    category: "NDIS Services",
-    description:
-      "Assistance with daily personal activities, including showering, dressing, and meal preparation, to help you live independently.",
-    mainImage: images.dls.src,
-    thumbnail: images.dls.src,
-    link: "/assistance-with-daily-living-life-skills",
-  },
-  {
-    id: "community-access",
-    title: "Community Access",
-    category: "NDIS Services",
-    description:
-      "Support to participate in community activities, social events, and recreational programs, fostering inclusion and connection.",
-    mainImage: images.cp.src,
-    thumbnail: images.cp.src,
-    link: "/community-participation",
-  },
-  {
-    id: "therapy",
-    title: "Therapy & Allied Health",
-    category: "NDIS Services",
-    description:
-      "Access to various therapies like occupational therapy, physiotherapy, and speech pathology to improve functional abilities.",
-    mainImage: images.adpa.src,
-    thumbnail: images.adpa.src,
-    link: "/community-nursing",
-  },
-  {
-    id: "employment",
-    title: "Employment Support",
-    category: "NDIS Services",
-    description:
-      "Guidance and support to find and maintain employment, including job coaching, resume building, and workplace assistance.",
-    mainImage: images.thumbnail_five.src,
-    thumbnail: images.thumbnail_five.src,
-    link: "/community-participation",
-  },
-  {
-    id: "respite",
-    title: "Respite Care",
-    category: "NDIS Services",
-    description:
-      "Short-term care options to provide a break for carers, ensuring participants receive continuous support in a safe environment.",
-    mainImage: images.sil.src,
-    thumbnail: images.sil.src,
-    link: "/short-term-accomodation",
-  },
-];
-
 export const happyTestimony = [
   {
     testimony:
-      "I was happy with the NDIS plan I received but I was overwhelmed with the process of organising my supports. My friend suggested to contact Sunflower Care, in a couple of days I was at so easy as all my support needs were organised with my choice. Quite happy with the services I have been receiving from Sunflower Care.",
+      `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
+            lives, uplifting communities, and setting a standard of excellence
+            has made this day more than a personal milestone—it is a celebration
+            for everyone blessed by your impact. May the coming years unveil new
+            heights of fulfillment, influence, and joy,” High Chief Uche is more
+            than just a celebrated personality; he is a beacon of hope, a
+            resilient leader, and a man whose dedication to humanity continues
+            to touch countless lives. Through his humanitarian platform, The OAU
+            Foundation, he has uplifted communities, empowered individuals, and
+            set a standard of excellence that speaks volumes of his character.
+            An entrepreneur with a passion for humanitarian service, he has
+            reportedly lived in developed countries and aimed to implement
+            similar developmental changes in Abia State.`,
     pic: images.jacob,
     name: "Jacob",
     county: "Cowandilla, SA",
   },
   {
     testimony:
-      "I am so thankful to Sunflower Care team for assisting me to understand my daughter's NDIS plan, I work full-time work and I was unable to spend much time to organise supports but since I started receiving services from Sunflower Care my daughters is fully utilising her NDIS plan. I highly recommend Sunflower Care and would like to thank everyone in the team for their support and services.",
+    `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
+            lives, uplifting communities, and setting a standard of excellence
+            has made this day more than a personal milestone—it is a celebration
+            for everyone blessed by your impact. May the coming years unveil new
+            heights of fulfillment, influence, and joy,” High Chief Uche is more
+            than just a celebrated personality; he is a beacon of hope, a
+            resilient leader, and a man whose dedication to humanity continues
+            to touch countless lives. Through his humanitarian platform, The OAU
+            Foundation, he has uplifted communities, empowered individuals, and
+            set a standard of excellence that speaks volumes of his character.
+            An entrepreneur with a passion for humanitarian service, he has
+            reportedly lived in developed countries and aimed to implement
+            similar developmental changes in Abia State.`,
     pic: images.cynthia,
     name: "Cynthia",
     county: "Craigmore, SA",
   },
   {
     testimony:
-      " I was supported by my Support Coordinator and staff in my NDIS plan reviews, it really helped me to get the right plan for my required supports. Support Coordinator assisted to draft my goals for the new plan, I was so much in control of my NDIS review meeting. Thank you Sunflower Care.",
+    `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
+            lives, uplifting communities, and setting a standard of excellence
+            has made this day more than a personal milestone—it is a celebration
+            for everyone blessed by your impact. May the coming years unveil new
+            heights of fulfillment, influence, and joy,” High Chief Uche is more
+            than just a celebrated personality; he is a beacon of hope, a
+            resilient leader, and a man whose dedication to humanity continues
+            to touch countless lives. Through his humanitarian platform, The OAU
+            Foundation, he has uplifted communities, empowered individuals, and
+            set a standard of excellence that speaks volumes of his character.
+            An entrepreneur with a passion for humanitarian service, he has
+            reportedly lived in developed countries and aimed to implement
+            similar developmental changes in Abia State.`,
     pic: images.tom,
     name: "Tom",
     county: "Beverly, SA",
-  },
-];
-
-export const approachList = [
-  {
-    icon: DoubleRight,
-    text: "We support our participants to be involved in making decisions about their life",
-  },
-  {
-    icon: DoubleRight,
-    text: "We take into account your life experience, age, gender, culture, heritage, language, beliefs and identity",
-  },
-  {
-    icon: DoubleRight,
-    text: "We provide flexible services and support to suit your needs and priorities",
-  },
-  {
-    icon: DoubleRight,
-    text: "We believe and acknowledged you as the experts in your life, we work with you to provide the right support you need and emphasize on maintaining and improving your personal independence.",
-  },
-  {
-    icon: DoubleRight,
-    text: "We include our Participant’s support networks as partners.",
-  },
-];
-
-export const usefulLinks = [
-  {
-    label: "RHDP",
-    href: "/rhdp",
-  },
-  {
-    label: "Start Career",
-    href: "/careers",
-  },
-  {
-    label: "What is NDIS",
-    href: "/support-coordination",
-  },
-  {
-    label: "Refer Someone",
-    href: "/referral",
   },
 ];
 
@@ -308,55 +204,6 @@ export const contactInfo = [
   {
     icon: Location,
     label: "179B Philip Hwy, Elizabeth South SA 5112",
-  },
-];
-
-export const missionVisionValues = [
-  {
-    img: images.space,
-    title: "Our Mission",
-    text: "Our Mission is to ensure an inclusive community where dignity, rights and social justice of all citizens are guaranteed through appropriate support, specific individualized intervention and working alongside relevant stakeholders.",
-  },
-  {
-    img: images.vision,
-    title: "Our Vision",
-    text: "Our Vision is to ensure an inclusive community where dignity, rights and social justice of all citizens are guaranteed.",
-  },
-  {
-    img: images.srum_board,
-    title: "Our Values",
-    text: "",
-    description: [
-      "Integrity in Service Delivery",
-      "Dignity in Care Services",
-      "Respect your privacy and confidentiality",
-      "Accountability in everything we do",
-      "Inclusion by giving equal opportunity and embracing diversity",
-    ],
-  },
-];
-
-export const aboutServices = [
-  {
-    img: images.supported,
-    title: "Supported Independent Living",
-    text: "Supported Independent Living is an assistance provided to NDIS participants, where a person with disability is supported…",
-    btn_link: "Read More",
-    link: "/supported-independent-living",
-  },
-  {
-    img: images.short_term,
-    title: "Short Term Accommodation",
-    text: "We at Sunflower Care are dedicated to your personal needs and aspirations and we offer Short Term Accommodation…",
-    btn_link: "Read More",
-    link: "/short-term-accomodation",
-  },
-  {
-    img: images.asstistance,
-    title: "Assistance with Daily Living Life Skills",
-    text: "Our Daily-Living Life Skills Program provides our participants with assistance in developing life skills…",
-    btn_link: "Read More",
-    link: "/assistance-with-daily-personal-activities",
   },
 ];
 
@@ -710,136 +557,98 @@ export const trainingDevelopment = [
   "Communication and Social Skills development",
 ];
 
-export const assistSupport = [
-  "Bathing, dressing, toileting and grooming up to 2 hours per day – including bowel management, skin care, bladder management, menstrual care;",
-  "Assistance with eating up to 2 hours per day which may include assistance with medication;",
-  "Mobility including exercise, positioning, moving up to 1 hour per day; and",
-  "Where toileting assistance alone is required, up to 1 hour a day.",
+
+
+export const missionVision = [
+  {
+    icon: Aid,
+    heading: 'Providing Aid and Saving Lives',
+    text: 'Humanitarian efforts make a difference in times of crisis. Learn how we\'re making an impact.'
+  },
+  {
+    icon: Help,
+    heading: 'Relief for Those in Need',
+    text: 'Dedicated to providing humanitarian assistance and support to vulnerable communities worldwide.'
+  },
+  {
+    icon: LifeTap,
+    heading: 'Empowering Communities, Saving Lives',
+    text: 'Discover how our humanitarian work is transforming lives and bringing hope to those who need it most.'
+  },
+  {
+    icon: LifeSupport,
+    heading: 'Humanitarian Support When It Matters Most',
+    text: 'Learn about our emergency response efforts and how we\'re helping those affected by crisis.'
+  },
+  // {
+  //   icon: LifeTap,
+  //   heading: 'Making a Difference, One Life at a Time',
+  //   text: 'Explore our humanitarian initiatives and see how you can be part of creating positive change in the world.'
+  // },
+  // {
+  //   icon: Impact,
+  //   heading: 'Dedicated to impacting humanity through humanitarian efforts.',
+  //   text: 'Learn about our emergency response efforts and how we\'re helping those affected by crisis.'
+  // },
 ];
 
-export const circumstance = [
-  "Whether the participant has high care needs, for example unstable seizure activity or respiratory support;",
-  "The weight (and other physical aspects) of the participant;",
-  "The medical condition of the participant, including any medication required;",
-  "Whether the need for a higher level of support is of a temporary nature. For example, due to waiting for a suitable home modification (for example, a bathroom modification) to be completed;",
-  "Whether two people are required for transfers;",
-  "Whether there are behavioural concerns which require more intensive assistance with personal care activities and there are no other options, for example behavioural support intervention; and",
-  "Whether additional time limited funding is likely to reduce a participant’s longer term support costs by building their capacity to independently perform personal care activities.",
-  "The NDIA will also consider whether assistive technology, home modifications or other supports can be used to reduce the level of assistance with daily personal activities.",
+export const focusAreas = [
+  {
+    icon: School,
+    name: 'Education'
+  },
+  {
+    icon: Health,
+    name: 'Health'
+  },
+  {
+    icon: Economy,
+    name: 'Economic Empowerment'
+  },
+  {
+    icon: LifeSupport,
+    name: 'Humanitarian Response'
+  },
+  {
+    icon: Emergency,
+    name: 'Emergency assistance'
+  },
+  {
+    icon: PovertyAlleviation,
+    name: 'Poverty Alleviation'
+  },
+
 ];
 
-export const personalSupport = [
-  "Maximise the independence and functional skills of the participant;",
-  "Are appropriate to the participant’s age and circumstances; and",
-  "Whether alternative arrangements or supports could meet a participant’s needs in a less intrusive manner. For example, aids and equipment may enable a participant to complete tasks for themselves or the provision of training may increase the participant’s independence in the tasks.",
-];
-
-export const servicesInclude = [
-  "Assistance with shopping and meal preparation",
-  "Assistance with personal care",
-  "Personal hygiene, including showering, bathing, oral hygiene, dressing and grooming;",
-  "Assistance with household management skills",
-  "Bladder and bowel management and menstrual care",
-  "Assistance with appointments",
-  "Developing your hobbies and interests",
-  "Using aids and appliances, hearing and communication devices;",
-];
-
-export const communityActivities = [
-  "Participating in volunteer activities",
-  "Attending personal development courses",
-  "Attending community events",
-  "Visiting a local library",
-  "Assistance with using public transport",
-  "Joining a social group",
-  "Attending sporting events",
-  "Joining a Gym",
-  "Making new friends and maintaining friendship",
-  "Movies / Music concerts",
-  "Holidays",
-  "Joining a group ex: Dance, Arts and Crafts.",
-];
-
-export const supportCoordinator = [
-  "Support the participant to understand and implement the funded supports in their plan and link them to community, mainstream and other government services.",
-  "Focus on supporting you to build skills and direct your life as well as connect you to providers.",
-  "Assist to negotiate with providers about what they will offer you and how much it will cost out of the approved plan.",
-  "Ensure service agreements and service bookings are completed.",
-  "Assist to build your ability to exercise choice and control, to coordinate supports and access local community.",
-  "Assist Participants in planning ahead to prepare for Plan review meetings.",
-  "Assist the participant to ‘optimise’ their plan ensuring that they qre getting the most out of funded supports.",
-];
-
-export const supportServices = [
-  "Assist you to understand your NDIS plan and funding",
-  "To provide information, advice and support when decisions are to be made",
-  "Help you monitor the progress and outcomes of your goals",
-  "Guide you on how to access the NDIS portal so that you can monitor how your funds are spent",
-  "Help you to prepare for your next NDIS review meeting",
-];
-
-export const nursingPlans = [
-  "Development of Care Plans",
-  "Diabetes management",
-  "Community Participation",
-  "Medication administration/supervision",
-  "General nursing care",
-  "Dementia management",
-  "Overnight nursing care",
-  "Catheter care",
-  "Continence care and management",
-  "Respiratory support",
-  "Stoma care",
-  "General Care after admission to hospital",
-  "Wound management",
-  "Assessment & Ongoing Professional Support",
-  "Case Management",
-  "Palliative support",
-  "Education for clients and support networks etc.",
-];
-
-export const houseHoldTasks = [
-  "Daily assistance with household cleaning",
-  "Meal preparation",
-  "Personal hygiene: includes showering, dressing and grooming",
-  "Grocery shopping",
-  "Assistance with household management skills",
-  "Recreational and social outings",
-  "Vacuuming, sweeping and mopping",
-  "Changing linen",
-  "Washing, drying, ironing and putting away Laundry",
-  "Cleaning the bathroom or kitchen",
-  "Dusting and wiping surfaces",
-  "Kitchen cleaning including sinks, taps and microwaves",
-  "Assistance with transportation to attend appointments",
-  "Lawn mowing and yard maintenance",
-  "Caring for plants or pets",
-];
-
-export const recoveryServices = [
-  "Assistance with medication management",
-  "motivation, counselling",
-  "Supporting participants with their recovery planning",
-  "Building personal capacity, including around strengths, resilience and decision making",
-  "Assistance with referrals and care escalations.",
-  "Supporting engagement with the NDIS",
-  "Documentation and reporting",
-  "Recovery goals",
-  "Fund utilisation",
-];
-
-export const rhdpList = [
-  "Collaborates and manages the process of discharge and transitioning back into the community.",
-  "Sources suitable Medium-Term Accommodation and provides around the clock care from a team of trained support workers funded by the NDIS",
-  "Collaborates with our Specialist Support Coordinators Homes team to find new ‘forever homes’",
-  "Partners with other professions and allied health teams to assist participants with their NDIS plans and funding requirements.",
-  "Within a Multidisplinary team work to develop person-centred support plans that meet the needs of each individual.",
-  "Ensures individual goals are captured and monitored within a person’s support plan",
-];
-
-export const rhdpSupport = [
-  "Applying for a rental property",
-  "Meeting your tenancy obligations",
-  "Getting home modifications and quote",
-  "Accessing SDA accommodation or support coordination",
+export const accomplishmentCarousel = [
+  {
+    icon: LifeTap,
+    heading: 'Humanitarian',
+    text: 'With every project, outreach, and partnership, we remain committed to restoring hope, improving lives, and building a future where no one is left behind.'
+  },
+  {
+    icon: Economy,
+    heading: 'Generous',
+    text: 'Our generous services are built on a commitment to giving, compassion, and meaningful impact. We focus on providing support, resources, and opportunities that help individuals and communities grow stronger.'
+  },
+  {
+    img: images.portrait_oau,
+    heading: 'OAU',
+    text: 'As a transformative leader, OAU\'s legacy is built on determination, service, and a pursuit of positive change. He\'s an advocate of prosperity, which describes the objectives of his foundation as delivering positivity to humanity.'
+  },
+  {
+    icon: Mission,
+    heading: 'Our Mission',
+    text: 'To empower communities and promote human well-being through sustainable development programs, emergency response, and advocacy.'
+  },
+  {
+    icon: Telescope,
+    heading: 'Our Vision',
+    text: 'A world where every individual has access to basic necessities, opportunities, and rights, enabling them to live a dignified and fulfilling life.'
+  },
+  {
+    icon: Politics,
+    heading: 'politics',
+    text: 'In politics, OAU was a 2023 gubernatorial candidate in Abia State under the umbrella of Action Alliance (AA) party, advocating for a leadership that\'s transparent, developmental, and accountable to the people of his state'
+  },
 ];

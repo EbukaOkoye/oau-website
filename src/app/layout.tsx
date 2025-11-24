@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sunflower care",
+  title: "The OAU FOundation",
   icons: {
     icon: "/sunflower-care-logo-removebg.png",
   },
