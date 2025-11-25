@@ -105,9 +105,9 @@ body {
 }
 
 .hero_bg {
-  background-image: linear-gradient(to bottom, #0000005f, #0000005f), url('../assets/about_us_sec.jpg');
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, #0000005f, #0000005f), url('../assets/bioHero.jpg');
+  background-position: top;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 55% !important;

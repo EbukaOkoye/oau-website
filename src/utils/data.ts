@@ -20,6 +20,7 @@ import {
   Politics,
   PovertyAlleviation,
   ReceiveMoney,
+  RightArrow,
   School,
   Skype,
   Telegram,
@@ -100,11 +101,7 @@ export const holaSupportList = [
 export const happyTestimony = [
   {
     testimony:
-      `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
-            lives, uplifting communities, and setting a standard of excellence
-            has made this day more than a personal milestone—it is a celebration
-            for everyone blessed by your impact. May the coming years unveil new
-            heights of fulfillment, influence, and joy,” High Chief Uche is more
+      `High Chief Uche is more
             than just a celebrated personality; he is a beacon of hope, a
             resilient leader, and a man whose dedication to humanity continues
             to touch countless lives. Through his humanitarian platform, The OAU
@@ -115,45 +112,21 @@ export const happyTestimony = [
             similar developmental changes in Abia State.`,
     pic: images.jacob,
     name: "Jacob",
-    county: "Cowandilla, SA",
   },
   {
     testimony:
     `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
             lives, uplifting communities, and setting a standard of excellence
             has made this day more than a personal milestone—it is a celebration
-            for everyone blessed by your impact. May the coming years unveil new
-            heights of fulfillment, influence, and joy,” High Chief Uche is more
-            than just a celebrated personality; he is a beacon of hope, a
-            resilient leader, and a man whose dedication to humanity continues
-            to touch countless lives. Through his humanitarian platform, The OAU
-            Foundation, he has uplifted communities, empowered individuals, and
-            set a standard of excellence that speaks volumes of his character.
-            An entrepreneur with a passion for humanitarian service, he has
-            reportedly lived in developed countries and aimed to implement
-            similar developmental changes in Abia State.`,
+            for everyone blessed by your impact.`,
     pic: images.cynthia,
     name: "Cynthia",
-    county: "Craigmore, SA",
   },
   {
     testimony:
-    `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
-            lives, uplifting communities, and setting a standard of excellence
-            has made this day more than a personal milestone—it is a celebration
-            for everyone blessed by your impact. May the coming years unveil new
-            heights of fulfillment, influence, and joy,” High Chief Uche is more
-            than just a celebrated personality; he is a beacon of hope, a
-            resilient leader, and a man whose dedication to humanity continues
-            to touch countless lives. Through his humanitarian platform, The OAU
-            Foundation, he has uplifted communities, empowered individuals, and
-            set a standard of excellence that speaks volumes of his character.
-            An entrepreneur with a passion for humanitarian service, he has
-            reportedly lived in developed countries and aimed to implement
-            similar developmental changes in Abia State.`,
-    pic: images.tom,
-    name: "Tom",
-    county: "Beverly, SA",
+    `“Your dedication to touching lives, uplifting communities, and setting a standard of excellence has made this day more than a personal milestone—it is a celebration for everyone blessed by your impact. May the coming years unveil new heights of fulfillment, influence, and joy,”`,
+    pic: images.uche_ogah,
+    name: "Uchechukwu S. Ogah, PhD, CON, FCA",
   },
 ];
 
@@ -362,203 +335,6 @@ export const bottomContact = [
   },
 ];
 
-export const whatWeOffer = [
-  "Professional development",
-  "Networking Opportunities",
-  "A friendly working environment",
-  "Good Orientation and Induction process",
-  "Work-Life balance",
-  "Training opportunities",
-  "Safe workplace",
-];
-
-export const importantToHave = [
-  "A current South Australian driver’s licence",
-  "A current Senior First Aid Certificate",
-  "Screening clearance to work with children and vulnerable people (DHS Screening Clearance)",
-  "Person-Centerd approach",
-  "In-depth understanding of Disability and Human Rights",
-];
-
-export const qualifications = [
-  "Cert III in Disability Care",
-  "Proof of First Aid Training",
-  "Recent, related experience working as a Support Worker",
-  "Ability to read, write, comprehend and communicate effectively in English",
-  "Must be able to meet the physical requirements of the position",
-  "Excellent communication abilities and interpersonal skills to interact positively and effectively with participants, staff and the general public",
-  "Demonstrated ability to prioritise multiple and changing tasks that require attention to detail",
-  "Demonstrated ability to work effectively as a member of a team",
-  "Commitment to Person-Centred care with a Service-Oriented attitude",
-  "Basic computer skills",
-  "Ability to problem solve",
-  "Demonstrate initiative within appropriate scope of practice",
-  "Demonstrated knowledge of protocol to escalate concerns",
-  "Must be self-directed and show initiative",
-  "Demonstrated ability to work independently with minimal supervision",
-  "Demonstrated ability to attend work on a regular basis",
-];
-
-export const skillsAbilities = [
-  "Ability to provide a Person-Centered holistic approach to care",
-  "Ability to communicate effectively both verbally and in writing.",
-  "Ability to work independently, organize workload and establish priorities.",
-  "Ability to work effectively as part of an inter-disciplinary team.",
-  "Knowledge of community dynamics, agencies and resources.",
-  "Physical ability to perform the duties of the position.",
-  "Ability to operate related equipment.",
-  "Ability to work independently and show initiative",
-  "Ability to deal effectively with a wide range of community and facility contacts.",
-  "Ability to demonstrate sound professional judgment, empathy, tact and integrity.",
-  "Excellent assessment, care planning and coordination skills.",
-];
-
-export const specificSkills = [
-  "Select appropriate exercises, apparatus and manipulations",
-  "Plan physiotherapy programs",
-  "Maintain clinical and progress reports",
-  "Confer with other health professionals",
-  "Assess patients’ physical abilities",
-  "Teach and/or supervise exercises to patients",
-  "Security and Safety",
-];
-
-export const workConditions = [
-  "Fast-paced environment",
-  "Work under pressure",
-  "Attention to detail",
-  "Combination of sitting, standing, walking",
-  "Standing for extended periods",
-];
-
-export const personalSuitability = [
-  "Effective interpersonal skills",
-  "Excellent oral communication",
-  "Client focus",
-  "Interpersonal awareness",
-  "Judgement",
-  "Punctuality",
-];
-
-export const keySkills = [
-  "Reliability and discretion",
-  "Adaptability",
-  "Communication, negotiation and relationship-building skills",
-];
-
-export const oSkills = [
-  "IT skills",
-  "Problem solving skills",
-  "Initiative",
-  "Leadership and the ability to make things happen",
-  "Budgeting skills",
-  "Attention to detail",
-];
-
-export const responsibilities = [
-  "organising meetings and managing databases",
-  "organising company events or conferences",
-  "ordering stationery and furniture",
-  "dealing with correspondence, complaints and queries",
-  "preparing letters, presentations and reports",
-  "supervising and monitoring the work of administrative staff",
-  "managing office budgets",
-  "liaising with Staff and Participants",
-  "implementing and maintaining procedures/office administrative systems",
-  "organising induction programmes for new employees",
-  "ensuring that health and safety policies are up to date",
-  "using a range of software packages",
-  "attending meetings with senior management",
-  "assisting the organisation’s HR function by keeping personnel records up to date, arranging interviews.",
-];
-
-export const includedSil = [
-  "Support with supervision, safety and security",
-  "Assistance with personal care tasks",
-  "Assistance with capacity building tasks (for example, meal prep and cooking, cleaning, routine development)",
-  "Behaviour support and social skill development",
-  "Administration of medication",
-  "Support for medical appointments",
-  "Community access that is not routine or regular (for example, support to complete personal tasks)",
-  "Support to get to and from community access activities (where this is the participant’s preference)",
-];
-
-export const notIncludedSil = [
-  "Cost of groceries",
-  "Rent, board or lodging costs",
-  "Utilities – gas, electricity, water, telephone, internet",
-  "Household budgeting/bill paying activities",
-  "Expenses related to holidays, including travel costs",
-  "Personal care supports while the participant is in hospital",
-  "Specialist Disability Accommodation (SDA) related costs (such as property maintenance costs, repairs, vacancy costs)",
-  "Ongoing costs and supports for vacancies (which is built into the price limit)",
-  "Regular community access",
-  "Specific funding for staff to attend training for the participant’s support needs (which is built into the price limit)",
-  "Shadow shifts",
-  "Organisational management costs",
-  "Allied Health staff, including those employed by SIL provider",
-  "Vehicle costs",
-  "Temporary Transformation Payment (TTP) pricing",
-  "Justice related supports",
-  "Community supervision orders",
-  "Nursing, medical care and other health related supports",
-  "Items covered in other sections of the NDIS Pricing Arrangements and Price Limits (such as transport costs, assistive technology, personal care while in the workplace, plan management, financial intermediary supports, clinical or allied health services)",
-];
-
-export const provisions = [
-  "General Household cleaning and laundry",
-  "Meal preparation",
-  "Assistance with catching Public Transport",
-  "New Hobby Assistance",
-  "Transport assistance to appointments",
-  "Assistance with administration of medication",
-  "Personal Care such as showering and dressing",
-];
-
-export const stac = [
-  "the need for Short Term Accommodation is related to your disability",
-  "it helps you pursue your goals",
-  "it helps you to participate in the community",
-  "it’s value for money",
-  "how much support your family and other informal supports provide",
-];
-
-export const supportFunding = [
-  "support a child in the long term",
-  "maintain your family situation.",
-];
-
-export const supportInclude = [
-  "support in your home",
-  "training to implement a behaviour support plan or build capacity in other areas. For example, this might help parents support their child in creating a sleep routine",
-  "community access to help you socialise and interact with your community",
-  "help to supervise behaviours of concern or support positive behaviour strategies.",
-];
-
-export const professionalAssist = [
-  "We provide assistance with developing independent living and social skills.",
-  "We provide assistance with personal care.",
-  "We provide opportunities to socialize and to get involved in recreational activities in the community.",
-  "We cater to the needs of the individual and provide assistance with personal care.",
-  "We also provide our services in the comfort of your own home if that is your preference.",
-  "Our service is available for both children and adults.",
-];
-
-export const trainingDevelopment = [
-  "Nutrition: such as grocery shopping and meal-planning",
-  "Personal Hygiene: such as personal care, toileting",
-  "Household Tasks",
-  "Public Transport Training",
-  "Problem solving",
-  "Job readiness- including resume and interview prep",
-  "Liaising with Public Trustee",
-  "Time Management and Problem Solving",
-  "Budgeting",
-  "Communication and Social Skills development",
-];
-
-
-
 export const missionVision = [
   {
     icon: Aid,
@@ -665,5 +441,47 @@ export const contactTexts = [
   {
     icons: Help,
     name: 'Socially Concerned'
+  },
+];
+
+export const footerFocusArea = [
+{
+  icon: RightArrow,
+  name: 'Education'
+},
+{
+  icon: RightArrow,
+  name: 'Health'
+},
+{
+  icon: RightArrow,
+  name: 'Economic Empowerment'
+},
+{
+  icon: RightArrow,
+  name: 'Humanitarian Response'
+},
+];
+
+export const quickLinks = [
+  {
+    icon: RightArrow,
+    name: 'HOME',
+    link: '/'
+  },
+  {
+    icon: RightArrow,
+    name: 'BIO',
+    link: '/bio'
+  },
+  {
+    icon: RightArrow,
+    name: 'THE OAU FOUNDATION',
+    link: '/oau-foundation'
+  },
+  {
+    icon: RightArrow,
+    name: 'CONTACT US',
+    link: '/contact'
   },
 ];

@@ -46,7 +46,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="mt-56 px-3 py-10 border-2 border-amber-600">
+    <section className="mt-56 px-3 py-10">
       <section className="rounded-md">
         {/* <div className=" relative"></div> */}
         <div className="max-w-7xl mx-auto px-6">
@@ -59,10 +59,13 @@ export default function ContactForm() {
             >
               THE OAU FOUNDATION
             </Typography>
-            <div className="bg-white mt-14 rounded-lg shadow-xl lg:relative flex flex-col lg:flex-row lg:h-80 p-4 justify-between gap-4">
+            <div className="bg-white mt-14 rounded-lg shadow-[30px_-10px_30px_30px_rgba(0,0,0,0.15)] lg:relative flex flex-col lg:flex-row lg:h-96 p-4 justify-between gap-4">
               <div className="">
                 {/* Description */}
-                <Typography as={"p"} className="text-gray-500 max-w-xl">
+                <Typography
+                  as={"p"}
+                  className="text-gray-500 max-w-xl lg:text-xl"
+                >
                   The OAU Foundation is a humanitarian non-governmental
                   organization (NGO) dedicated to improving the lives of
                   individuals and communities in need. Passionate about
@@ -94,12 +97,12 @@ export default function ContactForm() {
                 </div>
               </div>
               {/* RIGHT — APPOINTMENT FORM */}
-              <div className="bg-main-blue lg:absolute lg:h-fit lg:right-5 lg:-top-32 rounded-xl py-4 px-8 shadow-xl">
+              <div className="bg-main-blue lg:w-[35%] lg:absolute lg:h-fit lg:right-5 lg:-top-32 rounded-xl py-4 px-8 shadow-xl">
                 <Typography
                   as={"h4"}
-                  className="text-white text-center text-2xl lg:text-4xl font-bold mb-8"
+                  className="text-white text-center text-2xl lg:text-4xl font-bold"
                 >
-                  FEEL FREE TO JOIN US
+                  JOIN US
                 </Typography>
                 <form className="p-4 w-full" onSubmit={handleSubmit}>
                   <Input
@@ -137,7 +140,7 @@ export default function ContactForm() {
                   <div className="my-5">
                     <CustomButton
                       type="submit"
-                      className="bg-white w-full justify-center px-6 py-5 flex items-center gap-3 text-main-blue mx-auto cursor-pointer hover:scale-150 transition ease-in duration-700"
+                      className="bg-white w-full justify-center px-6 py-5 flex items-center gap-3 text-main-blue mx-auto cursor-pointer transition ease-in duration-700"
                     >
                       <span className="">Send</span>
                       <Send className="text-main-blue" />

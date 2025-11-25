@@ -4,7 +4,7 @@ import React from "react";
 
 interface HeroProps {
   className: string;
-  text: string;
+  text?: string;
   textStyle: string;
 }
 

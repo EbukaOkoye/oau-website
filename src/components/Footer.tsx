@@ -1,93 +1,99 @@
 "use client";
 import React from "react";
-import { contactInfo, socialLinks } from "@/utils/data";
+import { footerFocusArea, quickLinks, socialLinks } from "@/utils/data";
 import Link from "next/link";
-import Image from "next/image";
-import { images } from "@/utils/images";
 import CustomButton from "./custom-components/Button";
-import { useRouter } from "next/navigation";
+import { Typography } from "@material-tailwind/react";
+import Input from "./custom-components/Input";
 
-export default function Footer({
-  topText,
-  icon,
-  link,
-}: {
-  topText?: string;
-  icon?: React.ReactNode;
-  link?: string | undefined;
-}) {
-  const router = useRouter();
-
+export default function Footer() {
   return (
     <footer className="w-full bg-light-grey">
-      {/* Top Section: NDIS Support Coordination Box */}
-      <div className="bg-gradient-to-r from-main-purple to-main-pink md:w-10/12 translate-y-20 mx-auto rounded-xl p-6 md:p-8 lg:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between text-white text-center md:text-left gap-6">
-        <div className="flex flex-col">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1">
-            The OAU Foundation
-          </h3>
-        </div>
-        <CustomButton
-          onClick={() => router.push(link ?? "/")}
-          className="flex items-center bg-white gap-3 cursor-pointer text-main-purple font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition duration-300 whitespace-nowrap"
-        >
-          {topText}
-          {icon}
-        </CustomButton>
-      </div>
-
       {/* Middle Section: Main Footer Content */}
-      <div className="bg-white py-12 md:py-16 px-4 mt-8">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 !justify-between gap-8 lg:gap-4 text-center md:text-left">
-          {/* Column 2: HOLA SUPPORT */}
-          <div>
-            <h4 className="font-semibold text-lg text-main-pink mb-2">
+      <div className="bg-main-blue py-12 md:py-16 px-4 mt-8">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 !justify-between gap-10 lg:gap-8 text-center md:text-left">
+          {/* Column 1: HOLA SUPPORT */}
+          <div className="p-3">
+            <h4 className="font-semibold text-base lg:text-xl text-white mb-2 uppercase">
               THE OAU FOUNDATION
             </h4>
-            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
+            <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
             <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
-              <Image
-                src={images.vector_three}
-                alt="We NDIS Registered Provider"
-                width={120}
-                height={60}
-                className="mb-2"
-              />
-              <p className="text-main-pink font-bold">
-                NDIS Provider Number <br /> 405 003 7968
-              </p>
+              <Typography className="text-white font-medium">
+                Plot 56/58 umuokeyi World Bank Housing <br /> Estate Annexed.
+                Umuahia, Abia state
+              </Typography>
+              <div className="flex items-center gap-2">
+                <Typography className="text-white font-semibold">
+                  PHONE NUMBER:
+                </Typography>
+                <Typography className="text-white font-medium">
+                  09035269615
+                </Typography>
+              </div>
             </div>
           </div>
-
-          {/* Column 5: CONTACT */}
-          <div className="w-fit">
-            <h4 className="font-semibold text-lg text-main-pink mb-2">
-              CONTACT
+          {/* Column 2: Focus Area */}
+          <div className="p-3">
+            <h4 className="font-semibold text-base lg:text-xl text-white mb-2 uppercase">
+              Our Focus Areas
             </h4>
-            <div className="w-10 h-1 bg-main-purple mx-auto lg:mx-0" />
-            <div className="flex flex-col items-center md:items-start space-y-3 mt-5">
-              {contactInfo.map((item, index) => (
+            <div className="w-10 h-1 bg-white mx-auto lg:mx-0 mb-6" />
+            {footerFocusArea.map((_farea, id) => (
+              <div key={id} className="flex items-center gap-2 my-3">
+                <_farea.icon className="text-white" />
+                <Typography
+                  as={"p"}
+                  className="text-white font-medium text-base"
+                >
+                  {_farea.name}
+                </Typography>
+              </div>
+            ))}
+          </div>
+          {/* Column 3: Quick Links */}
+          <div className="p-3">
+            <h4 className="font-semibold text-base lg:text-xl text-white mb-2 uppercase">
+              Quick Links
+            </h4>
+            <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
+            <div className="flex flex-col items-center md:items-start space-y-3 mt-6">
+              {quickLinks.map((item, index) => (
                 <div
                   key={index}
                   className="flex items-center text-center md:text-left gap-3"
                 >
-                  <item.icon className="text-main-purple" size={16} />
-                  <span className="break-all text-gray-500 font-normal text-base">
-                    {item.label}
-                  </span>{" "}
+                  <item.icon className="text-white" />
+                  <Link href={item.link}>{item.name}</Link>
                 </div>
               ))}
+            </div>
+          </div>
+          {/* Column 4: News Letter */}
+          <div className="p-3">
+            <h4 className="font-semibold text-base lg:text-xl text-white mb-2 uppercase">
+              Join us
+            </h4>
+            <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
+            <div className="bg-white rounded-md relative mt-6">
+              <Input
+                type="text"
+                placeholder="NewsLetter"
+                className="!border-0 focus:border-0 focus:outline-0 w-full h-full"
+              />
+              <CustomButton className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 absolute top-3 right-2.5">
+                Join us
+              </CustomButton>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Section: Copyright & Social Media */}
-      <div className="bg-gradient-to-r from-main-purple to-main-pink py-4 px-4 text-white text-sm">
+      <div className="bg-gradient-to-r from-main-blue to-main-blue py-4 px-4 text-white text-sm">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-center md:text-left">
-            Copyright © {new Date().getFullYear()} Hola Support - Media Partner
-            YH Creations.
+            Copyright © {new Date().getFullYear()} GStat Mobile Solutions
           </p>
           <div className="flex items-center gap-4">
             <span className="font-semibold">Share on</span>

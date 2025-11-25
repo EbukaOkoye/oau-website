@@ -20,6 +20,7 @@ import {
   FaAward,
   FaFirstAid,
   FaHandsHelping,
+  FaQuoteLeft,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdHealthAndSafety } from "react-icons/md";
@@ -71,3 +72,4 @@ export const PovertyAlleviation = GiTakeMyMoney;
 export const Telescope = IoTelescope;
 export const Politics = RiGovernmentFill;
 export const Mission = GiJourney;
+export const Quote = FaQuoteLeft;

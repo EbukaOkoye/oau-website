@@ -21,10 +21,10 @@ interface InputProps {
   label?: string;
   className?: string;
   type: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  value: string | number;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
   placeholder?: string;
-  name: string;
+  name?: string;
   accept?: string;
   divClassName?: string;
   required?: boolean;

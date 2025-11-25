@@ -32,7 +32,7 @@ export default function Navbar() {
               <Link
                 key={_link.name}
                 href={_link.link}
-                className={`hover:bg-white hover:text-main-blue p-4 ${
+                className={`hover:bg-white hover:rounded-md hover:text-main-blue p-4 ${
                   _link.link === pathname
                     ? "bg-white text-main-blue font-bold rounded-md"
                     : "text-white"

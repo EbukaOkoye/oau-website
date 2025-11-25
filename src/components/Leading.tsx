@@ -6,15 +6,20 @@ import {
 } from "@/utils/data";
 import { images } from "@/utils/images";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import ContactForm from "./contactForm";
+import Testimony from "./testimony";
+import OurWorks from "./ourWorks";
+import { useRouter } from "next/navigation";
 
 export default function Leading() {
+  const router = useRouter();
+
   return (
-    <section className="py-28 px-4 my-14">
+    <section className="pt-28 px-4 my-14">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center items-center">
         <div className="p-3 lg:col-span-1">
           <Image
@@ -90,6 +95,14 @@ export default function Leading() {
             </div>
           ))}
         </div>
+        <div className="mt-9 flex">
+          <Button
+            onClick={() => router.push("/oau-foundation")}
+            className="bg-main-blue text-white text-lg py-2 px-6 mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition duration-1000"
+          >
+            Read More
+          </Button>
+        </div>
       </div>
       <div className="p-3 my-14 bg-secondary-blue lg:h-72">
         <Swiper
@@ -135,6 +148,8 @@ export default function Leading() {
         </Swiper>
       </div>
       <ContactForm />
+      <Testimony />
+      <OurWorks />
     </section>
   );
 }
