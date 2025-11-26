@@ -1,34 +1,24 @@
 import {
   Aid,
-  Chat,
   CheckCircle,
-  ClipboardCheck,
-  Copy,
   Economy,
   Email,
   Emergency,
   Facebook,
   Health,
   Help,
+  Instagram,
   LifeSupport,
   LifeTap,
-  LinkedinIn,
   Location,
   Mission,
   Phone,
-  Pinterest,
   Politics,
   PovertyAlleviation,
-  ReceiveMoney,
   RightArrow,
   School,
-  Skype,
-  Telegram,
   Telescope,
-  ThumbsUp,
-  Time,
-  Twitter,
-  Whatsapp,
+  Value,
 } from "./icons";
 import { images } from "./images";
 
@@ -101,7 +91,7 @@ export const holaSupportList = [
 export const happyTestimony = [
   {
     testimony:
-      `High Chief Uche is more
+      `OAU is more
             than just a celebrated personality; he is a beacon of hope, a
             resilient leader, and a man whose dedication to humanity continues
             to touch countless lives. Through his humanitarian platform, The OAU
@@ -115,7 +105,7 @@ export const happyTestimony = [
   },
   {
     testimony:
-    `Uchechukwu S. Ogah, PhD, CON, FCA “Your dedication to touching
+    `Your dedication to touching
             lives, uplifting communities, and setting a standard of excellence
             has made this day more than a personal milestone—it is a celebration
             for everyone blessed by your impact.`,
@@ -133,205 +123,26 @@ export const happyTestimony = [
 export const socialLinks = [
   {
     icon: Facebook,
-    href: "/",
+    href: "https://web.facebook.com/onyekwereAkym/?_rdc=1&_rdr#",
   },
   {
-    icon: Twitter,
-    href: "/",
-  },
-  {
-    icon: LinkedinIn,
-    href: "/",
-  },
-  {
-    icon: Whatsapp,
-    href: "/",
-  },
-  {
-    icon: Pinterest,
-    href: "/",
-  },
-  {
-    icon: Telegram,
-    href: "/",
-  },
-  {
-    icon: Skype,
-    href: "/",
+    icon: Instagram,
+    href: "https://www.instagram.com/ucheakym/",
   },
 ];
 
 export const contactInfo = [
   {
     icon: Phone,
-    label: "(08) 780 90212",
+    label: "09035269615",
   },
   {
     icon: Email,
-    label: "info@hola.support.com.au",
-  },
-  {
-    icon: Time,
-    label: "Mon - Fri: 9:00 - 17:00 hrs.",
+    label: "info@onyekwereakymuche.com",
   },
   {
     icon: Location,
-    label: "179B Philip Hwy, Elizabeth South SA 5112",
-  },
-];
-
-export const faqSteps = [
-  {
-    title: "Check Eligibility",
-    icon: CheckCircle,
-    content: [
-      "Residence: Australian citizen or hold a permanent visa or a Protected Special Category visa",
-      "Disability: Permanent disability that significantly affects your ability to take part in everyday activities",
-      "Age: Under 65 years, under 50 years for Aboriginal and Torres Strait Islanders at the time you register",
-    ],
-    color: "bg-main-purple",
-    stepNumber: 1,
-  },
-  {
-    title: "Access Request Questions",
-    icon: ClipboardCheck,
-    content: [
-      "To confirm your identity and/or a person’s authority to act on your behalf",
-      "To see if you meet the NDIS access requirements",
-      "About providing consent to enter the NDIS",
-    ],
-    color: "bg-step-green",
-    stepNumber: 2,
-  },
-  {
-    title: "Creating Your Plan",
-    icon: Copy,
-    content: [
-      "Preparation for  planning meeting",
-      "Setting goals",
-      "Planning meeting checklist",
-      "Ways to manage your funding Plan budget and rules",
-      "Receiving your approved plan",
-      "Compensation",
-    ],
-    color: "bg-step-purple",
-    stepNumber: 3,
-  },
-  {
-    title: "Access Request Questions",
-    icon: ClipboardCheck,
-    content: [
-      "To confirm your identity and/or a person’s authority to act on your behalf",
-      "To see if you meet the NDIS access requirements",
-      "About providing consent to enter the NDIS",
-    ],
-    color: "bg-step-green",
-    stepNumber: 4,
-  },
-  {
-    title: "Using Your Plan",
-    icon: ReceiveMoney,
-    content: [
-      "Help starting your plan",
-      "Understanding your plan",
-      "Managing your plan",
-      "Self-management",
-      "Managing your plan",
-      "Changing your plan",
-    ],
-    color: "bg-step-purple",
-    stepNumber: 5,
-  },
-  {
-    title: "Using Your Plan",
-    icon: ThumbsUp,
-    content:
-      "Plan review is an opportunity for you to check if your supports are working for you and they are helping you work towards your goals.",
-    color: "bg-step-green",
-    stepNumber: 6,
-  },
-];
-
-export const faqs_one = [
-  {
-    question: "What is the NDIS?",
-    answer:
-      "The National Disability Insurance Scheme (NDIS) is a federally managed and funded scheme that provides support and funding to people with permanent disability, their families and carers. We work with you to figure out a plan that is suitable to your needs and aspirations.",
-  },
-  {
-    question: "What is the purpose of NDIS?",
-    answer:
-      "The NDIS aims to support people with disabilities to achieve their goals, improve their independence and participate in the community.",
-  },
-  {
-    question: "Who is the NDIA?",
-    answer:
-      "The NDIA (National Disability Insurance Agency) is the organization responsible for implementing the NDIS.",
-  },
-  {
-    question: "What is the eligibility criteria for NDIS?",
-    answer:
-      "You must be under 65 years of age, live in Australia, and have a permanent and significant disability.",
-  },
-  {
-    question: "What happens if I am over 65 years old?",
-    answer:
-      "If you are over the age of 65 years, you will not be eligible to participate in the NDIS. You might be eligible for funding by the Aged Care System, instead.",
-  },
-];
-
-export const faqs_two = [
-  {
-    question: "What support can I receive under the NDIS?",
-    answer: [
-      "Daily Personal Activities",
-      "Transport facilities to enable participation in community, social, economic and daily life activities",
-      "Therapeutic Support",
-      "Home modification design and construction",
-      "Help with household tasks to maintain their home environment",
-      "Vehicle and mobility equipment modifications",
-      "Workplace help and training",
-    ],
-  },
-  {
-    question: "Does the NDIS affect the DSP?",
-    answer:
-      "The NDIS is not means-tested and has no impact on your Disability Support Pension (DSP).",
-  },
-  {
-    question: "Will the NDIS cost me anything?",
-    top: "The NDIS does not provide funding for support if it is: ",
-    answer: [
-      "Not related to a person’s disability.",
-      "A duplicate of another support within a participants personal support plan.",
-      "Related to daily living expenses not tied to a participants disability (e.g. rent, groceries).",
-      "The responsibility of another government system or community service.",
-      "Likely to cause harm to a participant or pose a risk to others.",
-      "Related to income replacement.",
-    ],
-  },
-  {
-    question: "Who is Carer?",
-    answer: [
-      "A carer is a person who provides unpaid care and support to family members or friends with a disability, a serious long-term illness, a terminal illness, a drug or alcohol issue or who are frail and aged.",
-      "Do Carers receive support outside of the NDIS? Carers receive a range of supports including respite support, counselling, education and training, peer support and advocacy.",
-      "The Carer Advisory Service provides information and advice to carers and their families about carer supports and services.",
-    ],
-  },
-];
-
-export const bottomContact = [
-  {
-    icon_img: Chat,
-    text: "NDIS Feedback & Complaints",
-  },
-  {
-    icon_img: Phone,
-    text: "1800 800 110",
-  },
-  {
-    icon_img: Copy,
-    text: "Contact & Feedback",
+    label: `Plot 56/58 umuokeyi World Bank Housing\n Estate Annexed. Umuahia, Abia state`,
   },
 ];
 
@@ -429,6 +240,29 @@ export const accomplishmentCarousel = [
   },
 ];
 
+export const foundationMission = [
+  {
+    icon: Mission,
+    heading: 'Our Mission',
+    text: 'To empower communities and promote human well-being through sustainable development programs, emergency response, and advocacy.'
+  },
+  {
+    icon: Telescope,
+    heading: 'Our Vision',
+    text: 'A world where every individual has access to basic necessities, opportunities, and rights, enabling them to live a dignified and fulfilling life.'
+  },
+  {
+    icon: Value,
+    heading: 'Our Approach',
+    text: 'We work in partnership with local communities, governments, and international organizations to design and implement effective programs that address the root causes of poverty, inequality, and social injustice.'
+  },
+  {
+    icon: Value,
+    heading: 'Our Values',
+    text: 'Compassion, integrity, accountability, and commitment to delivering high-quality services that make a lasting impact.'
+  },
+];
+
 export const contactTexts = [
   {
     icons: Health,
@@ -483,5 +317,28 @@ export const quickLinks = [
     icon: RightArrow,
     name: 'CONTACT US',
     link: '/contact'
+  },
+];
+
+export const foundationCoreValues = [
+  {
+    icon: School,
+    heading: 'Education',
+    text: 'Providing access to quality education, promoting literacy, and supporting educational infrastructure development.'
+  },
+  {
+    icon: Health,
+    heading: 'Health',
+    text: 'Improving healthcare outcomes, increasing access to medical services, and promoting health awareness'
+  },
+  {
+    icon: Economy,
+    heading: 'Economic Empowerment',
+    text: 'Supporting entrepreneurship, vocational training, and economic opportunities to reduce poverty and promote self-sufficiency.'
+  },
+  {
+    icon: LifeSupport,
+    heading: 'Humanitarian Response',
+    text: 'Providing emergency assistance, relief, and support to communities affected by crises.'
   },
 ];

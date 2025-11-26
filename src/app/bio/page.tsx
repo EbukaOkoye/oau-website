@@ -25,10 +25,13 @@ export default function Bio() {
         </Typography>
         <div className="mt-8">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-            <div className="rounded-full w-full overflow-hidden">
+            <div
+              className="rounded-full w-full overflow-hidden"
+              data-aos="slide-right"
+            >
               <Image src={images.oau_man} alt="oau_man" className="" />
             </div>
-            <div className="">
+            <div className="" data-aos="slide-left">
               <Typography
                 as={"h2"}
                 className="font-semibold text-main-blue text-lg lg:text-3xl mb-4"
@@ -52,7 +55,7 @@ export default function Bio() {
         </div>
         <div className="mt-8">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5">
-            <div className="">
+            <div className="" data-aos="fade-left">
               <Typography
                 as={"h2"}
                 className="font-semibold text-main-blue text-lg lg:text-3xl capitalize mb-4"
@@ -71,17 +74,23 @@ export default function Bio() {
                 local hospitals, and offered scholarships to indigent students.
               </Typography>
             </div>
-            <div className="w-full lg:h-[400px] rounded-full overflow-hidden">
+            <div
+              className="w-full lg:h-[400px] rounded-full overflow-hidden"
+              data-aos="fade-right"
+            >
               <Image src={images.about_hero} alt="man_oau" />
             </div>
           </div>
         </div>
         <div className="mt-8">
           <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5">
-            <div className="w-full rounded-full overflow-hidden">
+            <div
+              className="w-full rounded-full overflow-hidden"
+              data-aos="slide-right"
+            >
               <Image src={images.portrait_oau} alt="oau_lanscape" />
             </div>
-            <div className="">
+            <div className="" data-aos="slide-left">
               <Typography
                 as={"h2"}
                 className="font-semibold text-main-blue text-lg lg:text-3xl mb-4"

@@ -46,10 +46,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="mt-56 px-3 py-10">
+    <section className="lg:mt-56 lg:px-3 py-10" data-aos="zoom-in-up">
       <section className="rounded-md">
         {/* <div className=" relative"></div> */}
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="!w-full lg:max-w-7xl mx-auto lg:px-6">
           {/* LEFT SECTION */}
           <div className="space-y-8">
             {/* Years of Experience */}
@@ -59,7 +59,7 @@ export default function ContactForm() {
             >
               THE OAU FOUNDATION
             </Typography>
-            <div className="bg-white mt-14 rounded-lg shadow-[30px_-10px_30px_30px_rgba(0,0,0,0.15)] lg:relative flex flex-col lg:flex-row lg:h-96 p-4 justify-between gap-4">
+            <div className="bg-white p-2 mt-14 rounded-lg shadow-[30px_-10px_30px_30px_rgba(0,0,0,0.15)] lg:relative flex flex-col lg:flex-row lg:h-96 lg:p-4 justify-between gap-4">
               <div className="">
                 {/* Description */}
                 <Typography

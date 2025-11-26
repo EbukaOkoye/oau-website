@@ -19,16 +19,16 @@ export default function Leading() {
   const router = useRouter();
 
   return (
-    <section className="pt-28 px-4 my-14">
+    <section className="pt-4 px-4 my-14">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center items-center">
-        <div className="p-3 lg:col-span-1">
+        <div className="p-3 lg:col-span-1" data-aos="slide-left">
           <Image
             src={images.oau_man}
             alt="image"
             className="object-cover  w-full"
           />
         </div>
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2" data-aos="slide-right">
           <div className="mb-4 p-3">
             <Typography
               as={"h4"}
@@ -70,21 +70,21 @@ export default function Leading() {
         </div>
       </section>
       {/* Focus Area */}
-      <div className="p-3 mt-10">
+      <div className="p-3 mt-10" data-aos="fade-up">
         <Typography
           as={"h1"}
           className="text-center text-3xl lg:text-[40px] my-8 text-main-blue"
         >
           Our Focus Areas
         </Typography>
-        <div className="mt-10 flex justify-center gap-4 lg:gap-8">
+        <div className="mt-10 flex flex-col lg:flex-row justify-center gap-4 lg:gap-8">
           {focusAreas.map((_area, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center "
             >
-              <div className="flex items-center justify-center w-[175px] h-[175px] rounded-full shadow-sm">
-                <_area.icon className="text-[30px] lg:text-[60px] text-main-blue" />
+              <div className="flex items-center justify-center w-[175px] h-[175px] rounded-full !shadow-xl  hover:ring-8  hover:ring-main-blue hover:ring-offset-secondary-blue transition ease-linear duration-1000 ring-offset-8 ring-offset-white">
+                <_area.icon className="text-[40px] lg:text-[60px] text-main-blue" />
               </div>
               <Typography
                 as={"p"}
@@ -104,7 +104,7 @@ export default function Leading() {
           </Button>
         </div>
       </div>
-      <div className="p-3 my-14 bg-secondary-blue lg:h-72">
+      <div className="p-3 my-14 bg-secondary-blue lg:h-72" data-aos="fade-left">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000 }}

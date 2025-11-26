@@ -14,7 +14,7 @@ export default function Input({
 }: InputProps) {
   return (
     <div className={`p-2 my-4 ${divClassName}`}>
-      <label htmlFor={label} className="text-main-purple mb-3">
+      <label htmlFor={label} className="text-main-blue mb-3">
         {label}
       </label>
       <input
@@ -25,7 +25,7 @@ export default function Input({
         name={name}
         accept={accept}
         required={required}
-        className={`w-full border-b-2 border-b-main-purple rounded-2xl bg-white text-black p-3 focus:outline-none ${className}`}
+        className={`w-full border-b-2 border-b-main-blue rounded-2xl bg-white text-black p-3 focus:outline-none ${className}`}
       />
     </div>
   );

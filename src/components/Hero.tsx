@@ -32,14 +32,14 @@ export default function Hero() {
 
                 <div className="absolute inset-0 flex items-center ml-2 lg:ml-5 px-4">
                   <div className="max-w-2xl text-white space-y-4">
-                    <Typography className="text-base lg:text-lg lg:w-[40%] whitespace-pre-line">
+                    <Typography className="text-lg lg:text-[21px] font-medium lg:w-[40%] whitespace-pre-line">
                       {textData.text}
                     </Typography>
 
                     <Button
                       color="white"
                       onClick={() => route.push(textData.link)}
-                      className="text-black cursor-pointer"
+                      className="text-black cursor-pointer px-6 py-2"
                     >
                       Read More
                     </Button>

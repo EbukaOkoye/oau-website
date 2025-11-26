@@ -21,6 +21,7 @@ import {
   FaFirstAid,
   FaHandsHelping,
   FaQuoteLeft,
+  FaInstagram,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdHealthAndSafety } from "react-icons/md";
@@ -29,6 +30,7 @@ import { IoIosSend, IoMdSchool } from "react-icons/io";
 import { GiReceiveMoney } from "react-icons/gi";
 import { BsChatDotsFill } from "react-icons/bs";
 import { RiMenu2Fill, RiGovernmentFill } from "react-icons/ri";
+import { RxValue } from "react-icons/rx";
 import { GiLifeSupport, GiBulletImpacts, GiLifeTap, GiPayMoney, GiAmbulance, GiTakeMyMoney, GiJourney } from "react-icons/gi";
 
 
@@ -73,3 +75,5 @@ export const Telescope = IoTelescope;
 export const Politics = RiGovernmentFill;
 export const Mission = GiJourney;
 export const Quote = FaQuoteLeft;
+export const Value = RxValue;
+export const Instagram = FaInstagram;

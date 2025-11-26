@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 export default function OurWorks() {
   return (
-    <div className="mt-12 bg-[#f5f5f5] px-5 py-10">
+    <div className="mt-12 bg-[#f5f5f5] px-5 py-10" data-aos="slide-up">
       <Typography
         as={"h3"}
         className="text-3xl lg:text-5xl text-main-blue text-center font-semibold"

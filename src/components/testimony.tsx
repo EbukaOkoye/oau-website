@@ -9,9 +9,9 @@ import { Quote } from "@/utils/icons";
 
 export default function Testimony() {
   return (
-    <div className="mt-6">
+    <div className="mt-6" data-aos="zoom-in">
       <div className="mt-14">
-        <div className="lg:w-4/5 mx-auto rounded-tl-[140px] rounded-br-[140px] bg-white shadow-2xl p-5 lg:p-10">
+        <div className="lg:w-4/5 mx-auto lg:rounded-tl-[140px] lg:rounded-br-[140px] bg-white shadow-2xl p-5 lg:p-10">
           <Swiper
             spaceBetween={50}
             slidesPerView={1}

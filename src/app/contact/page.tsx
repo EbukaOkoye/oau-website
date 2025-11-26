@@ -1,11 +1,13 @@
 "use client";
 import { useState } from "react";
 import Input from "@/components/custom-components/Input";
-import { bottomContact, contactInfo } from "@/utils/data";
-import { images } from "@/utils/images";
-import Image from "next/image";
+import { contactInfo, socialLinks } from "@/utils/data";
 import CustomButton from "@/components/custom-components/Button";
 import { Send } from "@/utils/icons";
+import CustomHero from "@/components/custom-components/customHero";
+import Footer from "@/components/Footer";
+import Link from "next/link";
+import { Typography } from "@material-tailwind/react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -49,71 +51,84 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative w-full h-screen">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={images.oau_man}
-          alt="About us background"
-          fill
-          className="object-cover object-center brightness-75"
-          priority
-        />
-      </div>
-      {/* Overlay Text Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Contact us</h1>
-        <div className="w-24 h-1 bg-white mb-4" />
-        <p className="text-lg md:text-2xl font-medium max-w-2xl">
-          Adelaide based NDIS Service Provider, we are dedicated, inspired and
-          passionate.
-        </p>
-      </div>
-      {/* Curved Bottom Section with Breadcrumb and Logo */}
-      <div className="absolute -bottom-7 w-full">
-        <svg
-          className="w-full h-[80px] md:h-[100px] text-gray-100"
-          viewBox="0 0 1440 100"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
-        </svg>
-
-        {/* <div className="absolute bottom-4 right-6">
-          <Image src={images.hola_heart} alt="Logo" width={50} height={50} />
-        </div> */}
-      </div>
-      <div className="mt-16 p-4 bg-white">
-        <p className="text-gray-500 font-medium leading-8 text-base lg:text-xl">
-          <b className="text-main-purple">
-            Sunflower Care is a NDIS Service Provider
-          </b>{" "}
-          and is one of the fastest-growing disability-care facilities available
-          here in South Australia. Our Participants have the opportunity to live
-          an enriched, and fulfilling life in communities of their choice. We
-          are highly committed to being inclusive of people with differing
-          backgrounds and are constantly tailoring our services to reach diverse
-          social groups. Our website provides an overview of our services,
-          information provided / recorded is accurate as of July 2021. Please
-          contact us If you have any questions or feedback, or want to now more
-          about our support services
-        </p>
-      </div>
+    <section className="h-screen">
+      <CustomHero
+        className="hero_bg flex items-center"
+        textStyle="text-white text-4xl md:text-6xl font-bold ml-5 bg-main-purple px-8 rounded-md"
+      />
       <section className="grid lg:grid-cols-2 gap-4 py-10 px-4 mt-14">
         <div className="">
+          <div className="h-full flex flex-col justify-center px-6 md:px-16">
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 text-main-blue">
+              Message us
+            </h1>
+            <div className="w-24 h-1 bg-main-blue mb-4" />
+            <form className="p-0 gap-4" onSubmit={handleSubmit}>
+              <Input
+                name="firstName"
+                type="text"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder="First Name"
+                className="!border-0 rounded-md !bg-gray-200 w-full"
+              />
+              <Input
+                name="lastName"
+                type="text"
+                value={formData.lastName}
+                onChange={handleChange}
+                placeholder="Last Name"
+                className="!border-0 rounded-md !bg-gray-200 w-full"
+              />
+              <Input
+                name="contactNumber"
+                type="text"
+                value={formData.contactNumber}
+                onChange={handleChange}
+                placeholder="Contact Number"
+                className="!border-0 rounded-md !bg-gray-200 w-full"
+              />
+              <Input
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+                className="!border-0 rounded-md !bg-gray-200 w-full"
+              />
+              <textarea
+                name="message"
+                onChange={handleChange}
+                value={formData.message}
+                placeholder="Message"
+                cols={5}
+                className="w-full text-black focus:outline-none p-3 col-span-2 rounded-md bg-gray-200"
+              />
+              <div className="my-5">
+                <CustomButton
+                  type="submit"
+                  className="group bg-main-blue w-full px-6 py-3 flex justify-center items-center gap-3 text-white mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition ease-in duration-700"
+                >
+                  <span className="">Send</span>
+                  <Send className="text-white group-hover:text-main-blue" />
+                </CustomButton>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="">
           <div className="mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 text-main-blue">
               Contact info
             </h1>
-            <div className="w-24 h-1 bg-main-purple mb-4" />
+            <div className="w-24 h-1 bg-main-blue mb-4" />
           </div>
           {contactInfo.map((_info, id) => (
             <div
               key={id}
-              className="flex rounded-2xl group-hover:bg-transparent my-4 cursor-pointer"
+              className="flex items-center rounded-2xl group-hover:bg-transparent my-4 cursor-pointer"
             >
-              <div className="p-3 bg-main-purple rounded-lg flex items-center justify-center">
+              <div className="p-3 bg-main-blue w-10 h-10 flex items-center justify-center">
                 <_info.icon className="text-white" />
               </div>
               <div className="p-3 bg-white peer-hover:bg-grey-text rounded-lg font-bold text-gray-500">
@@ -121,95 +136,29 @@ export default function Contact() {
               </div>
             </div>
           ))}
-          <div className="mt-8">
-            {bottomContact.map((_bottom, idx) => (
-              <div key={idx} className="flex items-center gap-3 my-6">
-                <_bottom.icon_img className="text-main-purple" />
-                <p className="text-gray-500 font-normal">{_bottom.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="">
-          {/* Address details above map */}
-          <div className="p-4 sm:p-5">
-            <div className="flex space-x-4 text-sm text-hola-purple">
-              {/* These links might point to directions or larger map view */}
-              <iframe
-                loading="lazy"
-                className="w-full !h-[500px]"
-                src="https://www.google.com/maps/embed/v1/place?q=179B%20Philip%20Hwy%20lEizabeth%20South%20SA%205112%2C%20Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              ></iframe>
+          <div className="">
+            <Typography
+              as={"p"}
+              className="text-base lg:text-xl text-main-blue mb-3 font-semibold"
+            >
+              Find us on:
+            </Typography>
+            <div className="flex gap-3">
+              {socialLinks.map((social, index) => (
+                <Link
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  className="text-main-blue text-base lg:text-3xl hover:text-secondary-blue transition-colors duration-200"
+                >
+                  <social.icon className="hover:text-secondary-blue" />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </section>
-      <div className="bg-white mt-28 py-8">
-        <Image src={images.mail} alt="mail" className="mx-auto" />
-        <div className="md:w-10/12 min-h-[28rem] md:mx-auto border-[3px] border-main-blue rounded-2xl mt-24">
-          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 pt-6">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-main-purple">
-              Message us
-            </h1>
-            <div className="w-24 h-1 bg-main-purple mb-4" />
-          </div>
-          <form
-            className="grid grid-cols-2 justify-between gap-4 p-4"
-            onSubmit={handleSubmit}
-          >
-            <Input
-              name="firstName"
-              label="First Name"
-              type="text"
-              value={formData.firstName}
-              onChange={handleChange}
-              placeholder="First Name"
-            />
-            <Input
-              name="lastName"
-              label="Last Name"
-              type="text"
-              value={formData.lastName}
-              onChange={handleChange}
-              placeholder="Last Name"
-            />
-            <Input
-              name="contactNumber"
-              label="Contact Number"
-              type="text"
-              value={formData.contactNumber}
-              onChange={handleChange}
-              placeholder="Contact Number"
-            />
-            <Input
-              name="email"
-              label="Email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-            />
-            <textarea
-              name="message"
-              onChange={handleChange}
-              value={formData.message}
-              placeholder="Message"
-              cols={5}
-              rows={10}
-              className="w-full text-black focus:outline-none border-b-2 p-3 border-b-main-blue col-span-2 rounded-2xl bg-white"
-            />
-            <div className="col-span-2 my-5">
-              <CustomButton
-                type="submit"
-                className="bg-main-purple px-6 py-2 flex items-center gap-3 text-white mx-auto cursor-pointer hover:scale-150 transition ease-in duration-700"
-              >
-                <span className="">Send</span>
-                <Send className="text-white" />
-              </CustomButton>
-            </div>
-          </form>
-        </div>
-      </div>
+      <Footer />
     </section>
   );
 }
