@@ -112,21 +112,16 @@ export default function Bio() {
                   as={"p"}
                   className="text-gray-500 text-lg lg:text-2xl leading-9 font-normal"
                 >
-                  In politics, OAU was a 2023 gubernatorial candidate in Abia
-                  State under the umbrella of Action Alliance (AA) party,
-                  advocating for a leadership that&apos;s transparent,
-                  developmental, and accountable to the people of his state. In
-                  his desire to see a developed Abia, OAU has demonstrated his
-                  desire and readiness to offer his services as required to
-                  achieve sustained developmental goals. OAU is a family man
-                  with parental and community values that drive his
-                  philanthropic efforts. As a transformative leader, OAU&apos;s
-                  legacy is built on determination, service, and a pursuit of
-                  positive change. He&apos;s an advocate of prosperity, which
-                  describes the objectives of his foundation as delivering
-                  positivity to humanity. His story serves as an inspiration for
-                  combining passion with the purpose of uplifting communities
-                  and bridging the inequality gaps.
+                  In January 2022, Uchechukwu had declared his intention to run
+                  for the 2023 governorship under the People&apos;s Democratic
+                  Party (PDP) banner. During the 2023 Abia Governorship
+                  Election, Onyekwere Akym Uchechukwu contested the election as
+                  the AA candidate, campaigning on a promise to rescue the state
+                  from &ldquo;political and economic slavery&rdquo;. In April
+                  2025, Uchechukwu officially joined the Labour Party (LP) and
+                  declared his support for Governor Alex Otti, stating that Otti
+                  was already implementing the changes he had hoped to achieve
+                  for Abia
                 </Typography>
               </div>
             </div>
