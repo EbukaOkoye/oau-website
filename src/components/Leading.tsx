@@ -21,51 +21,54 @@ export default function Leading() {
   return (
     <section className="pt-4 px-4 my-14">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center items-center">
-        <div className="p-3 lg:col-span-1" data-aos="slide-left">
+        <div className="p-3 lg:col-span-1">
           <Image
             src={images.oau_man}
             alt="image"
             className="object-cover  w-full"
+            data-aos="slide-right"
           />
         </div>
-        <div className="lg:col-span-2" data-aos="slide-right">
-          <div className="mb-4 p-3">
-            <Typography
-              as={"h4"}
-              className="uppercase text-main-blue text-2xl lg:text-4xl font-semibold mb-4"
-            >
-              the oau foundation
-            </Typography>
-            <Typography
-              as={"p"}
-              className="text-sm lg:text-base font-normal text-gray-500 text-justify"
-            >
-              A foundation whose mission is dedicated to impacting humanity
-              through humanitarian efforts.
-            </Typography>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-4 mt-8">
-            {missionVision?.map((item, id) => (
-              <div className="flex gap-5 m-5" key={id}>
-                <span>
-                  <item.icon size={40} className="text-main-blue" />
-                </span>
-                <div className="">
-                  <Typography
-                    as={"h5"}
-                    className="text-sm lg:text-xl text-main-blue font-semibold"
-                  >
-                    {item.heading}
-                  </Typography>
-                  <Typography
-                    as={"p"}
-                    className="text-sm lg:text-lg text-gray-500 font-normal mt-4"
-                  >
-                    {item.text}
-                  </Typography>
+        <div className="lg:col-span-2">
+          <div data-aos="slide-left">
+            <div className="mb-4">
+              <Typography
+                as={"h4"}
+                className="uppercase text-main-blue text-2xl lg:text-4xl font-semibold mb-4"
+              >
+                the oau foundation
+              </Typography>
+              <Typography
+                as={"p"}
+                className="text-sm lg:text-base font-normal text-gray-500 text-justify"
+              >
+                A foundation whose mission is dedicated to impacting humanity
+                through humanitarian efforts.
+              </Typography>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-4 mt-8">
+              {missionVision?.map((item, id) => (
+                <div className="flex gap-5 m-5" key={id}>
+                  <span>
+                    <item.icon size={40} className="text-main-blue" />
+                  </span>
+                  <div className="">
+                    <Typography
+                      as={"h5"}
+                      className="text-sm lg:text-xl text-main-blue font-semibold"
+                    >
+                      {item.heading}
+                    </Typography>
+                    <Typography
+                      as={"p"}
+                      className="text-sm lg:text-lg text-gray-500 font-normal mt-4"
+                    >
+                      {item.text}
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -77,7 +80,7 @@ export default function Leading() {
         >
           Our Focus Areas
         </Typography>
-        <div className="mt-10 flex flex-col lg:flex-row justify-center gap-4 lg:gap-8">
+        <div className="mt-10 flex flex-col lg:flex-row justify-center gap-4 lg:gap-5 xl:gap-8">
           {focusAreas.map((_area, idx) => (
             <div
               key={idx}
@@ -104,7 +107,7 @@ export default function Leading() {
           </Button>
         </div>
       </div>
-      <div className="p-3 my-14 bg-secondary-blue lg:h-72" data-aos="fade-left">
+      <div className="p-3 my-14 bg-secondary-blue lg:h-72" data-aos="fade-in">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000 }}

@@ -15,6 +15,12 @@ import portrait_oau from '@/assets/potrait_oau_man.jpeg';
 import landscape_oau from '@/assets/landscape_oau.jpg';
 import uche_ogah from '@/assets/uche_ogah.png';
 import about_hero from '@/assets/bioHero.jpg';
+import our_works_one from '@/assets/ourWorks-1.jpeg';
+import our_works_two from '@/assets/ourWorks-2.jpeg';
+import our_works_three from '@/assets/ourWorks-3.jpeg';
+import our_works_four from '@/assets/ourWorks-4.jpeg';
+import our_works_five from '@/assets/ourWorks-5.jpeg';
+import our_works_six from '@/assets/ourWorks-6.jpeg';
 
 export const images = {
   tom,
@@ -33,6 +39,12 @@ export const images = {
   landscape_oau,
   uche_ogah,
   about_hero,
+  our_works_one,
+  our_works_two,
+  our_works_three,
+  our_works_four,
+  our_works_five,
+  our_works_six,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };

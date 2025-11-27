@@ -65,10 +65,7 @@ export default function Careers() {
           </div>
         </div>
       </div>
-      <div
-        className="p-3 my-14 bg-secondary-blue lg:h-72"
-        data-aos="slide-left"
-      >
+      <div className="p-3 my-14 bg-secondary-blue lg:h-72" data-aos="zoom-in">
         <Swiper
           spaceBetween={20}
           modules={[Autoplay]}

@@ -22,7 +22,7 @@ export default function Hero() {
 
           return (
             <SwiperSlide key={id}>
-              <div className="relative h-full w-full">
+              <div className="relative h-full">
                 <Image
                   src={image}
                   alt={`Hero Slide ${id + 1}`}
@@ -32,7 +32,7 @@ export default function Hero() {
 
                 <div className="absolute inset-0 flex items-center ml-2 lg:ml-5 px-4">
                   <div className="max-w-2xl text-white space-y-4">
-                    <Typography className="text-lg lg:text-[21px] font-medium lg:w-[40%] whitespace-pre-line">
+                    <Typography className="text-lg xl:text-[21px] font-medium lg:w-[40%] whitespace-pre-line">
                       {textData.text}
                     </Typography>
 

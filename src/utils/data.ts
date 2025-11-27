@@ -36,6 +36,10 @@ export const navbarLinks = [
     link: "/oau-foundation",
   },
   {
+    name: "OUR WORKS",
+    link: "/our-works",
+  },
+  {
     name: "CONTACT US",
     link: "/contact",
   },
@@ -342,3 +346,5 @@ export const foundationCoreValues = [
     text: 'Providing emergency assistance, relief, and support to communities affected by crises.'
   },
 ];
+
+export const worksPageImages = [images.our_works_one, images.our_works_two, images.our_works_three, images.our_works_four, images.our_works_five, images.our_works_six];
