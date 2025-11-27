@@ -13,7 +13,7 @@ interface OurWorksProps {
 export default function OurWorks({
   showButton = true,
   showHeading = true,
-  showIcon,
+  showIcon = true,
 }: OurWorksProps) {
   const router = useRouter();
 
