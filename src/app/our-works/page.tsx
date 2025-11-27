@@ -1,7 +1,10 @@
+"use client";
 import CustomHero from "@/components/custom-components/customHero";
 import Footer from "@/components/Footer";
 import OurWorks from "@/components/ourWorks";
 import { worksPageImages } from "@/utils/data";
+import { LifeTap } from "@/utils/icons";
+import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 
 const OurWorksPage = () => {
@@ -15,7 +18,15 @@ const OurWorksPage = () => {
         className="hero_bg flex items-center"
         textStyle="text-white text-4xl md:text-6xl font-bold ml-5 bg-main-purple px-8 rounded-md"
       />
-
+      <div className="my-8">
+        <Typography
+          as={"h3"}
+          className="text-3xl lg:text-5xl text-main-blue text-center font-semibold"
+        >
+          Our Works
+        </Typography>
+        <LifeTap className="text-main-blue text-6xl lg:text-5xl mt-8 text-center mx-auto" />
+      </div>
       <div className="p-[30px_10px]">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
           {/* COLUMN ONE */}

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Typography } from "@material-tailwind/react";
 import CustomHero from "@/components/custom-components/customHero";
 import { images } from "@/utils/images";
+import Testimony from "@/components/testimony";
 
 export default function Bio() {
   return (
@@ -132,6 +133,7 @@ export default function Bio() {
           </div>
         </div>
       </div>
+      <Testimony />
       <Footer />
     </section>
   );
