@@ -47,7 +47,7 @@ export default function Contact() {
     const encodedBody = encodeURIComponent(body);
 
     // Open default mail client with prefilled email
-    window.location.href = `mailto:your-email@example.com?subject=${encodedSubject}&body=${encodedBody}`;
+    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
   };
 
   return (

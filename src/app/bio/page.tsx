@@ -59,7 +59,7 @@ export default function Bio() {
           </div>
         </div>
         <div className="mt-8">
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5">
+          <div className="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center gap-5">
             <div className="">
               <div data-aos="fade-left">
                 <Typography

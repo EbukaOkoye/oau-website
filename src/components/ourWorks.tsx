@@ -11,8 +11,8 @@ interface OurWorksProps {
 }
 
 export default function OurWorks({
-  showButton,
-  showHeading,
+  showButton = true,
+  showHeading = true,
   showIcon,
 }: OurWorksProps) {
   const router = useRouter();

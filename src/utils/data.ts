@@ -109,10 +109,7 @@ export const happyTestimony = [
   },
   {
     testimony:
-    `Your dedication to touching
-            lives, uplifting communities, and setting a standard of excellence
-            has made this day more than a personal milestone—it is a celebration
-            for everyone blessed by your impact.`,
+    `Your dedication to touching lives, uplifting communities, and setting a standard of excellence has made this day more than a personal milestone—it is a celebration for everyone blessed by your impact.`,
     pic: images.cynthia,
     name: "Cynthia",
   },
@@ -316,6 +313,11 @@ export const quickLinks = [
     icon: RightArrow,
     name: 'THE OAU FOUNDATION',
     link: '/oau-foundation'
+  },
+  {
+    icon: RightArrow,
+    name: 'OUR WORKS',
+    link: '/our-works'
   },
   {
     icon: RightArrow,

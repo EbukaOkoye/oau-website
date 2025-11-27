@@ -91,7 +91,7 @@ export default function Footer() {
                 className="!border-0 focus:border-0 focus:outline-0 w-full h-full"
               />
               <CustomButton className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 absolute top-3 right-2.5">
-                Join us
+                Send
               </CustomButton>
             </div>
           </div>
