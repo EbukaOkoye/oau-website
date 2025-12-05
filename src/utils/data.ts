@@ -17,6 +17,7 @@ import {
   PovertyAlleviation,
   RightArrow,
   School,
+  Steps,
   Telescope,
   Value,
 } from "./icons";
@@ -253,7 +254,7 @@ export const foundationMission = [
     text: 'A world where every individual has access to basic necessities, opportunities, and rights, enabling them to live a dignified and fulfilling life.'
   },
   {
-    icon: Value,
+    icon: Steps,
     heading: 'Our Approach',
     text: 'We work in partnership with local communities, governments, and international organizations to design and implement effective programs that address the root causes of poverty, inequality, and social injustice.'
   },

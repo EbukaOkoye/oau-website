@@ -73,7 +73,9 @@ export default function Footer() {
                   className="flex items-center text-center md:text-left gap-3"
                 >
                   <item.icon className="text-white hidden md:block" />
-                  <Link href={item.link}>{item.name}</Link>
+                  <Link href={item.link} className="text-white">
+                    {item.name}
+                  </Link>
                 </div>
               ))}
             </div>
