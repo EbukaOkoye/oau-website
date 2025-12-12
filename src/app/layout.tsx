@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <section className="xl:container lg:mx-auto">
-          <Navbar />
+          {/* <Navbar /> */}
           <AOSProvider />
           {/* {children} */}
         </section>
