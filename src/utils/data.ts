@@ -109,10 +109,9 @@ export const happyTestimony = [
     name: "Jacob",
   },
   {
-    testimony:
-    `Your dedication to touching lives, uplifting communities, and setting a standard of excellence has made this day more than a personal milestone—it is a celebration for everyone blessed by your impact.`,
-    pic: images.cynthia,
-    name: "Cynthia",
+    testimony: `Onyekwere Akym Uchechukwu is a man of quiet strength and unwavering integrity—an embodiment of purpose, passion, and principle. His brilliance is matched only by his humility, and his consistent drive to uplift others speaks volumes about his character. In a world in need of true leadership, he stands tall—not just in words, but in daily action. I celebrate the man he is and the impact he continues to make.`,
+    pic: images.ogbah,
+    name: " Dr. Johnny Ogbah",
   },
   {
     testimony:

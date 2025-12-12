@@ -35,7 +35,7 @@ export default function RootLayout({
         <section className="xl:container lg:mx-auto">
           <Navbar />
           <AOSProvider />
-          {children}
+          {/* {children} */}
         </section>
       </body>
     </html>
