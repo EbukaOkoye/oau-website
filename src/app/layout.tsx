@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import "aos/dist/aos.css";
 import AOSProvider from "@/providers/AosProvider";
 
@@ -22,9 +22,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout({}: // children,
+Readonly<{
   children: React.ReactNode;
 }>) {
   return (
