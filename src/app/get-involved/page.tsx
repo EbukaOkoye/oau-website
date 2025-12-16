@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Footer from "@/components/Footer";
-import { Typography } from "@material-tailwind/react";
+// import { Typography } from "@material-tailwind/react";
 import CustomHero from "@/components/custom-components/customHero";
 import Input from "@/components/custom-components/Input";
 import { Send } from "@/utils/icons";
