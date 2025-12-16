@@ -44,6 +44,10 @@ export const navbarLinks = [
     name: "CONTACT US",
     link: "/contact",
   },
+  {
+    name: "GET INVOLVED",
+    link: "/get-involveds",
+  },
 ];
 
 export const heroImages = [
