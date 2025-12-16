@@ -46,7 +46,7 @@ export const navbarLinks = [
   },
   {
     name: "GET INVOLVED",
-    link: "/get-involveds",
+    link: "/get-involved",
   },
 ];
 
