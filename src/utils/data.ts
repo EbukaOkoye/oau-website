@@ -332,6 +332,16 @@ export const quickLinks = [
     name: 'CONTACT US',
     link: '/contact'
   },
+  {
+    icon: RightArrow,
+    name: 'GET INVOLVED',
+    link: '/get-involved'
+  },
+  {
+    icon: RightArrow,
+    name: 'NEWS',
+    link: '/news'
+  },
 ];
 
 export const foundationCoreValues = [
@@ -362,8 +372,63 @@ export const worksPageImages = [images.our_works_one, images.our_works_two, imag
 export const news = [
   {
     id: 1,
-    title: "Tech startups raise record funding",
-    slug: "tech-startups-funding",
-    image: "/news/thumb1.jpg",
+    title: "Onyekwere Akym Uche Slams Airlines Over Rising Flight Costs, Says Nigerians Facing Undue Hardship",
+    text: `
+      Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has strongly condemned the high cost of domestic flights this Yuletide season, describing the surge as a source of unnecessary hardship for millions of Nigerians striving to reunite with their families.
+
+      In a statement issued to the press, Akym expressed deep concern over what he termed “exploitative pricing” by airlines, particularly during peak travel periods such as Christmas and New Year. 
+
+      He noted that the unprecedented hike in ticket prices has placed an enormous financial burden on ordinary citizens. \n
+
+      “The cost of traveling home this festive season has become unbearable for the average Nigerian,” Akym said. “Families are being priced out of seeing their loved ones, and this is unacceptable. Airlines must recognise that their operations exist to serve the people, not to exploit them during moments of emotional and cultural significance.”
+
+      OAU highlighted the broader social impact of inflated airfares, pointing out that excessive costs could erode cultural practices and weaken the bonds that hold communities together. 
+
+      “The ability to travel home during festive periods is more than convenience; it is part of our cultural fabric,” he stated. “When people cannot afford to travel, it affects family cohesion, community bonding, and even economic activities that thrive during the holiday season.”
+
+      Onyekwere Akym Uche also urged both the federal government and regulatory authorities to take swift and decisive action to stabilise airfare costs. \n
+
+      “This is a national issue that requires intervention at the highest level. The government, through the Civil Aviation Authority and other relevant agencies, must ensure that pricing is transparent, fair, and aligned with operational realities,” Akym emphasised.
+
+      In addition to calling for regulatory oversight, OAU encouraged airline operators to adopt socially responsible business practices. 
+
+      “Profit is important, but it cannot come at the expense of the welfare of citizens. Airlines should consider flexible pricing mechanisms, targeted discounts, or other strategies that allow Nigerians to travel affordably,” he suggested.
+
+      Akym concluded by warning that failure to address the crisis could have political and social repercussions. 
+
+      “If nothing is done, the public perception will be that airlines and regulators are indifferent to the suffering of ordinary Nigerians. I call on all stakeholders to act immediately to relieve this undue hardship,” he said.
+          `,
+      image: images.oau_white
+  },
+
+  {
+    id: 2,
+    title: 'Put Nigerians First, OAU Advises Leaders, Emphasising Compassion and Inclusion',
+    text: `
+      In a strong call for ethical and people-centered governance, Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has urged Nigerian leaders to place the welfare of citizens at the forefront of their decision-making. 
+
+      In a statement made available to newsmen, OAU highlighted the need for compassion, integrity, and inclusion as the foundation of effective governance in Nigeria.
+
+      According to Onyekwere Akym Uche, “Leadership is meaningful only when it uplifts communities, strengthens institutions, and offers hope to the people. Any administration that ignores the needs of its citizens is failing in its primary responsibility.”
+
+      Akym further emphasized that good governance is not just about policy or infrastructure, but about empathy and active engagement with the people. 
+
+      “A leader who listens, who cares, and who acts in the interest of the most vulnerable in society is a leader who truly serves. Compassion must be the heartbeat of every government,” he said.
+
+      He also highlighted the importance of inclusion, stressing that sustainable development can only be achieved when all Nigerians, regardless of region, religion, or background, are represented and considered in decision-making processes.
+
+      “We cannot talk about progress while leaving segments of our society behind. Inclusive leadership ensures that every voice matters, and that no one is left behind,” Akym added.
+
+      Hon Onyekwere Akym Uche therefore urged leaders at all levels of government to adopt policies that prioritize education, healthcare, women/youth empowerment and social welfare, arguing that these areas are essential for national growth and stability.
+
+      “Putting Nigerians first is not a slogan; it is a moral obligation and a strategic imperative. Governments must design programs and initiatives that directly improve the lives of citizens, particularly the marginalized,” Uche stated.
+
+      Summarily, Onyekwere Akym Uche called on Nigerians to engage actively in governance by holding leaders accountable and promoting ethical leadership. 
+
+      “Together, as citizens and leaders, we can build a Nigeria where government serves the people genuinely, and where compassion and inclusion guide every decision,” he said.
+
+      He also pledged to continue advocating for people-centered leadership and to support initiatives that promote transparency, fairness, and social justice across the country.
+      `,
+    image: images.oau_blue
   },
 ];

@@ -3,6 +3,8 @@ import { news } from "@/utils/data";
 import { images } from "@/utils/images";
 import Link from "next/link";
 import CustomHero from "@/components/custom-components/customHero";
+import { cutText } from "@/utils/helpers";
+import Footer from "@/components/Footer";
 
 export default function News() {
   return (
@@ -73,29 +75,34 @@ export default function News() {
             {news.map((item) => (
               <Link
                 key={item.id}
-                href={`/news/${item.slug}`}
+                href={`/news/${item.id}`}
                 className="flex gap-4 group"
               >
                 <div className="w-24 h-20 rounded-lg overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
-                    fill
                     className="object-cover group-hover:scale-105 transition"
                   />
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-medium group-hover:text-blue-600">
+                  <h4 className="text-sm text-main-blue font-semibold">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-gray-500 mt-1">Read more →</p>
+                  <p className="text-xs text-gray-500 mt-1 font-medium">
+                    {cutText(item.text, 130)}
+                  </p>
+                  <p className="text-sm font-semibold text-gray-500 mt-1 hover:text-main-blue">
+                    Read more →
+                  </p>
                 </div>
               </Link>
             ))}
           </aside>
         </div>
       </section>
+      <Footer />
     </section>
   );
 }

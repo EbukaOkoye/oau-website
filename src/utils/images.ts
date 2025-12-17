@@ -22,6 +22,8 @@ import our_works_four from '@/assets/ourWorks-4.jpeg';
 import our_works_five from '@/assets/ourWorks-5.jpeg';
 import our_works_six from '@/assets/ourWorks-6.jpeg';
 import ogbah from '@/assets/dr_ogbah.jpeg';
+import oau_white from '@/assets/oau_white.jpeg';
+import oau_blue from '@/assets/oau_blue.jpeg'
 
 export const images = {
   tom,
@@ -47,6 +49,8 @@ export const images = {
   our_works_five,
   our_works_six,
   ogbah,
+  oau_white,
+  oau_blue,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };
