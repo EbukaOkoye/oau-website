@@ -48,6 +48,10 @@ export const navbarLinks = [
     name: "GET INVOLVED",
     link: "/get-involved",
   },
+  {
+    name: "NEWS",
+    link: "/news",
+  },
 ];
 
 export const heroImages = [
@@ -354,3 +358,12 @@ export const foundationCoreValues = [
 ];
 
 export const worksPageImages = [images.our_works_one, images.our_works_two, images.our_works_three, images.our_works_four, images.our_works_five, images.our_works_six];
+
+export const news = [
+  {
+    id: 1,
+    title: "Tech startups raise record funding",
+    slug: "tech-startups-funding",
+    image: "/news/thumb1.jpg",
+  },
+];
