@@ -23,7 +23,7 @@ export default function News() {
             </h1>
             <div className="w-full h-72 !overflow-hidden mb-6 rounded-xl">
               <Image
-                src={images.landscape_oau}
+                src={images.oau_white}
                 alt="Main news"
                 className="w-object-cover"
               />
