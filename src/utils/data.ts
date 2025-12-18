@@ -103,22 +103,8 @@ export const holaSupportList = [
 
 export const happyTestimony = [
   {
-    testimony:
-      `OAU is more
-            than just a celebrated personality; he is a beacon of hope, a
-            resilient leader, and a man whose dedication to humanity continues
-            to touch countless lives. Through his humanitarian platform, The OAU
-            Foundation, he has uplifted communities, empowered individuals, and
-            set a standard of excellence that speaks volumes of his character.
-            An entrepreneur with a passion for humanitarian service, he has
-            reportedly lived in developed countries and aimed to implement
-            similar developmental changes in Abia State.`,
-    pic: images.jacob,
-    name: "Jacob",
-  },
-  {
     testimony: `Onyekwere Akym Uchechukwu is a man of quiet strength and unwavering integrity—an embodiment of purpose, passion, and principle. His brilliance is matched only by his humility, and his consistent drive to uplift others speaks volumes about his character. In a world in need of true leadership, he stands tall—not just in words, but in daily action. I celebrate the man he is and the impact he continues to make.`,
-    pic: images.ogbah,
+    pic: images.another_ogah,
     name: " Dr. Johnny Ogbah",
   },
   {

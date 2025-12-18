@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { footerFocusArea, quickLinks } from "@/utils/data";
 import Link from "next/link";
 import CustomButton from "./custom-components/Button";
@@ -9,6 +9,35 @@ import Input from "./custom-components/Input";
 
 export default function Footer() {
   // const route = useRouter();
+  const [volunteer, setVolunteer] = useState({ text: "" });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setVolunteer((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const subject = "Volunteer Message";
+    const body = `
+    Message: ${volunteer.text}
+  `;
+
+    // Encode the subject and body for URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    // Open default mail client with prefilled email
+    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+  };
 
   function goToGstat() {
     window.open("https://www.gstatmobile.com");
@@ -83,19 +112,27 @@ export default function Footer() {
           {/* Column 4: News Letter */}
           <div className="p-3">
             <h4 className="font-semibold text-base lg:text-xl text-white mb-2 uppercase">
-              Join us
+              Volunteer
             </h4>
             <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
-            <div className="bg-white rounded-md relative mt-6">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white rounded-md relative h-14 mt-6"
+            >
               <Input
                 type="text"
-                placeholder="NewsLetter"
+                placeholder="Volunteer"
+                onChange={handleChange}
+                value={volunteer.text}
                 className="!border-0 focus:border-0 focus:outline-0 w-full h-full"
               />
-              <CustomButton className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 absolute top-3 right-2.5">
+              <CustomButton
+                type="submit"
+                className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 absolute top-3 right-2.5"
+              >
                 Send
               </CustomButton>
-            </div>
+            </form>
           </div>
         </div>
       </div>

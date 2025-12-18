@@ -17,8 +17,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The OAU FOundation",
+  description:
+    "The OAU Foundation is a humanitarian non-governmental organization (NGO) dedicated to improving the lives of individuals and communities in need",
   icons: {
-    icon: "/sunflower-care-logo-removebg.png",
+    icon: "/oau_blue.jpeg",
   },
 };
 
