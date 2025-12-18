@@ -1,46 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { footerFocusArea, quickLinks } from "@/utils/data";
 import Link from "next/link";
 import CustomButton from "./custom-components/Button";
 import { Typography } from "@material-tailwind/react";
-import Input from "./custom-components/Input";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
-  // const route = useRouter();
-  const [volunteer, setVolunteer] = useState({ text: "" });
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    const { name, value } = e.target;
-    setVolunteer((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const subject = "Volunteer Message";
-    const body = `
-    Message: ${volunteer.text}
-  `;
-
-    // Encode the subject and body for URL
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
-
-    // Open default mail client with prefilled email
-    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
-  };
+  const route = useRouter();
 
   function goToGstat() {
     window.open("https://www.gstatmobile.com");
+  }
+
+  function goToInvolvedPage() {
+    route.push("/get-involved");
   }
 
   return (
@@ -115,21 +89,11 @@ export default function Footer() {
               Volunteer
             </h4>
             <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
-            <form
-              onSubmit={handleSubmit}
-              className="bg-white rounded-md h-14 mt-6 flex items-center px-3 gap-2"
-            >
-              <Input
-                type="text"
-                name="text"
-                placeholder="Volunteer message"
-                onChange={handleChange}
-                value={volunteer.text}
-                className="!border-0 focus:border-0 focus:outline-0 w-full h-full"
-              />
+            <form className="bg-white rounded-md h-14 mt-6 flex items-center px-3 gap-2">
               <CustomButton
                 type="submit"
-                className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2"
+                onClick={goToInvolvedPage}
+                className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 w-full"
               >
                 Send
               </CustomButton>
