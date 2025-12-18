@@ -121,7 +121,7 @@ export default function Footer() {
             >
               <Input
                 type="text"
-                placeholder="Volunteer"
+                placeholder="Volunteer message"
                 onChange={handleChange}
                 value={volunteer.text}
                 className="!border-0 focus:border-0 focus:outline-0 w-full h-full"
