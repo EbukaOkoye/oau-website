@@ -55,7 +55,7 @@ export const navbarLinks = [
 ];
 
 export const heroImages = [
-  images.landscape_oau,
+  images.oau_white,
   images.portrait_oau,
 ];
 
