@@ -117,10 +117,11 @@ export default function Footer() {
             <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
             <form
               onSubmit={handleSubmit}
-              className="bg-white rounded-md relative h-14 mt-6"
+              className="bg-white rounded-md h-14 mt-6 flex items-center px-3 gap-2"
             >
               <Input
                 type="text"
+                name="text"
                 placeholder="Volunteer message"
                 onChange={handleChange}
                 value={volunteer.text}
@@ -128,7 +129,7 @@ export default function Footer() {
               />
               <CustomButton
                 type="submit"
-                className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 absolute top-3 right-2.5"
+                className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2"
               >
                 Send
               </CustomButton>
