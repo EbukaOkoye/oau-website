@@ -4,17 +4,11 @@ import { footerFocusArea, quickLinks } from "@/utils/data";
 import Link from "next/link";
 import CustomButton from "./custom-components/Button";
 import { Typography } from "@material-tailwind/react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export default function Footer() {
-  const route = useRouter();
-
   function goToGstat() {
     window.open("https://www.gstatmobile.com");
-  }
-
-  function goToInvolvedPage() {
-    route.push("/get-involved");
   }
 
   return (
@@ -89,15 +83,14 @@ export default function Footer() {
               Volunteer
             </h4>
             <div className="w-10 h-1 bg-white mx-auto lg:mx-0" />
-            <form className="bg-white rounded-md h-14 mt-6 flex items-center px-3 gap-2">
+            <div className="bg-white rounded-md h-14 mt-6 flex items-center px-3 gap-2">
               <CustomButton
                 type="submit"
-                onClick={goToInvolvedPage}
                 className="bg-main-blue text-white cursor-pointer text-sm rounded-md p-2 w-full"
               >
-                Send
+                <Link href={"/get-involved"}>Send</Link>
               </CustomButton>
-            </form>
+            </div>
           </div>
         </div>
       </div>
