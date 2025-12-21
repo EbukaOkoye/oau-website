@@ -24,12 +24,12 @@ export default function Testimony() {
             {happyTestimony.map((_item, i) => (
               <SwiperSlide key={i} className="my-auto">
                 <>
-                  <div className="flex flex-col lg:flex-row lg:justify-between lg:flex-2/5 items-center">
+                  <div className="flex flex-col lg:flex-row lg:justify-between lg:flex-2/5 items-center gap-5">
                     <div className="flex-1 lg:w-[20%] flex flex-col items-center">
                       <Image
                         src={_item.pic}
                         alt="image"
-                        className="w-[142px] h-[142px] rounded-full"
+                        className="w-[100px] h-[100px] my-auto lg:!w-[142px] lg:!h-[142px] rounded-full"
                       />
                     </div>
                     <div className="lg:col-span-2 lg:w-[80%]">
