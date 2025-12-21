@@ -25,6 +25,7 @@ import ogbah from '@/assets/dr_ogbah.jpeg';
 import oau_white from '@/assets/oau_white.jpeg';
 import oau_blue from '@/assets/oau_blue.jpeg';
 import another_ogah from '@/assets/another_ogah.jpeg';
+import lotanna from '@/assets/lotanna.jpeg';
 
 export const images = {
   tom,
@@ -53,6 +54,7 @@ export const images = {
   oau_white,
   oau_blue,
   another_ogah,
+  lotanna,
   faq_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
   link_img: `https://www.holasupport.com.au/wp-content/uploads/2021/07/FAQs-top-Header-HS-img-01.jpg`,
 };
