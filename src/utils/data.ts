@@ -117,7 +117,7 @@ export const happyTestimony = [
     testimony:
     `"A Good man he is, selfless and always willing to sacrifice for the benefit of others Akym, family and humanity will always uphold your good life and philanthropic gestures!!! A man that speaks the bold truth no matter who's OX is Goered”`,
     pic: images.lotanna,
-    name: "Maduemem Lotanna Victor. BSC Accts, MNIM, MBA Mgt., ACA, ACTI.",
+    name: "Maduememm Lotanna Viator. BSC Accts, MNIM, MBA Mgt., ACA, ACTI.",
   },
 ];
 
