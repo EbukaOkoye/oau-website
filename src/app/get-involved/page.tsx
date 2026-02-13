@@ -27,7 +27,7 @@ export default function GetInvolved() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -39,7 +39,7 @@ export default function GetInvolved() {
   const handlePartnerChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setPartnerData((prevData) => ({
@@ -65,7 +65,7 @@ export default function GetInvolved() {
     const encodedBody = encodeURIComponent(body);
 
     // Open default mail client with prefilled email
-    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+    window.location.href = `mailto:admin@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
   };
 
   const handlePartnerSubmit = (e: React.FormEvent) => {
@@ -85,7 +85,7 @@ export default function GetInvolved() {
     const encodedBody = encodeURIComponent(body);
 
     // Open default mail client with prefilled email
-    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+    window.location.href = `mailto:admin@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
   };
 
   return (

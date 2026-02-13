@@ -364,6 +364,26 @@ export const worksPageImages = [images.our_works_one, images.our_works_two, imag
 export const news = [
   {
     id: 1,
+    title: 'Will Nigeria Choose Transparency or Repeat 2023’s Electoral Criminality? — By Onyekwere Akym Uche (OAU)',
+    text: `
+      As Nigeria gradually approaches the 2027 general elections, the nation stands at a defining crossroads. The memories of the 2023 electoral process remain vivid in the minds of millions of citizens who watched with hope, only to be confronted by controversy, confusion, and widespread allegations of manipulation. Elections are the lifeblood of any democracy. When their credibility is questioned, the legitimacy of governance itself is weakened. The pressing question before Nigeria today is whether it will embrace transparency and reform, or whether it will once again descend into the troubling patterns that stained its last national exercise.
+
+      The controversy surrounding the failure to entrench mandatory electronic transmission of election results has reignited fears of systemic regression. Electronic transmission is not a luxury innovation but a fundamental safeguard designed to protect the sanctity of the ballot. It minimizes human interference, reduces opportunities for tampering, and strengthens public confidence in outcomes. By resisting such a reform, lawmakers risk sending a dangerous signal that opacity remains preferable to accountability. A democracy cannot thrive where transparency is treated as optional.
+
+      The turmoil that followed the 2023 elections did not emerge in isolation. It was fueled by inconsistent implementation of electoral guidelines, disputed result collation processes, and the now infamous explanation of technical glitches. Many Nigerians felt betrayed by assurances that technology would guarantee real time credibility, only to witness a process marred by delays and contradictions. Trust, once broken, is not easily restored. If lessons from 2023 are ignored, the nation may face even deeper skepticism and potential unrest in 2027.
+
+      Globally, electoral integrity has become a benchmark for measuring democratic maturity. Several African nations have adopted digital transmission systems with measurable success, enhancing transparency and reducing post election disputes. Nigeria, often described as the giant of Africa, should be leading in democratic innovation rather than hesitating at the threshold of reform. The refusal to adopt clear and binding transparency mechanisms risks portraying the country as unwilling to evolve with the demands of modern governance.
+
+      Beyond the mechanics of voting lies a deeper moral question about leadership responsibility. Government exists to guarantee order, justice, and equal opportunity. When institutions appear to shield ambiguity instead of clarity, citizens begin to question whether power is being exercised for the common good or for narrow interests. Electoral manipulation, whether real or perceived, erodes national cohesion and diminishes faith in democratic participation. A system that fails to reflect the true will of the people cannot sustainably command their loyalty.
+
+      The stakes in 2027 extend beyond political parties and individual ambitions. They concern the future of Nigeria’s democracy and the inheritance left for the next generation. Young Nigerians, already disillusioned by economic hardship and governance challenges, are watching closely. If the political class fails to implement credible safeguards, it risks deepening apathy or provoking civic resistance. A stable nation is built on credible processes, not on contested victories.
+
+      Nigeria still has time to choose wisely. Transparency is not an act of charity by those in power but a duty owed to the citizens. The path to credible elections is neither mysterious nor unattainable. It requires political will, institutional integrity, and a commitment to reform that places national interest above partisan advantage. As 2027 approaches, the country must decide whether it will correct the errors of 2023 or entrench them. The choice will determine not only the outcome of an election, but the direction of a nation.
+    `,
+    image: images.oau_white,
+  },
+  {
+    id: 2,
     title: "Onyekwere Akym Uche Slams Airlines Over Rising Flight Costs, Says Nigerians Facing Undue Hardship",
     text: `
       Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has strongly condemned the high cost of domestic flights this Yuletide season, describing the surge as a source of unnecessary hardship for millions of Nigerians striving to reunite with their families.
@@ -394,7 +414,7 @@ export const news = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: 'Put Nigerians First, OAU Advises Leaders, Emphasising Compassion and Inclusion',
     text: `
       In a strong call for ethical and people-centered governance, Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has urged Nigerian leaders to place the welfare of citizens at the forefront of their decision-making. 
@@ -423,4 +443,5 @@ export const news = [
       `,
     image: images.oau_blue
   },
+  
 ];
