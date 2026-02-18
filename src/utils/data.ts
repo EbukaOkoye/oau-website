@@ -364,6 +364,27 @@ export const worksPageImages = [images.our_works_one, images.our_works_two, imag
 export const news = [
   {
     id: 1,
+    title: 'Breaking the Chains of Bad Governance: A Call for Ethical Political Reform — Onyekwere Akym Uche (OAU)',
+    text: `
+      Nigeria stands at a defining moment in its national journey. Rich in culture, blessed with abundant natural resources, and powered by one of the most energetic youth populations in the world, the country should be a beacon of progress on the African continent. Yet the persistent weight of bad governance continues to suppress its vast potential. Corruption, electoral malpractice, weak institutions, and leadership driven by personal ambition rather than public service have created a cycle that undermines trust and slows development. Breaking these chains requires more than rhetoric. It demands ethical political reform anchored in integrity, accountability, and a renewed sense of national purpose.
+
+      Bad governance is not merely a political failure. It is a human tragedy. It is seen in overcrowded classrooms where children struggle to learn without adequate resources. It is felt in hospitals where basic equipment is lacking. It is experienced by graduates who wander the streets in search of employment that does not exist. When leadership fails, ordinary citizens pay the price. The consequences extend beyond statistics and economic indicators. They shape the daily realities of families who dream of better opportunities yet remain constrained by systems that prioritize the few over the many.
+
+      Ethical political reform begins with character. Leadership must be redefined as stewardship rather than entitlement. Public office should not be viewed as a pathway to wealth accumulation but as a sacred trust to serve the common good. Ethical leaders understand that power is temporary, but impact is lasting. They value transparency, respect the rule of law, and are guided by conscience. When integrity becomes the standard rather than the exception, institutions grow stronger and citizens regain confidence in governance.
+
+      Electoral reform is also central to breaking the cycle of dysfunction. A credible democratic process is the foundation of legitimate leadership. When elections are manipulated, the will of the people is silenced, and accountability is weakened from the outset. Strengthening electoral systems, protecting voter rights, and ensuring transparency in political financing are critical steps toward reform. Democracy thrives where citizens believe their voices matter and their votes count. Without electoral integrity, political reform remains incomplete.
+
+      Citizens themselves play a vital role in this transformation. Ethical governance cannot flourish in an environment of apathy. The demand for reform must rise from the grassroots. Civil society organizations, religious institutions, youth movements, and professional bodies all have a responsibility to advocate for accountability and to model ethical behavior. Social change is sustained when citizens move beyond complaint to constructive engagement. Holding leaders accountable through lawful means strengthens democracy and nurtures a culture of responsibility.
+
+      Education and civic enlightenment are powerful tools in dismantling the structures of bad governance. A politically informed population is less vulnerable to manipulation. When citizens understand their rights and responsibilities, they are better equipped to demand transparency and reject divisive tactics. Investing in civic education cultivates a generation that values service, fairness, and justice. Over time, this shift in values can transform political culture from one defined by greed to one guided by collective progress.
+
+      Breaking the chains of bad governance is neither simple nor immediate, but it is possible. Nations across the world have confronted similar challenges and emerged stronger through courage and reform. Nigeria’s story does not have to be one of squandered promise. It can become a testament to resilience and renewal. Ethical political reform offers a path toward a society where leadership reflects compassion, policies prioritize people, and governance becomes a tool for empowerment rather than exploitation. The future depends on the choices made today, and the call for reform must be answered with conviction and hope.
+
+      `,
+    image: images.portrait_oau
+  },
+  {
+    id: 2,
     title: 'Will Nigeria Choose Transparency or Repeat 2023’s Electoral Criminality? — By Onyekwere Akym Uche (OAU)',
     text: `
       As Nigeria gradually approaches the 2027 general elections, the nation stands at a defining crossroads. The memories of the 2023 electoral process remain vivid in the minds of millions of citizens who watched with hope, only to be confronted by controversy, confusion, and widespread allegations of manipulation. Elections are the lifeblood of any democracy. When their credibility is questioned, the legitimacy of governance itself is weakened. The pressing question before Nigeria today is whether it will embrace transparency and reform, or whether it will once again descend into the troubling patterns that stained its last national exercise.
@@ -383,7 +404,7 @@ export const news = [
     image: images.oau_white,
   },
   {
-    id: 2,
+    id: 3,
     title: "Onyekwere Akym Uche Slams Airlines Over Rising Flight Costs, Says Nigerians Facing Undue Hardship",
     text: `
       Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has strongly condemned the high cost of domestic flights this Yuletide season, describing the surge as a source of unnecessary hardship for millions of Nigerians striving to reunite with their families.
@@ -414,7 +435,7 @@ export const news = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'Put Nigerians First, OAU Advises Leaders, Emphasising Compassion and Inclusion',
     text: `
       In a strong call for ethical and people-centered governance, Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has urged Nigerian leaders to place the welfare of citizens at the forefront of their decision-making. 
@@ -445,3 +466,4 @@ export const news = [
   },
   
 ];
+
