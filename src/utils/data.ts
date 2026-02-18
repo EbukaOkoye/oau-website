@@ -385,6 +385,24 @@ export const news = [
   },
   {
     id: 2,
+    title: 'YOUR PVC IS YOUR BRAGGING RIGHT, GET YOURS TODAY',
+    text: `
+      Continuous Voter Registration (CVR) Is Ongoing Nationwide
+
+      The ongoing Continuous Voter Registration exercise provides a vital opportunity for every eligible citizen to actively participate in shaping the future of our nation.
+
+      If you are a first-time voter, need to update your registration details, or have not yet collected your Permanent Voter Card (PVC), this is the appropriate time to take action.
+
+      The registration process is straightforward: visit your Local Government Area INEC Office  designated Registration Centre ,present the required information and documentation, and complete your enrollment.
+
+      Active civic participation remains the cornerstone of a thriving democracy. Your vote is your voice, and your voice matters.
+
+      Register today and be part of building the Nigeria we all desire.
+      `,
+    image: images.oau_vote
+  },
+  {
+    id: 3,
     title: 'Will Nigeria Choose Transparency or Repeat 2023’s Electoral Criminality? — By Onyekwere Akym Uche (OAU)',
     text: `
       As Nigeria gradually approaches the 2027 general elections, the nation stands at a defining crossroads. The memories of the 2023 electoral process remain vivid in the minds of millions of citizens who watched with hope, only to be confronted by controversy, confusion, and widespread allegations of manipulation. Elections are the lifeblood of any democracy. When their credibility is questioned, the legitimacy of governance itself is weakened. The pressing question before Nigeria today is whether it will embrace transparency and reform, or whether it will once again descend into the troubling patterns that stained its last national exercise.
@@ -404,7 +422,7 @@ export const news = [
     image: images.oau_white,
   },
   {
-    id: 3,
+    id: 4,
     title: "Onyekwere Akym Uche Slams Airlines Over Rising Flight Costs, Says Nigerians Facing Undue Hardship",
     text: `
       Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has strongly condemned the high cost of domestic flights this Yuletide season, describing the surge as a source of unnecessary hardship for millions of Nigerians striving to reunite with their families.
@@ -435,7 +453,7 @@ export const news = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Put Nigerians First, OAU Advises Leaders, Emphasising Compassion and Inclusion',
     text: `
       In a strong call for ethical and people-centered governance, Former Abia State governorship candidate and founder of the OAU foundation, Hon Onyekwere Akym Uche (OAU), has urged Nigerian leaders to place the welfare of citizens at the forefront of their decision-making. 
@@ -463,6 +481,36 @@ export const news = [
       He also pledged to continue advocating for people-centered leadership and to support initiatives that promote transparency, fairness, and social justice across the country.
       `,
     image: images.oau_blue
+  },
+
+  {
+    id: 6,
+    title: 'SENATORIAL AMBITION OF AKYM ONYEKWERE GAINS MORE MOMENTUM AS SOME GROUP VISITED HIS RESIDENCE FOR ENDORSEMENT.',
+    text: `
+      The senatorial ambition of Onyekwere Akym Uche has continued to gather remarkable momentum as various groups across Abia North declare their support for his aspiration. In a significant show of solidarity, a delegation of youths from different local government areas of the district paid an unscheduled visit to his residence in the early hours of today. Their presence was described as a bold statement of endorsement and confidence in his leadership capacity to transform Abia North district as he has shown consistent compassion in using his private resources to assist the masses.The atmosphere was charged with enthusiasm as the group expressed optimism and confidence on the future of the senatorial district. The visit further underscored the growing grassroots acceptability of his ambition. It also reflected the increasing desire among the people for purposeful representation that is built on values.
+
+      The youths stated clearly that their mission was to publicly identify with Akym and lend their voices to his aspiration for the Abia North Senate seat. According to them, the region has experienced years of underdevelopment, backwardness, Poor representation and neglect. They lamented the persistent infrastructural decay affecting many communities in the zone.Unemployment and youth restiveness were also highlighted as major concerns. The group insisted that urgent intervention is needed to redirect the zone toward growth. They expressed confidence that Akym possesses the vision to change the narrative for good.
+
+      Speaking during the visit, representatives of the group emphasized that their endorsement was not influenced by mere political sentiments. They explained that their decision was based on Akym’s long standing philanthropic engagements, public trust, Leadership qualities,  doggedness, peaceful disposition etc. Over the years, he has consistently demonstrated compassion for the less privileged. His humanitarian gestures, they said, have touched countless families , clans , Local Government, States etc.These actions have earned him widespread admiration across the district and state at large.
+      For them, leadership must be built on proven character and service to the people.
+
+      The youths went further to recount several impactful initiatives attributed to him. They mentioned the building of free houses for the needy as one of his notable contributions. They also cited the donation of vehicles to support individuals and community causes. Scholarship schemes for students from disadvantaged backgrounds were equally acknowledged. Payment of hospital bills for indigent patients was highlighted as another example of his generosity. According to them, these efforts reflect a genuine commitment to societal welfare and growth.
+
+      In addition to individual support, the group noted his involvement in broader community development projects. They stated that many communities have benefited from his direct interventions. His approach, they said, focuses on practical solutions and empathy rather than empty promises. Through his personal resources, he has empowered youths and small business owners. Such initiatives have helped to stimulate local economic activities and growth.The youths maintained that this track record distinguishes him from peers.
+
+      Expressing dissatisfaction with past & present representation, the group decried what they described as ineffective leadership in the senatorial zone. They argued that Abia North has not maximized its potential over the years. According to them, poor advocacy and weak legislative presence have slowed progress. Critical infrastructure has remained in deplorable condition. Opportunities that could attract investment have been underutilized. This, they insisted, must change with the coming of Akym.
+
+      The delegation emphasized that a vote for Akym would represent a vote for transformation. They envisioned a future anchored on economic sustainability and inclusive growth. Youth empowerment was described as a central pillar of their expectations. They believe that his philosophy of human capital development aligns with the needs of the people. For them, credible representation at the Senate will open new opportunities. They called on other stakeholders to rally behind his aspiration.
+
+      Receiving the group on behalf of his principal , Hon.Uche Madukwe, who expressed deep appreciation for the visit. He described the solidarity shown by the youths as encouraging and timely. According to him, such gestures demonstrate growing public trust in Akym’s vision. He assured the delegation that their message would be duly conveyed. He also commended them for their peaceful and organized conduct. 
+
+      Madukwe reiterated that Akym remains committed to serving the people of Abia North with dedication. He described him as a goal driven leader with a passion for excellence. According to him, his principal believes strongly in empowerment as a tool for development. He noted that sustainable growth can only be achieved when people are given opportunities to thrive. This philosophy, he said, has guided Akym’s personal and public engagements. It will equally shape his legislative priorities if elected.
+
+      He further emphasized that the aspiration of Akym is rooted in a genuine desire to reposition the senatorial district. The focus, he said, will be on attracting federal presence and developmental projects. He assured the youths that their concerns about unemployment and infrastructure are well understood. Strategic partnerships and effective representation would be pursued vigorously. Transparent leadership and accountability would remain guiding principles. The ultimate goal, he stressed, is measurable progress.
+
+      The visit concluded with renewed assurances of support from the youth delegation. They pledged to mobilize others across the local government areas. According to them, collective effort is necessary to achieve meaningful change. They expressed hope that their endorsement would inspire broader participation. The gathering ended on a note of unity and shared purpose. It reinforced the growing momentum behind Akym’s senatorial ambition.
+      `,
+    image: images.portrait_oau
   },
   
 ];

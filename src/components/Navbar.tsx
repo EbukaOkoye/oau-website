@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/utils/data";
+import Image from "next/image";
+import { images } from "@/utils/images";
 
 import Link from "next/link";
 import {
@@ -19,7 +21,7 @@ export default function Navbar() {
   useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 1024 && setOpenNav(false)
+      () => window.innerWidth >= 1024 && setOpenNav(false),
     );
   }, []);
 
@@ -27,6 +29,11 @@ export default function Navbar() {
     <section className="z-50 w-full fixed top-0 left-0">
       <Nav className="bg-gradient-to-r from-main-blue to-main-blue rounded-none px-4 py-2 lg:px-8 lg:py-1">
         <div className="container mx-auto flex items-center justify-between">
+          <Image
+            src={images.oau_logo}
+            alt="OAU Foundation Logo"
+            className="h-16 w-16"
+          />
           <div className="hidden lg:flex gap-3 justify-end w-full">
             {navbarLinks.map((_link) => (
               <Link
