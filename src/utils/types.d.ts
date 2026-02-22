@@ -15,6 +15,7 @@ interface CustomButtonProps {
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 interface InputProps {

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import "aos/dist/aos.css";
 import AOSProvider from "@/providers/AosProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The OAU FOundation",
+  title: "The OAU Foundation",
   description:
     "The OAU Foundation is a humanitarian non-governmental organization (NGO) dedicated to improving the lives of individuals and communities in need",
   icons: {
@@ -60,6 +61,7 @@ export default function RootLayout({
             }}
           />
           {children}
+          <ScrollToTop />
         </section>
       </body>
     </html>

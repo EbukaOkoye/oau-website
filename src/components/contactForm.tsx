@@ -66,23 +66,20 @@ export default function ContactForm() {
   return (
     <section className="lg:mt-56 lg:px-3 py-10" data-aos="zoom-in-up">
       <section className="rounded-md">
-        {/* <div className=" relative"></div> */}
         <div className="!w-full lg:max-w-7xl mx-auto lg:px-6">
           {/* LEFT SECTION */}
           <div className="space-y-8">
-            {/* Years of Experience */}
             <Typography
               as={"h4"}
-              className="text-xl lg:text-[40px] text-main-blue font-semibold"
+              className="text-xl lg:text-[40px] text-main-blue font-semibold section-heading-accent"
             >
               THE OAU FOUNDATION
             </Typography>
-            <div className="bg-white p-2 mt-14 rounded-lg shadow-[30px_-10px_30px_30px_rgba(0,0,0,0.15)] lg:relative flex flex-col lg:flex-row lg:h-96 lg:p-4 justify-between gap-4">
-              <div className="">
-                {/* Description */}
+            <div className="bg-white p-4 mt-14 rounded-xl shadow-lg lg:relative flex flex-col lg:flex-row lg:h-96 lg:p-6 justify-between gap-6 border border-gray-100">
+              <div>
                 <Typography
                   as={"p"}
-                  className="text-gray-500 max-w-xl lg:text-xl"
+                  className="text-gray-500 max-w-xl lg:text-xl leading-relaxed"
                 >
                   The OAU Foundation is a humanitarian non-governmental
                   organization (NGO) dedicated to improving the lives of
@@ -93,20 +90,20 @@ export default function ContactForm() {
                 </Typography>
 
                 {/* Service Icons */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                   {contactTexts.map((_contact, i) => (
                     <div
                       key={i}
-                      className="flex flex-col items-center space-y-3"
+                      className="flex flex-col items-center space-y-3 group"
                     >
-                      <div className="w-32 h-32 rounded-full bg-yellow-500 flex items-center justify-center">
-                        <span className="text-4xl text-white">
+                      <div className="w-28 h-28 rounded-full bg-deep-orange flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
+                        <span className="text-3xl text-white">
                           <_contact.icons />
                         </span>
                       </div>
                       <Typography
                         as={"p"}
-                        className="font-semibold text-lg text-main-blue"
+                        className="font-semibold text-base text-main-blue"
                       >
                         {_contact.name}
                       </Typography>
@@ -114,22 +111,24 @@ export default function ContactForm() {
                   ))}
                 </div>
               </div>
-              {/* RIGHT — APPOINTMENT FORM */}
-              <div className="bg-main-blue lg:w-[35%] lg:absolute lg:h-fit lg:right-5 lg:-top-32 rounded-xl py-4 px-8 shadow-xl">
+
+              {/* RIGHT -- JOIN US FORM */}
+              <div className="bg-main-blue lg:w-[35%] lg:absolute lg:h-fit lg:right-5 lg:-top-32 rounded-xl py-6 px-8 shadow-xl">
                 <Typography
                   as={"h4"}
-                  className="text-white text-center text-2xl lg:text-4xl font-bold"
+                  className="text-white text-center text-2xl lg:text-4xl font-bold mb-2"
                 >
                   JOIN US
                 </Typography>
-                <form className="p-4 w-full" onSubmit={handleSubmit}>
+                <div className="w-10 h-1 bg-deep-orange rounded-full mx-auto mb-4" />
+                <form className="p-3 w-full space-y-1" onSubmit={handleSubmit}>
                   <Input
                     name="name"
                     type="text"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Name"
-                    className="p-2 rounded-sm bg-white text-black outline-none !border-0"
+                    className="p-3 rounded-md bg-white text-black outline-none !border-0 transition-shadow duration-200 focus:ring-2 focus:ring-deep-orange"
                   />
                   <Input
                     name="email"
@@ -137,7 +136,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="p-2 rounded-sm bg-white text-black outline-none !border-0"
+                    className="p-3 rounded-md bg-white text-black outline-none !border-0 transition-shadow duration-200 focus:ring-2 focus:ring-deep-orange"
                   />
                   <Input
                     name="contactNumber"
@@ -145,7 +144,7 @@ export default function ContactForm() {
                     value={formData.phoneNumber}
                     onChange={handleChange}
                     placeholder="Phone Number"
-                    className="p-2 rounded-sm bg-white text-black outline-none !border-0"
+                    className="p-3 rounded-md bg-white text-black outline-none !border-0 transition-shadow duration-200 focus:ring-2 focus:ring-deep-orange"
                   />
                   <textarea
                     name="message"
@@ -153,15 +152,15 @@ export default function ContactForm() {
                     value={formData.message}
                     placeholder="Message"
                     cols={5}
-                    className="w-full p-2 rounded-sm bg-white text-black outline-none !border-0"
+                    className="w-full p-3 rounded-md bg-white text-black outline-none !border-0 transition-shadow duration-200 focus:ring-2 focus:ring-deep-orange"
                   />
-                  <div className="my-5">
+                  <div className="my-4">
                     <CustomButton
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-white w-full justify-center px-6 py-5 flex items-center gap-3 text-main-blue mx-auto cursor-pointer transition ease-in duration-700 disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="bg-white w-full justify-center px-6 py-4 flex items-center gap-3 text-main-blue mx-auto cursor-pointer rounded-md transition-all duration-300 hover:bg-deep-orange hover:text-white disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      <span className="">{isSubmitting ? "Sending..." : "Send"}</span>
+                      <span>{isSubmitting ? "Sending..." : "Send"}</span>
                       {!isSubmitting && <Send className="text-main-blue" />}
                     </CustomButton>
                   </div>
