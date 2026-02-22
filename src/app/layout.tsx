@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import "aos/dist/aos.css";
 import AOSProvider from "@/providers/AosProvider";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,27 @@ export default function RootLayout({
         <section className="xl:container lg:mx-auto">
           <Navbar />
           <AOSProvider />
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              duration: 5000,
+              style: {
+                background: "#1a365d",
+                color: "#fff",
+                borderRadius: "8px",
+              },
+              success: {
+                style: {
+                  background: "#16a34a",
+                },
+              },
+              error: {
+                style: {
+                  background: "#dc2626",
+                },
+              },
+            }}
+          />
           {children}
         </section>
       </body>

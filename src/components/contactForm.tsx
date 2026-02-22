@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import Input from "@/components/custom-components/Input";
 import CustomButton from "@/components/custom-components/Button";
 import { Send } from "@/utils/icons";
@@ -13,6 +14,7 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -26,23 +28,39 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    const subject = "Contact Form Submission";
-    const body = `
-    First Name: ${formData.name}
-    Contact Number: ${formData.phoneNumber}
-    Email: ${formData.email}
-    Message: ${formData.message}
-  `;
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "join-us",
+          fields: formData,
+        }),
+      });
 
-    // Encode the subject and body for URL
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
+      const data = await res.json();
 
-    // Open default mail client with prefilled email
-    window.location.href = `mailto:info@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+      if (!res.ok) {
+        toast.error(data.error || "Something went wrong. Please try again.");
+        return;
+      }
+
+      toast.success("Thank you for joining us! We will be in touch soon.");
+      setFormData({
+        name: "",
+        phoneNumber: "",
+        email: "",
+        message: "",
+      });
+    } catch {
+      toast.error("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -140,10 +158,11 @@ export default function ContactForm() {
                   <div className="my-5">
                     <CustomButton
                       type="submit"
-                      className="bg-white w-full justify-center px-6 py-5 flex items-center gap-3 text-main-blue mx-auto cursor-pointer transition ease-in duration-700"
+                      disabled={isSubmitting}
+                      className="bg-white w-full justify-center px-6 py-5 flex items-center gap-3 text-main-blue mx-auto cursor-pointer transition ease-in duration-700 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      <span className="">Send</span>
-                      <Send className="text-main-blue" />
+                      <span className="">{isSubmitting ? "Sending..." : "Send"}</span>
+                      {!isSubmitting && <Send className="text-main-blue" />}
                     </CustomButton>
                   </div>
                 </form>
