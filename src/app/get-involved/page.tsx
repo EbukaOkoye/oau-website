@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import Footer from "@/components/Footer";
-// import { Typography } from "@material-tailwind/react";
 import CustomHero from "@/components/custom-components/customHero";
 import Input from "@/components/custom-components/Input";
 import { Send } from "@/utils/icons";
@@ -15,6 +15,7 @@ export default function GetInvolved() {
     email: "",
     reason: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [partnerData, setPartnerData] = useState({
     firstName: "",
@@ -23,6 +24,7 @@ export default function GetInvolved() {
     email: "",
     reason: "",
   });
+  const [isPartnerSubmitting, setIsPartnerSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -48,44 +50,76 @@ export default function GetInvolved() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    const subject = "Contact Form Submission";
-    const body = `
-    First Name: ${formData.firstName}
-    Last Name: ${formData.lastName}
-    Contact Number: ${formData.contactNumber}
-    Email: ${formData.email}
-    Message: ${formData.reason}
-  `;
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "volunteer",
+          fields: formData,
+        }),
+      });
 
-    // Encode the subject and body for URL
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
+      const data = await res.json();
 
-    // Open default mail client with prefilled email
-    window.location.href = `mailto:admin@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+      if (!res.ok) {
+        toast.error(data.error || "Something went wrong. Please try again.");
+        return;
+      }
+
+      toast.success("Volunteer application submitted! We will reach out soon.");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        contactNumber: "",
+        email: "",
+        reason: "",
+      });
+    } catch {
+      toast.error("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handlePartnerSubmit = (e: React.FormEvent) => {
+  const handlePartnerSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsPartnerSubmitting(true);
 
-    const subject = "Contact Form Submission";
-    const body = `
-    First Name: ${partnerData.firstName}
-    Last Name: ${partnerData.lastName}
-    Contact Number: ${partnerData.contactNumber}
-    Email: ${partnerData.email}
-    Message: ${partnerData.reason}
-  `;
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "partner",
+          fields: partnerData,
+        }),
+      });
 
-    // Encode the subject and body for URL
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
+      const data = await res.json();
 
-    // Open default mail client with prefilled email
-    window.location.href = `mailto:admin@onyekwereakymuche.com?subject=${encodedSubject}&body=${encodedBody}`;
+      if (!res.ok) {
+        toast.error(data.error || "Something went wrong. Please try again.");
+        return;
+      }
+
+      toast.success("Partnership inquiry sent! We will get back to you soon.");
+      setPartnerData({
+        firstName: "",
+        lastName: "",
+        contactNumber: "",
+        email: "",
+        reason: "",
+      });
+    } catch {
+      toast.error("Network error. Please check your connection and try again.");
+    } finally {
+      setIsPartnerSubmitting(false);
+    }
   };
 
   return (
@@ -145,10 +179,11 @@ export default function GetInvolved() {
               <div className="my-5">
                 <CustomButton
                   type="submit"
-                  className="group bg-main-blue w-full px-6 py-3 flex justify-center items-center gap-3 text-white mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition ease-in duration-700"
+                  disabled={isSubmitting}
+                  className="group bg-main-blue w-full px-6 py-3 flex justify-center items-center gap-3 text-white mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition ease-in duration-700 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <span className="">Send</span>
-                  <Send className="text-white group-hover:text-main-blue" />
+                  <span className="">{isSubmitting ? "Sending..." : "Send"}</span>
+                  {!isSubmitting && <Send className="text-white group-hover:text-main-blue" />}
                 </CustomButton>
               </div>
             </form>
@@ -204,10 +239,11 @@ export default function GetInvolved() {
               <div className="my-5">
                 <CustomButton
                   type="submit"
-                  className="group bg-main-blue w-full px-6 py-3 flex justify-center items-center gap-3 text-white mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition ease-in duration-700"
+                  disabled={isPartnerSubmitting}
+                  className="group bg-main-blue w-full px-6 py-3 flex justify-center items-center gap-3 text-white mx-auto cursor-pointer hover:bg-white hover:text-main-blue hover:border-2 hover:border-main-blue transition ease-in duration-700 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <span className="">Send</span>
-                  <Send className="text-white group-hover:text-main-blue" />
+                  <span className="">{isPartnerSubmitting ? "Sending..." : "Send"}</span>
+                  {!isPartnerSubmitting && <Send className="text-white group-hover:text-main-blue" />}
                 </CustomButton>
               </div>
             </form>
