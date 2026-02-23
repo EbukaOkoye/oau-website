@@ -27,11 +27,11 @@ export default function Leading() {
             src={images.oau_man}
             alt="OAU Foundation representative"
             className="object-cover w-full rounded-lg shadow-lg"
-            data-aos="slide-right"
+            data-aos="slide-up"
           />
         </div>
         <div className="lg:col-span-2">
-          <div data-aos="slide-left">
+          <div data-aos="slide-up">
             <div className="mb-4">
               <Typography
                 as={"h4"}
@@ -114,7 +114,10 @@ export default function Leading() {
       </div>
 
       {/* Accomplishments Carousel */}
-      <div className="py-16 mt-14 bg-secondary-blue rounded-xl" data-aos="fade-in">
+      <div
+        className="py-16 mt-14 bg-secondary-blue rounded-xl"
+        data-aos="fade-in"
+      >
         <Typography
           as={"h2"}
           className="text-center text-white text-2xl lg:text-4xl font-semibold mb-10 section-heading-accent"
